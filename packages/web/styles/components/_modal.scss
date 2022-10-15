@@ -1,0 +1,90 @@
+.modal-component {
+  .modal-dialog {
+    max-width: 90%;
+    margin: 61px auto 44px;
+
+    .modal-body {
+      padding: 0;
+    }
+
+    @media (min-width: 576px) {
+      max-width: 490px;
+      margin: 150px auto 44px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 650px;
+      border-radius: 3px;
+      margin: 170px auto 44px;
+    }
+
+    @media (min-width: 1000px) {
+      max-width: 980px;
+      margin: 200px auto 44px;
+    }
+  }
+
+  .popup {
+    width: auto;
+  }
+
+  .fancybox-close-small {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    z-index: 10;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    left: auto;
+    top: -10px;
+    right: -10px;
+    bottom: auto;
+    background: #9fd34a;
+    border-radius: 50%;
+    color: #fff;
+
+    @media (min-width: 1000px) {
+      width: 44px;
+      height: 44px;
+      right: -22px;
+      top: -22px;
+    }
+
+    &:hover {
+      background: #86bc2e;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      right: auto;
+      bottom: auto;
+      font-family: "icomoon";
+      content: "";
+      font-weight: 400;
+      font-size: .625rem;
+      line-height: .875rem;
+      width: auto;
+      height: auto;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      display: block;
+      background: none;
+      color: #fff;
+      outline: none;
+
+      @media (min-width: 1000px) {
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+  }
+}

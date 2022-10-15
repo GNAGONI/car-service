@@ -1,0 +1,43 @@
+.preferred-collection-time {
+  width: 100%;
+
+  .btn-group.btn-group-toggle {
+    width: 100%;
+
+    .btn.btn-primary {
+      background-color: #e8e9ea;
+      margin-right: 15px;
+      padding: 10px 20px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.active {
+        border: 4px solid #9fd34a;
+      }
+
+      &.focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__item {
+    input {
+      display: none;
+    }
+
+    &-date {
+      font-weight: 500;
+    }
+
+    &-time {
+      font-weight: 300;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="content section-regions bg-before-lighter"
+>
+  <header
+    className="section-head text-center"
+  />
+  <div
+    className="popular-locations text-center"
+  >
+    <div
+      className="list-holder"
+    >
+      <ul
+        className="locations-list"
+      />
+    </div>
+  </div>
+  <div
+    aria-expanded={null}
+    className="personalise-locations text-center collapse"
+  >
+    <h2>
+      Other locations
+    </h2>
+    <div
+      className="tabs-area text-left"
+    >
+      0
+      <div
+        className="tab-content"
+        id="nav-tabContent"
+      />
+    </div>
+  </div>
+  <div
+    className="btn-block text-center"
+  >
+    <button
+      className="btn-locations btn btn-primary"
+      color="primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <div>
+        <strong
+          className="more"
+        >
+          View more locations
+        </strong>
+        <i
+          className="icon-chevron-down"
+        />
+      </div>
+    </button>
+  </div>
+</section>
+`;

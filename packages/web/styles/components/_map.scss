@@ -1,0 +1,25 @@
+.svg-map {
+  width: 100%;
+  height: auto;
+  stroke: $white;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  g {
+    fill: $dark;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      fill: $green;
+      outline: 0;
+      transition: .3s ease-out;
+
+    }
+  }
+
+  &__map {
+    display: inline-block;
+    width: 500px;
+  }
+}

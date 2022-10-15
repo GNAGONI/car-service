@@ -1,0 +1,233 @@
+.faqs-main.content {
+  .wrap {
+    @include media-breakpoint-up(lg) {
+      margin-top: -20px;
+      margin-bottom: -20px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: -27px;
+      margin-bottom: -27px;
+    }
+  }
+}
+
+.faqs-list {
+  .wrap & {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 27px;
+      padding-bottom: 27px;
+    }
+  }
+  h2 {
+    @include fontsize(20, 26);
+    margin: 0 0 14px;
+    font-weight: $font-weight-medium;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(24, 32);
+      margin: 0 0 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(30, 40);
+      margin: 0 0 25px;
+    }
+  }
+  .card {
+    border: 0;
+    background: none;
+    padding: 6px 0;
+    position: relative;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(14, 24);
+    }
+    &:first-child {
+      padding-top: 0;
+      .card-area:after {
+        top: 0;
+      }
+    }
+    &:after {
+      @include absolute(auto, 0, 0, 0);
+      background: theme-color("info");
+      height: 2px;
+      border-top: 1px solid #eae9ea;
+      content: '';
+    }
+    h3 {
+      margin: 0;
+      a {
+        display: block;
+        position: relative;
+        font-weight: $font-weight-light;
+        padding: 5px 30px 5px 0;
+        transition: margin .25s ease-in-out;
+        color: theme-color("dark");
+        &:hover {
+          color: darken(theme-color("primary"), 15%);
+        }
+        &:after,
+        &:before {
+          @include absolute(50%, auto, 4px);
+          @include size(2px, 10px);
+          transition: all .25s ease-in-out;
+          transform: translateY(-50%);
+          background: theme-color("dark");
+          content: '';
+        }
+        &:after {
+          @include size(10px, 2px);
+          right: 0;
+        }
+        &:not(.collapsed) {
+          font-weight: $font-weight-medium;
+          background: none;
+          margin: 18px 0 0 15px;
+          @include media-breakpoint-up(lg) {
+            margin: 25px 0 0 20px;
+          }
+          &:before {
+            opacity: 0;
+          }
+          &:after {
+            right: 15px;
+            top: -2px;
+            transform: none;
+            @include media-breakpoint-up(lg) {
+              right: 20px;
+              top: -3px;
+            }
+          }
+        }
+      }
+    }
+    .card-area {
+      &:after {
+        @include absolute(9px, 0, 0, 9px);
+        transition: all .25s ease-in-out;
+        background: $white;
+        content: "";
+        border-radius: $border-radius;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        .bg-before-default &,
+        .bg-default & {
+          background: theme-color('light');
+        }
+      }
+      &.show:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .card-body {
+      position: static;
+      padding: 15px 15px 23px;
+      @include media-breakpoint-up(lg) {
+        padding: 11px 13% 32px 20px;
+      }
+      .btn-block {
+        padding: 0;
+      }
+    }
+    p {
+      margin: 0 0 15px;
+    }
+  }
+  > .btn-block {
+    padding: 15px 0 0;
+    @include media-breakpoint-up(lg) {
+      padding: 21px 0 0;
+    }
+    .btn {
+      @include media-breakpoint-up(lg) {
+        @include fontsize(14, 20);
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+    }
+  }
+}
+
+.faqs-help {
+  background: url(../static/images/bg-facts.jpg) no-repeat theme-color('primary') 100% 50%;
+  background-size: cover;
+  padding: 15px 0;
+  line-height: rem-calc(17);
+  @include media-breakpoint-up(md) {
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 20px 0 28px;
+  }
+  .content-holder {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ico {
+    @include size(100px);
+    border-radius: 50%;
+    background: theme-color('dark');
+    display: flex;
+    flex-flow: row nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+    justify-content: center;
+    @include media-breakpoint-up(xl) {
+      @include size(152px);
+    }
+    img {
+      max-width: 60%;
+      height: auto;
+      display: block;
+      @include media-breakpoint-up(xl) {
+        max-width: 100%;
+      }
+    }
+  }
+  .text-box {
+    flex-grow: 1;
+    @include media-breakpoint-up(lg) {
+      padding: 0 6%;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 0 9%;
+    }
+  }
+  h2 {
+    @include fontsize(20, 26);
+    margin: 0 0 12px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(24, 32);
+      margin: 0 0 18px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(30, 40);
+    }
+  }
+  .btn-block {
+    padding: 0;
+  }
+  .btn {
+    @include media-breakpoint-down(md) {
+      min-width: 130px !important;
+    }
+    &.btn-dark {
+      &:hover,
+      &:focus {
+        background: theme-color("dark");
+        color: theme-color("primary");
+      }
+    }
+  }
+}

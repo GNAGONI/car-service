@@ -1,0 +1,38 @@
+.note {
+  width: calc(50% - 20px);
+  display:inline-flex;
+  margin: 10px;
+  font-size: 18px;
+  padding: 0 10px;
+
+  &:nth-child(odd) {
+    margin: 0;
+  }
+
+  &:nth-child(even) {
+    margin: 0 0 35px 35px;
+  }
+
+  &__close,
+  &__edit {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__close {
+    margin-top: 20px;
+  }
+
+  &__edit {
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 0 20px;
+  }
+
+  .collection-details-page__description {
+    max-width: 100%;
+  }
+}

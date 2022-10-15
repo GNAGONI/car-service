@@ -1,0 +1,54 @@
+.select-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  text-align: left;
+  color: #19212d;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  cursor: pointer;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    background: #f4f4f5;
+    border: 1px solid #d5d2d0;
+
+  }
+
+  .car-details {
+    &__list {
+      z-index: 10;
+      position: absolute;
+      width: 100%;
+      font-weight: 500;
+      background-color: #f4f4f5;
+      user-select: none;
+      box-shadow: none;
+      border: 1px solid #d5d2d0;
+    }
+
+    &__items {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+      padding: .375rem .9375rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: .75rem;
+      line-height: 1rem;
+      font-weight: 500;
+    }
+
+    &__items:hover {
+      background: #dddee0;
+      color: #19212d;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.news-widget {
+  .btn.widget-btn {
+    font-weight: 500;
+    border-radius: 2px;
+    letter-spacing: 0;
+
+    @media (min-width: 1000px) {
+      min-width: 89px;
+      padding: 13px 20px 12px;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      padding: 9px 10px;
+    }
+  }
+
+  .widget-media {
+    border-radius: 2px;
+    padding: 15px;
+    background: #e8e9ea;
+    color: #19212c;
+
+    @media (min-width: 1000px) {
+      background: #19212c;
+      color: #fff;
+    }
+
+    h2 {
+      margin: 0 0 15px;
+      color: #19212c;
+
+      @media (min-width: 1000px) {
+        color: #fff;
+      }
+    }
+
+    .post-holder {
+      padding: 6px 0;
+
+      @media (min-width: 1000px) {
+        padding: 12px 0 8px;
+      }
+    }
+
+    .post {
+      border-bottom: 1px solid #d5d3d0;
+      padding: 15px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-flow: row nowrap;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+
+      @media (min-width: 1000px) {
+        padding: 24px 0;
+        border-color: #3b424c;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        border: 0;
+      }
+
+      .img-thumbnail {
+        flex-shrink: 0;
+        width: 70px;
+        margin: 0 10px 0 0;
+        padding: 0;
+        border: 0;
+        border-radius: 5px;
+        overflow: hidden;
+
+        @media (min-width: 1000px) {
+          margin: 0 19px 0 0;
+          width: 70px;
+        }
+
+        img {
+          max-width: 100%;
+          display: block;
+          height: auto;
+          border-radius: 5px;
+        }
+      }
+
+      .text-area {
+        flex-grow: 1;
+        margin: -4px 0 0;
+      }
+
+      .date {
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: 500;
+        display: block;
+        color: #a3a6ab;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 11px;
+        line-height: 17px;
+        margin: 0 0 2px;
+        color: #19212c;
+
+        @media (min-width: 768px) {
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        @media (min-width: 1000px) {
+          color: #fff;
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+
+        a {
+          color: inherit;
+
+          &:hover,
+          &:focus {
+            color: #9fd34a;
+          }
+        }
+      }
+    }
+  }
+}

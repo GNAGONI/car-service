@@ -1,0 +1,166 @@
+.ui-datepicker {
+  border-radius: 3px;
+  border: 1px solid $gray-400;
+  background: theme-color('default');
+  padding: 0;
+  z-index: 999 !important;
+  width: 250px;
+  font-family: $font-family-sans-serif;
+  .ui-datepicker-header {
+    background: theme-color('light');
+    border-radius: 0;
+    border: 0;
+    padding: 8px 10px;
+  }
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    @include size(9px, 13px);
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    top: 50%;
+    cursor: pointer;
+    left: 10px;
+    transform: translateY(-50%);
+    span {
+      @include sr-only;
+      margin: 0;
+      display: block;
+    }
+    &:before {
+      @include icon("\e90d");
+      @include absolute(50%, 0);
+      transform: translateY(-50%);
+    }
+    &:hover {
+      &:before {
+        color: theme-color('primary');
+      }
+    }
+  }
+  .ui-datepicker-title {
+    @include font(12, 20, $font-weight-semibold);
+    display: block;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(13, 22);
+    }
+  }
+  .ui-datepicker-next {
+    left: auto;
+    right: 10px;
+    &:before {
+      content: "\e90c";
+    }
+  }
+
+  table {
+    @include fontsize(11, 14);
+    margin: 0 0 2px;
+    th {
+      font-weight: $font-weight-semibold;
+      border: 0;
+      padding: 1px;
+      span {
+        display: block;
+        padding: 9px 2px;
+      }
+    }
+    td {
+      padding: 1px;
+      border: 0;
+      width: 14.28%;
+      .ui-state-default {
+        border: 0;
+        background: theme-color('light');
+        text-align: center;
+        padding: 7px 2px;
+        border-radius: 1px;
+        &:hover,
+        &.ui-state-active {
+          background: theme-color('dark');
+          color: theme-color('light');
+        }
+        &.ui-state-highlight {
+          background: theme-color('primary');
+          color: theme-color('default');
+        }
+
+      }
+      &.ui-datepicker-unselectable, &.ui-datepicker-disable {
+        pointer-events: none;
+        .ui-state-default:hover {
+          background: theme-color('light');
+          color: #454545;
+        }
+      }
+    }
+  }
+}
+
+.wickedpicker {
+  border-radius: 0;
+  border: 1px solid $gray-400;
+  background: theme-color('default');
+  padding: 0;
+  width: 111px;
+  box-shadow: none;
+  z-index: 999 !important;
+  height: auto;
+  font-family: $font-family-sans-serif;
+  @include media-breakpoint-up(md) {
+    width: 135px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 250px;
+  }
+  &__title {
+    @include font(11, 18, $font-weight-semibold);
+    background: theme-color('light');
+    border-radius: 0;
+    border: 0;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(13, 22);
+    }
+  }
+  &__controls {
+    @extend %listreset;
+    padding: 4px 0;
+  }
+  &__controls__control-up,
+  &__controls__control-down {
+    height: 12px;
+    @include fontsize(7, 12);
+    position: relative;
+    margin: 6px auto;
+    &:after {
+      @include absolute(0, 0, 0);
+      @include fontsize(7, 12);
+      @include icon("\e909");
+      text-align: center;
+      width: auto;
+      margin: 0;
+    }
+    &:before {
+      display: none;
+    }
+    &:hover {
+      color: theme-color('primary');
+    }
+  }
+  &__controls__control-up {
+    &:after {
+      content: "\e90e";
+      margin: 0;
+    }
+  }
+  &__close {
+    display: none;
+  }
+}
+
+.react-datepicker--wrapper input {
+  border-radius: $border-radius;
+}

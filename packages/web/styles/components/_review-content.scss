@@ -1,0 +1,812 @@
+.review-content {
+  @include media-breakpoint-up(lg) {
+    padding: 15px 0 0;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 21px 0 0;
+  }
+}
+
+.review-intro {
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+    padding: 7px 0;
+  }
+  @include media-breakpoint-up(lg) {
+    @include fontsize(12, 21);
+  }
+  .section-head {
+    padding: 0 0 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 30px;
+    }
+    h2 {
+      max-width: inherit;
+      margin: 0 0 10px;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 16px;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .text-box {
+      flex-grow: 1;
+      max-width: 100% !important;
+    }
+  }
+  .img-thumbnail {
+    @include size(65px);
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 0 15px 0 0;
+    @include media-breakpoint-up(lg) {
+      @include size(95px);
+      margin: 0 30px 0 0;
+    }
+    + .text-box {
+      @include media-breakpoint-up(lg) {
+        padding: 5px 0 0;
+      }
+    }
+  }
+  .rating-info {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: -5px;
+    padding: 0 0 7px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(12, 21);
+      padding: 0 0 12px;
+    }
+    > * {
+      padding: 5px;
+    }
+    .text {
+      display: block;
+      opacity: .5;
+    }
+  }
+  .star-rating {
+    @include media-breakpoint-up(lg) {
+      margin: -4px;
+    }
+    li {
+      @include fontsize(22, 22);
+      @include media-breakpoint-up(lg) {
+        @include fontsize(31, 31);
+        margin: 4px;
+      }
+    }
+    .bg-before-default & {
+      li {
+        color: theme-color('lightest');
+      }
+    }
+  }
+  .meta {
+    @extend %listreset;
+    margin: -5px -10px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 0 5px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(12, 21);
+      margin: -5px -15px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: -5px -18px;
+    }
+    li {
+      padding: 5px 10px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      @include media-breakpoint-up(lg) {
+        padding: 5px 15px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding: 5px 18px;
+      }
+      .text {
+        display: block;
+        flex-grow: 1;
+        font-weight: $font-weight-medium;
+        .subtitle {
+          opacity: .5;
+        }
+      }
+      i {
+        font-size: rem-calc(18);
+        flex-shrink: 0;
+        margin: 0 10px 0 0;
+        @include media-breakpoint-up(lg) {
+          @include fontsize(23, 23);
+          margin: 0 13px 0 4px;
+        }
+        &.icon-like {
+          color: theme-color('primary');
+          margin-top: -5px;
+        }
+        &.icon-dislike {
+          color: #e30613;
+        }
+      }
+    }
+  }
+  p {
+    margin: 0 0 16px;
+  }
+  .info {
+    @extend %listreset;
+    margin: -3px -6px;
+    display: flex;
+    flex-flow: row wrap;
+    @include media-breakpoint-up(lg) {
+      margin: -3px -14px;
+    }
+    li {
+      padding: 3px 6px;
+      @include media-breakpoint-up(lg) {
+        padding: 3px 14px;
+      }
+    }
+  }
+  .btn-block {
+    padding: 9px 0 0;
+    margin: -5px;
+    .btn {
+      margin: 5px;
+      @include media-breakpoint-up(lg) {
+        min-width: 170px;
+      }
+    }
+  }
+}
+
+.partner-contacts {
+  > .row {
+    overflow: hidden;
+  }
+}
+
+.contact-block {
+  @include fontsize(13, 30);
+  @include media-breakpoint-up(lg) {
+    @include fontsize(15, 37);
+  }
+  @include media-breakpoint-up(xl) {
+    @include fontsize(18, 44);
+  }
+  &:before {
+    @include absolute(-1px, 10px, 10px);
+    @include size(auto, 1px);
+    background: $gray-300;
+    content: '';
+    @include media-breakpoint-up(md) {
+      @include size(1px, 100%);
+      left: -1px;
+      top: 0;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &:first-child {
+      .box-holder {
+        padding-top: 0;
+      }
+    }
+    &:last-child {
+      .box-holder {
+        padding-bottom: 0;
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    &:nth-child(3n + 1) {
+      .box-holder {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(3n + 3) {
+      .box-holder {
+        padding-right: 0;
+      }
+    }
+  }
+  .box-holder {
+    overflow: hidden;
+    padding: 20px 0;
+    @include media-breakpoint-up(md) {
+      padding: 10px 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 23px 20px 10px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 23px 30px 10px;
+    }
+  }
+  h3 {
+    margin: 0 0 11px;
+  }
+  .map-frame {
+    height: 288px;
+    @include media-breakpoint-up(md) {
+      height: 200px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 242px;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 288px;
+    }
+  }
+  address {
+    @include fontsize(13, 30);
+    margin: 0 0 15px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(15, 37);
+      margin: 0 0 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(18, 44);
+      margin: 0 0 25px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    .phone {
+      display: block;
+    }
+  }
+  .btn-block {
+    margin: -3px;
+    .btn {
+      margin: 3px;
+    }
+  }
+  .timing-list {
+    padding: 0;
+    li {
+      &:before {
+        display: none;
+      }
+    }
+    .time {
+      color: theme-color('dark');
+      font-weight: $font-weight-light;
+    }
+  }
+  .map {
+    margin: 0 0 5px;
+    @include media-breakpoint-up(lg) {
+      margin: -12px 0 9px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: -20px 0 9px;
+    }
+    img {
+      @include size(100%, auto);
+      display: block;
+    }
+    iframe {
+      border: 0 !important;
+      margin: 0;
+    }
+  }
+}
+
+.dealer-services {
+  .tick-list {
+    @include media-breakpoint-up(lg) {
+      line-height: rem-calc(22);
+      column-gap: 100px;
+      -moz-column-gap: 100px;
+    }
+    @include media-breakpoint-up(xl) {
+      column-gap: 142px;
+      -moz-column-gap: 142px;
+    }
+    > li {
+      &:before {
+        @include media-breakpoint-up(lg) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.rating-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: -5px -10px;
+  align-items: center;
+  padding: 17px 0 25px;
+  position: relative;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+  &:before {
+    @include absolute(0, 50%);
+    @include size(95px, 2px);
+    background: $gray-300;
+    content: '';
+    transform: translateX(-50%);
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 20px 0 50px;
+    margin: -5px -15px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 28px 0 74px;
+    margin: -5px -23px;
+  }
+  &:first-child {
+    padding-top: 0;
+    &:before {
+      display: none;
+    }
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+  > * {
+    padding: 5px 10px;
+    @include media-breakpoint-up(lg) {
+      padding: 5px 15px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 5px 23px;
+    }
+  }
+  h3 {
+    margin: 0;
+    max-width: 374px;
+    letter-spacing: 0;
+  }
+  .rating {
+    margin: 0;
+    &:hover {
+      input[type="radio"] {
+        &:checked + label,
+        &:checked ~ label {
+          &:before {
+            content: "\e916";
+          }
+        }
+      }
+    }
+    label:before {
+      content: "\e916";
+    }
+    .rating-holder {
+      @include media-breakpoint-up(lg) {
+        margin: -10px;
+      }
+    }
+    label {
+      margin: 0;
+      @include media-breakpoint-up(lg) {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.sort-bar {
+  background: theme-color('primary');
+  border-radius: $border-radius;
+  padding: 9px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 0 10px;
+  text-align: center;
+  align-items: center;
+  @include media-breakpoint-up(sm) {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  @include media-breakpoint-up(md) {
+    justify-content: space-between;
+    text-align: left;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 17px 19px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 23px 28px;
+  }
+  &:last-child {
+    margin: 0;
+  }
+  .title {
+    padding: 5px;
+    order: 2;
+    @include media-breakpoint-up(md) {
+      order: inherit;
+    }
+  }
+  .sorting {
+    display: flex;
+    flex-flow: column nowrap;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+    @media (min-width: 414px) {
+      flex-flow: row wrap;
+      align-items: center;
+      align-content: center;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 0 -5px;
+    }
+    .btn-block {
+      padding: 5px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      @include media-breakpoint-up(md) {
+        justify-content: flex-start;
+      }
+      .btn {
+        flex-grow: 1;
+        min-width: inherit;
+      }
+    }
+    .form-sort {
+      flex-shrink: 0;
+      padding: 5px;
+      flex-grow: 1;
+      .form-group {
+        padding: 0;
+        align-items: center;
+      }
+      &.js-hidden {
+        display: none;
+      }
+      label {
+        width: auto;
+        margin: 0 10px 0 0;
+        flex-shrink: 0;
+        flex-grow: inherit;
+        @include media-breakpoint-up(lg) {
+          margin: 0 16px 0 0;
+        }
+      }
+      .input-group {
+        width: auto;
+        flex-grow: 1;
+        @include media-breakpoint-up(md) {
+          width: 145px;
+          flex-grow: inherit;
+        }
+      }
+    }
+  }
+  .js-view-list {
+    li {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.garages-finder {
+  background: theme-color('primary');
+  border-radius: $border-radius;
+  padding: 17px 19px;
+  margin: 0 0 25px;
+  display: flex;
+  text-align: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  @include media-breakpoint-up(md) {
+    justify-content: space-between;
+    text-align: left;
+    flex-direction: row;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 37px;
+    padding: 20px 28px 22px;
+  }
+  &:last-child {
+    margin: 0;
+  }
+  .section-head {
+    padding: 0 0 15px;
+    @include media-breakpoint-up(md) {
+      width: 48.5%;
+      padding: 0;
+    }
+    h2 {
+      @include media-breakpoint-only(md) {
+        @include fontsize(20, 28);
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .form-inline {
+    align-items: center;
+    flex-flow: row nowrap;
+    @include media-breakpoint-up(md) {
+      width: 48%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 43%;
+    }
+    .form-group {
+      flex-grow: 1;
+    }
+    .form-control {
+      @include media-breakpoint-up(lg) {
+        @include fontsize(14, 18);
+        height: 50px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+    }
+    .btn-block {
+      flex-shrink: 0;
+    }
+    .btn.btn-dark {
+      min-width: 85px;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(14, 18);
+        padding-top: 16px;
+        padding-bottom: 16px;
+        min-width: 120px;
+      }
+      @include media-breakpoint-up(xl) {
+        min-width: 180px;
+      }
+      &:hover,
+      &:focus {
+        background: lighten(theme-color('dark'), 10%);
+        color: theme-color('default');
+      }
+    }
+  }
+}
+
+.partner-review {
+  @include fontsize(12, 23);
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .box-holder {
+    background: theme-color('default');
+    border-radius: $alert-border-radius;
+    overflow: hidden;
+  }
+  .header {
+    line-height: rem-calc(20);
+    background: theme-color('lightest');
+    padding: 7px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    @include media-breakpoint-up(lg) {
+      padding: 10px 17px;
+    }
+    .img-thumbnail {
+      flex-shrink: 0;
+      width: 32px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 3px 12px 0 0;
+      @include media-breakpoint-up(lg) {
+        margin: 5px 20px 0 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .text-box {
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .title {
+      display: block;
+      a {
+        color: inherit;
+        &:hover,
+        &:focus {
+          color: theme-color("primary");
+        }
+      }
+    }
+    .info {
+      @extend %listreset;
+      margin: 0 -4px 0 -8px;
+      display: flex;
+      flex-flow: row wrap;
+      li {
+        padding: 0 4px 0 8px;
+        position: relative;
+        &:before {
+          @include absolute(50%, 0);
+          @include size(4px, 1px);
+          transform: translateY(-50%);
+          background: theme-color('dark');
+        }
+      }
+    }
+  }
+  .box-frame {
+    overflow: hidden;
+    padding: 15px 20px;
+    @include media-breakpoint-up(lg) {
+      padding: 15px 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 21px 40px 14px;
+    }
+  }
+  .rating-overall {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 0 12px;
+    align-items: flex-start;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 18px;
+    }
+    .text {
+      @include fontsize(14, 22);
+      @include media-breakpoint-up(lg) {
+        padding: 3px 0 0;
+      }
+    }
+    .star-rating {
+      @include fontsize(12, 12);
+      padding: 0;
+      @include media-breakpoint-up(lg) {
+        margin: -6px;
+      }
+      li {
+        @include fontsize(22, 22);
+        @include media-breakpoint-up(lg) {
+          @include fontsize(28, 28);
+          margin: 6px;
+        }
+      }
+    }
+  }
+  .rating-items {
+    padding: 0;
+    margin: 0 0 15px;
+    column-count: 1;
+    -moz-column-count: 1;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 25px;
+    }
+    > li {
+      padding: 5px 0;
+      border-bottom: 1px solid theme-color('lightest');
+    }
+    .star-rating li {
+      @include fontsize(16, 16);
+    }
+  }
+  .link-area {
+    overflow: hidden;
+    margin: 0 0 15px;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: 0 0 25px;
+    }
+  }
+  .meta {
+    @extend %listreset;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: -5px -15px;
+    text-align: center;
+    li {
+      padding: 5px 15px;
+      min-width: 33%;
+      a {
+        display: inline-flex;
+        vertical-align: top;
+        max-width: 100%;
+        color: theme-color('dark');
+        flex-flow: column nowrap;
+        i {
+          @include fontsize(20, 20);
+          @include transition;
+          flex-grow: 1;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          color: $gray-400;
+          margin: 0 0 2px;
+        }
+        &:hover,
+        &:focus {
+          color: darken(theme-color('primary'), 10%);
+          i {
+            color: darken(theme-color('primary'), 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.review-first {
+  background: #e9e8e8;
+  padding: 20px;
+  position: relative;
+  z-index: 50;
+  @include media-breakpoint-up(lg) {
+    padding: 30px 9%;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 60px 9%;
+  }
+  &:after,
+  &:before {
+    @include absolute(0, 0, 0, 0);
+    background: url(../static/images/shadow-light-tr.png) no-repeat 100% 0;
+    content: '';
+    z-index: -1;
+  }
+  &:after {
+    background: url(../static/images/shadow-light-bl.png) no-repeat 0 100%;
+  }
+  .section-head {
+    padding-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 29px;
+    }
+    .text-box {
+      max-width: 100% !important;
+    }
+  }
+  h2 {
+    margin: 0 0 20px;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 35px;
+    }
+    span {
+      @include media-breakpoint-up(lg) {
+        font-size: rem-calc(24);
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: rem-calc(30);
+      }
+    }
+  }
+  .rating-block {
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 15px 0;
+    @include media-breakpoint-up(lg) {
+      padding: 19px 0;
+    }
+    h3 {
+      margin: 0 0 3px;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 6px;
+      }
+    }
+  }
+}

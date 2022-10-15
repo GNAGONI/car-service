@@ -1,0 +1,92 @@
+.posts-slideshow {
+  position: relative;
+  .slick-list {
+    display: flex;
+    flex-grow: 1;
+    max-width: 540px;
+    margin: auto;
+
+    @include media-breakpoint-up(md) {
+      max-width: 720px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 970px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1198px;
+    }
+  }
+  .slick-track {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row nowrap;
+  }
+  &:after,
+  &:before {
+    @include media-breakpoint-down(sm) {
+      @include absolute(0, -10px, auto, 0);
+      width: 40px;
+      background: linear-gradient(to right, rgba(theme-color("light"), 1) 0%, rgba(theme-color("light"), 1) 50%, rgba(theme-color("light"), 0) 100%);
+
+      content: '';
+      z-index: 50;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 20px;
+    }
+  }
+  &:before {
+    @include media-breakpoint-down(sm) {
+      .bg-before-default &,
+      .bg-default & {
+        background: linear-gradient(to right, rgba(theme-color("default"), 1) 0%, rgba(theme-color("default"), 1) 50%, rgba(theme-color("default"), 0) 100%);
+      }
+      .bg-before-info &,
+      .bg-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 1) 0%, rgba(theme-color("info"), 1) 50%, rgba(theme-color("info"), 0) 100%);
+      }
+      .bg-before-primary &,
+      .bg-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 1) 0%, rgba(theme-color("primary"), 1) 50%, rgba(theme-color("primary"), 0) 100%);
+      }
+      .bg-before-dark &,
+      .bg-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 1) 0%, rgba(theme-color("dark"), 1) 50%, rgba(theme-color("dark"), 0) 100%);
+      }
+      .bg-before-lighter &,
+      .bg-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 1) 0%, rgba(theme-color("lighter"), 1) 50%, rgba(theme-color("lighter"), 0) 100%);
+      }
+    }
+  }
+  &:after {
+    @include media-breakpoint-down(sm) {
+      left: auto;
+      background: linear-gradient(to right, rgba(theme-color("light"), 0) 0%, rgba(theme-color("light"), 1) 50%, rgba(theme-color("light"), 1) 100%);
+
+      right: -10px;
+      .bg-before-default &,
+      .bg-default & {
+        background: linear-gradient(to right, rgba(theme-color("default"), 0) 0%, rgba(theme-color("default"), 1) 50%, rgba(theme-color("default"), 1) 100%);
+      }
+      .bg-before-info &,
+      .bg-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 0) 0%, rgba(theme-color("info"), 1) 50%, rgba(theme-color("info"), 1) 100%);
+      }
+      .bg-before-primary &,
+      .bg-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 0) 0%, rgba(theme-color("primary"), 1) 50%, rgba(theme-color("primary"), 1) 100%);
+      }
+      .bg-before-dark &,
+      .bg-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 0) 0%, rgba(theme-color("dark"), 1) 50%, rgba(theme-color("dark"), 1) 100%);
+      }
+      .bg-before-lighter &,
+      .bg-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 0) 0%, rgba(theme-color("lighter"), 1) 50%, rgba(theme-color("lighter"), 1) 100%);
+      }
+    }
+  }
+}

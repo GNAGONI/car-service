@@ -1,0 +1,75 @@
+.finance-features {
+  position: relative;
+  &:after {
+    @include absolute(0, 0);
+    @include size(250px, 263px);
+    background: url(../static/images/shadow-light-tl.png) no-repeat 0 0;
+    background-size: 100% auto;
+    content: '';
+    z-index: 50;
+    @include media-breakpoint-up(lg) {
+      @include size(485px, 510px);
+    }
+  }
+  .img-area {
+    @include media-breakpoint-up(md) {
+      margin: -30px -80px -30px -10px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: -40px -90px -40px -20px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: -61px -177px -46px -60px;
+    }
+  }
+}
+
+.box-feature {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 10px;
+  > a,
+  .box-holder {
+    flex-grow: 1;
+    display: block;
+    position: relative;
+    color: theme-color('dark');
+    background: theme-color('default');
+    padding: 18px 40px 18px 15px;
+    @include media-breakpoint-up(lg) {
+      padding: 35px 20% 35px 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 46px 23% 52px 30px;
+    }
+    &:after {
+      @include absolute(50%, auto, 15px);
+      @include fontsize(20, 20);
+      @include icon('\e911');
+      display: block;
+      transform: translateY(-50%);
+      @include media-breakpoint-up(lg) {
+        right: 30px;
+      }
+    }
+    &:hover {
+      background: theme-color('primary');
+    }
+  }
+  h2 {
+    margin: 0 0 15px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(24, 32);
+      margin: 0 0 21px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(30, 40);
+    }
+  }
+  p {
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.invite-widget {
+  background-image: url("../static/images/bg-star.jpg");
+  padding: 15px 20px;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  font-weight: 300;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 20px 15px;
+  }
+
+  @media (min-width: 1000px) {
+    padding: 47px 15px 33px;
+  }
+
+  @media (min-width: 1220px) {
+    padding: 17px 15px 33px;
+  }
+
+  .btn.widget-btn {
+    font-weight: 500;
+    border-radius: 2px;
+    letter-spacing: 0;
+
+    @media (min-width: 1000px) {
+      min-width: 89px;
+      padding: 13px 20px 12px;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      padding: 9px 10px;
+    }
+  }
+
+  h3 {
+    padding: 0 55px;
+    margin: 0 0 8px;
+
+    @media (min-width: 768px) {
+      h3 {
+        margin: 0 0 11px;
+      }
+    }
+  }
+
+  .price-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    display: block;
+    background: #9fd34a;
+    color: #fff;
+    font-size: .981875rem;
+    line-height: 1.00375rem;
+    font-weight: 500;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 0 0 0 60px;
+    margin: -4px -4px 0 0;
+
+    .price {
+      display: block;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      padding: 12px 6px 22px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 100%;
+    }
+  }
+
+  .star-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+
+    li {
+      padding: 4px;
+
+      &:before {
+        content: none;
+      }
+    }
+
+    .icon-wrap {
+      max-width: 41px;
+      display: block;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .widget-header {
+    margin: 0 0 6px;
+  }
+}

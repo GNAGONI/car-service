@@ -1,0 +1,218 @@
+.reviews-slider {
+  position: relative;
+  .slick-list {
+    display: flex;
+  }
+  .slick-track {
+    display: flex;
+  }
+  &:after,
+  &:before {
+    @include media-breakpoint-down(sm) {
+      @include absolute(0, -10px, auto, 0);
+      width: 40px;
+      background: linear-gradient(to right, rgba(theme-color("light"), 1) 0%, rgba(theme-color("light"), 1) 50%, rgba(theme-color("light"), 0) 100%);
+      content: '';
+      z-index: 50;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 30px;
+    }
+  }
+  &:before {
+    @include media-breakpoint-down(sm) {
+      .bg-before-default &,
+      .bg-default & {
+        background: linear-gradient(to right, rgba(theme-color("default"), 1) 0%, rgba(theme-color("default"), 1) 50%, rgba(theme-color("default"), 0) 100%);
+      }
+      .bg-before-info &,
+      .bg-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 1) 0%, rgba(theme-color("info"), 1) 50%, rgba(theme-color("info"), 0) 100%);
+      }
+      .bg-before-primary &,
+      .bg-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 1) 0%, rgba(theme-color("primary"), 1) 50%, rgba(theme-color("primary"), 0) 100%);
+      }
+      .bg-before-dark &,
+      .bg-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 1) 0%, rgba(theme-color("dark"), 1) 50%, rgba(theme-color("dark"), 0) 100%);
+      }
+      .bg-before-lighter &,
+      .bg-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 1) 0%, rgba(theme-color("lighter"), 1) 50%, rgba(theme-color("lighter"), 0) 100%);
+      }
+    }
+  }
+  &:after {
+    @include media-breakpoint-down(sm) {
+      left: auto;
+      background: linear-gradient(to right, rgba(theme-color("light"), 0) 0%, rgba(theme-color("light"), 1) 50%, rgba(theme-color("light"), 1) 100%);
+      right: -10px;
+      .bg-before-default &,
+      .bg-default & {
+        background: linear-gradient(to right, rgba(theme-color("default"), 0) 0%, rgba(theme-color("default"), 1) 50%, rgba(theme-color("default"), 1) 100%);
+      }
+      .bg-before-info &,
+      .bg-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 0) 0%, rgba(theme-color("info"), 1) 50%, rgba(theme-color("info"), 1) 100%);
+      }
+      .bg-before-primary &,
+      .bg-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 0) 0%, rgba(theme-color("primary"), 1) 50%, rgba(theme-color("primary"), 1) 100%);
+      }
+      .bg-before-dark &,
+      .bg-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 0) 0%, rgba(theme-color("dark"), 1) 50%, rgba(theme-color("dark"), 1) 100%);
+      }
+      .bg-before-lighter &,
+      .bg-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 0) 0%, rgba(theme-color("lighter"), 1) 50%, rgba(theme-color("lighter"), 1) 100%);
+      }
+    }
+  }
+}
+
+.item-review {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  height: auto !important;
+  float: none;
+  min-height: inherit !important;
+  flex-basis: inherit !important;
+  @include media-breakpoint-down(sm) {
+    width: 300px !important;
+  }
+  .slick-initialized & {
+    display: flex;
+  }
+  .box-holder {
+    background: theme-color('default');
+    color: theme-color('dark');
+    padding: 15px;
+    flex-grow: 1;
+    border-radius: $border-radius;
+    @include media-breakpoint-up(lg) {
+      padding: 17px 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 17px 42px 25px;
+    }
+    .bg-default &,
+    .bg-before-default & {
+      background: theme-color('info');
+    }
+  }
+  .default {
+    float: right;
+    margin: 0 0 18px;
+    @include media-breakpoint-up(lg) {
+      margin: 0 -10px 25px 0;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 37px;
+      margin: 0 -13px 37px 0;
+    }
+  }
+  .header {
+    @include clearfix;
+    margin: 0 0 15px;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 26px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  h3 {
+    clear: both;
+    letter-spacing: .3px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(20, 24);
+      margin: 0 0 21px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(23, 28);
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .rating-items {
+    column-count: 1;
+    -moz-column-count: 1;
+    text-align: left;
+    margin: 0;
+    > li {
+      border-bottom: 2px solid theme-color('lightest');
+      overflow: hidden;
+      padding: 4px 0;
+    }
+  }
+  .box-rating {
+    overflow: hidden;
+    padding: 18px 0 12px;
+    border-bottom: 2px solid theme-color('lightest');
+    @include media-breakpoint-up(lg) {
+      padding: 31px 0 18px;
+    }
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border: 0;
+      padding-bottom: 0;
+    }
+    .text-rating {
+      @include fontsize(18, 24);
+      display: block;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(23, 28);
+      }
+    }
+  }
+  .star-rating {
+    margin: -3px;
+    padding: 0 0 10px;
+    li {
+      @include fontsize(16, 16);
+      margin: 3px;
+    }
+  }
+  .star-rating.add {
+    margin: -5px;
+    li {
+      @include fontsize(24, 24);
+      color: theme-color('primary');
+      @include media-breakpoint-up(lg) {
+        @include fontsize(33, 34);
+        margin: 5px;
+      }
+    }
+  }
+  .info {
+    overflow: hidden;
+    border-bottom: 2px solid theme-color('lightest');
+    padding: 14px 0;
+    @include media-breakpoint-up(lg) {
+      padding: 22px 0;
+    }
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border: 0;
+      padding-bottom: 0;
+    }
+    .name {
+      display: block;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(14, 23);
+      }
+    }
+    .time {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="info-box"
+>
+  <h2>
+    Car Details:
+  </h2>
+  <ul
+    className="details-list"
+  >
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="Has Keys"
+          height={56}
+          src=""
+          width={54}
+        />
+      </span>
+      <span
+        className="text"
+      >
+        Has not Keys
+      </span>
+    </li>
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="Does Start"
+          height={52}
+          src=""
+          width={54}
+        />
+      </span>
+      <span
+        className="text"
+      >
+        Does not Start
+      </span>
+    </li>
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="V5C Logbook"
+          height={44}
+          src=""
+          width={46}
+        />
+      </span>
+      <span
+        className="text"
+      >
+        No V5
+      </span>
+    </li>
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="ABI Category"
+          height={29}
+          src=""
+          width={62}
+        />
+      </span>
+      <span
+        className="text"
+      >
+        ABI category not recorded
+      </span>
+    </li>
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="FSH"
+          height={49}
+          src=""
+          width={36}
+        />
+      </span>
+      <span
+        className="text"
+      >
+        No FSH
+      </span>
+    </li>
+  </ul>
+</div>
+`;

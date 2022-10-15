@@ -1,0 +1,35 @@
+version: '2.2'
+
+networks:
+  default:
+    name: menuki
+    labels:
+      com.menuki.project: carservice
+
+services:
+  react:
+    build: ./
+    image: biasofpriene/node:10.15.3
+    user: "${USERID-1000}:${GROUPID-999}"
+    working_dir: /var/www
+    command: yarn run:web
+    volumes:
+      - ./:/var/www
+    expose: [3000]
+    ports: [22222:3000]
+    environment:
+      PORT: "3000"
+      NODE_ENV: ${NODE_ENV-production}
+      NPM_CONFIG_CACHE: /tmp/cache/npm
+      YARN_CACHE_FOLDER: /tmp/cache/yarn
+      YARN_NETWORK_TIMEOUT: "180000"
+
+  frontend:
+    image: biasofpriene/rl-https:1.13
+    container_name: frontend.car-service
+    links: ["react"]
+    expose: [80, 443]
+    ports: [22122:80]
+    volumes:
+      - ./:/var/www
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf

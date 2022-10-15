@@ -1,0 +1,121 @@
+.nav-breadcrumb {
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  position: relative;
+  z-index: 50;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 16px;
+  }
+
+  .template-main & {
+    padding-top: 15px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 20px;
+    }
+  }
+  * + & {
+    padding-top: 15px;
+    padding-bottom: 7px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 20px;
+    }
+  }
+  #main > & {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+    padding-top: 17px;
+    @include media-breakpoint-up(sm) {
+      max-width: map-get($container-max-widths, sm);
+      margin: 0 auto;
+    }
+    @include media-breakpoint-up(md) {
+      max-width: map-get($container-max-widths, md);
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: map-get($container-max-widths, lg);
+      padding-left: $grid-gutter-width/2;
+      padding-right: $grid-gutter-width/2;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: map-get($container-max-widths, xl);
+    }
+  }
+  .breadcrumb {
+    font-weight: $font-weight-medium;
+    border-radius: 0;
+    .breadcrumb-item {
+      &.active a {
+        color: theme-color('secondary');
+      }
+        a {
+        color: theme-color('secondary');
+        &:hover {
+          color: theme-color('primary');
+        }
+      }
+    }
+    .breadcrumb-item:after {
+      @include icon('\e90c');
+      @include fontsize(8, 8);
+      padding: 0 10px;
+    }
+    .breadcrumb-item:last-of-type:after {
+      content: '';
+    }
+  }
+}
+
+.btn-back {
+  @include font(14, 21, $font-weight-medium);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  color: theme-color('dark');
+  padding-top: 10px;
+  @include media-breakpoint-up(lg) {
+    @include fontsize(16, 22);
+  }
+  &:before {
+    @include size(24px);
+    @include icon('\e910');
+    @include fontsize(12, 22);
+    text-align: center;
+    flex-shrink: 0;
+    color: theme-color('default');
+    border-radius: 50%;
+    padding: 0 1px 0 0;
+    background: theme-color('primary');
+    @include media-breakpoint-up(md) {
+      margin: 0 15px 0 0;
+    }
+    @include media-breakpoint-up(lg) {
+      @include size(30px);
+      @include fontsize(15, 30);
+      margin: 0 20px 0 0;
+    }
+  }
+
+  &--wrapper {
+    cursor: pointer;
+  }
+}
+
+.breadcrumbs {
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

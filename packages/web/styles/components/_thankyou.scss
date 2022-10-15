@@ -1,0 +1,90 @@
+.section-thanks {
+  &:after {
+    @include absolute(auto, 0, 0, 0);
+    background: url(../static/images/bg-thanks.png) no-repeat 0 100%;
+    background-size: 100% auto;
+    height: 100%;
+    content: '';
+  }
+  .section-head {
+    border-bottom: 2px solid theme-color("light");
+    margin: 0 0 37px;
+    .template-content .nav-breadcrumb + & {
+      border-bottom: 2px solid theme-color("light");
+      margin: 0 0 37px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 45px;
+      padding: 0 0 45px;
+      .template-content .nav-breadcrumb + & {
+        padding: 0 0 45px;
+        margin: 0 0 45px;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      margin: 0 0 66px;
+      padding: 0 0 69px;
+      .template-content .nav-breadcrumb + & {
+        margin: 0 0 66px;
+        padding: 0 0 69px;
+      }
+    }
+    .text-box {
+      max-width: 90%;
+      @include media-breakpoint-up(lg) {
+        max-width: 83%;
+      }
+      @include media-breakpoint-up(xl) {
+        max-width: 80%;
+      }
+    }
+    .img-thumbnail {
+      position: relative;
+      margin: 0 0 30px;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 40px;
+      }
+      img {
+        max-width: 300px;
+        margin: 0 auto;
+        @include media-breakpoint-up(lg) {
+          max-width: 400px;
+        }
+      }
+      &:after,
+      &:before {
+        @include media-breakpoint-up(md) {
+          @include absolute(50%, 0);
+          @include size(150px, 145px);
+          transform: translateY(-50%);
+          background: url(../static/images/icons/bg-thanks.svg) no-repeat;
+          background-size: 100% auto;
+          content: '';
+        }
+        @include media-breakpoint-up(lg) {
+          @include size(180px, 174px);
+          left: -65px;
+        }
+        @include media-breakpoint-up(xl) {
+          @include size(228px, 221px);
+          left: -128px;
+        }
+      }
+      &:after {
+        @include media-breakpoint-up(md) {
+          background-image: url(../static/images/icons/bg-thanks2.svg);
+          left: auto;
+          right: 0;
+        }
+        @include media-breakpoint-up(lg) {
+          right: -65px;
+          left: auto;
+        }
+        @include media-breakpoint-up(xl) {
+          right: -144px;
+          left: auto;
+        }
+      }
+    }
+  }
+}

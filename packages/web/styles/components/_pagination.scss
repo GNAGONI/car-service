@@ -1,0 +1,159 @@
+.nav-paging {
+  background: theme-color('dark');
+  border-radius: $border-radius;
+  padding: 17px 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 0 20px;
+  color: theme-color('default');
+  flex-flow: row wrap;
+  align-items: center;
+
+  @include media-breakpoint-up(sm) {
+    padding: 17px 170px;
+    justify-content: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 20px 190px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .show-form {
+    flex-flow: row wrap;
+    align-items: center;
+
+    @include media-breakpoint-up(sm) {
+      @include absolute(16px, 10px);
+      width: 150px;
+    }
+
+    @include media-breakpoint-up(md) {
+      @include absolute(16px, 19px);
+      width: 160px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include absolute(22px, 28px);
+      width: 180px;
+    }
+
+    label {
+      @extend .ellipsis;
+      padding: 5px;
+      margin: 0;
+      flex-grow: inherit;
+      width: auto;
+
+      @include media-breakpoint-up(lg) {
+        padding: 10px;
+      }
+    }
+
+    .form-group {
+      width: 70px;
+
+      @include media-breakpoint-up(lg) {
+        width: 101px;
+      }
+    }
+
+    .jcf-select {
+      padding-right: 30px;
+      text-align: center;
+
+      .jcf-select-opener {
+        width: 31px;
+      }
+    }
+  }
+
+  .pagination {
+    @extend %listreset;
+    margin: -2px;
+
+    @include media-breakpoint-up(lg) {
+      margin: -5px;
+    }
+
+    li {
+      padding: 2px;
+      display: flex;
+
+      @include media-breakpoint-up(lg) {
+        padding: 5px;
+      }
+
+      @include media-breakpoint-down(md) {
+        &:nth-child(1n + 9) {
+          display: none;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        &:nth-child(1n + 5) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        display: flex;
+      }
+
+      a {
+        font-weight: $font-weight-medium;
+        display: block;
+        background: #656a72;
+        min-width: 26px;
+        padding: 7px 4px;
+        margin: 0;
+        border: 0;
+        line-height: rem-calc(16);
+        border-radius: $border-radius;
+        text-align: center;
+        color: theme-color('default');
+
+        @include media-breakpoint-up(sm) {
+          min-width: 30px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          min-width: 40px;
+          padding: 12px 5px;
+        }
+
+        &:hover {
+          background: theme-color('primary');
+          color: theme-color('dark');
+        }
+
+        i {
+          @include icon('\e910');
+          @include absolute(50%, 50%);
+          @include fontsize(10, 12);
+          transform: translate(-50%, -50%);
+        }
+
+        &[aria-label='Next'],
+        &[aria-label='Previous'] {
+          background: none;
+
+          &:hover {
+            background: theme-color('primary');
+          }
+        }
+      }
+
+      &.active {
+        a {
+          background: theme-color('primary');
+          color: theme-color('dark');
+        }
+      }
+    }
+  }
+}

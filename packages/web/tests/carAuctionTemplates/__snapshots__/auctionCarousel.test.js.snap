@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="banner-col"
+>
+  <div
+    className="product-image-slider"
+  >
+    <div
+      className="product-holder"
+    >
+      
+      <div
+        className="slick-slider slides slick-initialized"
+      >
+        
+        <div
+          className="slick-list"
+        >
+          <div
+            className="slick-track"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            style={
+              Object {
+                "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                "WebkitTransition": "-webkit-transform 500ms ease",
+                "msTransform": "translateX(0px)",
+                "opacity": 1,
+                "transform": "translate3d(0px, 0px, 0px)",
+                "transition": "transform 500ms ease",
+              }
+            }
+          />
+        </div>
+        
+        
+      </div>
+    </div>
+    <div
+      className="slick-slider thumbnail-slider slick-initialized"
+    >
+      
+      <div
+        className="slick-list"
+      >
+        <div
+          className="slick-track"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "WebkitTransform": "translate3d(0px, 0px, 0px)",
+              "WebkitTransition": "-webkit-transform 500ms ease",
+              "msTransform": "translateX(0px)",
+              "opacity": 1,
+              "transform": "translate3d(0px, 0px, 0px)",
+              "transition": "transform 500ms ease",
+            }
+          }
+        />
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+`;

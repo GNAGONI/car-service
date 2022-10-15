@@ -1,0 +1,123 @@
+.section-404 {
+  padding-top: 154px;
+  padding-bottom: 155px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 199px;
+    padding-bottom: 199px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 233px;
+    padding-bottom: 234px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+  .img-area {
+    padding-top: 20px;
+    @include media-breakpoint-up(xs) {
+      transform: translateY(-4%);
+    }
+    @include media-breakpoint-up(sm) {
+      transform: translateX(17.5%) translateY(-14%) scale(.8);
+    }
+    @include media-breakpoint-up(md) {
+      @include absolute(50%, auto, 0);
+      max-width: 50%;
+      padding-top: 0;
+      transform: translateY(-67%);
+    }
+    @include media-breakpoint-down(md) {
+      height: auto !important;
+    }
+    @include media-breakpoint-up(lg) {
+      transform: translateY(-67%);
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 59%;
+      transform: translateY(-67%);
+    }
+    img {
+      width: 887px;
+      height: 523px;
+      @include media-breakpoint-down(sm) {
+        height: 373px;
+      }
+    }
+  }
+  .content-block {
+    @include media-breakpoint-down(md) {
+      height: auto !important;
+    }
+  }
+  .section-head {
+    padding-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 27px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 36px;
+    }
+  }
+  h1 {
+    letter-spacing: 0;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(42, 49);
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(60, 71);
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  h3 {
+    @include fontsize(14, 20);
+    letter-spacing: .25px;
+    margin: 0 0 15px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(16, 21);
+      margin: 0 0 22px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(17, 22);
+      margin: 0 0 29px;
+    }
+  }
+  .item-links {
+    @include fontsize(13, 22);
+    @extend %listreset;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(16, 20);
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(18, 22);
+    }
+    li {
+      position: relative;
+      padding: 0 0 0 33px;
+      margin: 0 0 15px;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 22px;
+        padding: 0 0 0 40px;
+      }
+      &:last-child {
+        margin: 0;
+      }
+      &:before {
+        @include absolute(0, 0);
+        @include fontsize(8, 22);
+        @include icon("\e91d");
+        @include size(22px);
+        border-radius: 50%;
+        text-align: center;
+        background: theme-color('primary');
+        color: theme-color('default');
+        @include media-breakpoint-up(lg) {
+          @include size(26px);
+          @include fontsize(11, 26);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.ad-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  .ad-holder {
+    display: flex;
+    flex-grow: 1;
+    background: #d5d2d0;
+    flex-flow: column nowrap;
+    border-radius: $border-radius;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    @include media-breakpoint-up(xl) {
+      padding: 25px 20px;
+    }
+  }
+  .ad {
+    background: theme-color("default");
+    border-radius: $border-radius;
+    min-height: 280px;
+    margin: 0 0 15px;
+    position: relative;
+    @include media-breakpoint-up(xl) {
+      margin: 0 0 25px;
+    }
+    a {
+      color: inherit;
+    }
+    img {
+      @include size(100%, auto);
+      display: block;
+      position: relative;
+      z-index: 5;
+    }
+    .size {
+      @include font(14, 18, $font-weight-medium);
+      @include absolute(0, 0, 0, 0);
+      padding: 15px;
+      display: flex;
+      z-index: 1;
+      align-items: center;
+      justify-content: center;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(18, 22);
+      }
+    }
+  }
+  h3 {
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-up(xl) {
+      @include fontsize(20, 24);
+    }
+  }
+}
+
+.sidebar .ad-block {
+  padding: 0;
+  .ad-holder {
+    background: theme-color("info");
+    padding: 15px;
+    @include media-breakpoint-up(xl) {
+      padding: 25px 20px;
+      min-height: 450px;
+    }
+  }
+}

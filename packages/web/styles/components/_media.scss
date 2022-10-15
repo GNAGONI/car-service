@@ -1,0 +1,33 @@
+.section-media {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .section-head {
+    .nav-breadcrumb + .section & {
+      border: 0;
+      margin: 0;
+      padding: 0 0 20px;
+      @include media-breakpoint-up(lg) {
+        padding: 0 0 24px;
+      }
+    }
+    h2 {
+      margin: 0;
+      flex-grow: 1;
+    }
+    .read-more {
+      flex-shrink: 0;
+      letter-spacing: 0;
+    }
+  }
+  .btn-block {
+    padding: 20px 0 0;
+  }
+}

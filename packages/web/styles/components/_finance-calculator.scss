@@ -1,0 +1,79 @@
+.finance-calculator {
+  &.form-large {
+    label,
+    .label {
+      letter-spacing: 0;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 17px;
+      }
+    }
+  }
+  .form-row {
+    > .col,
+    > [class*="col-"] {
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 23px;
+      }
+    }
+  }
+  .js-range-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+      width: auto;
+      margin: 0;
+      flex-shrink: 0;
+      flex-grow: inherit;
+    }
+    .range-value {
+      @include fontsize(14, 22);
+      flex-shrink: 0;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      margin: 0 -8px;
+      padding: 0 0 0 15px;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(18, 26);
+      }
+      &.short {
+        span {
+          @include media-breakpoint-up(lg) {
+            min-width: 70px;
+          }
+        }
+      }
+      span {
+        background: theme-color('default');
+        min-width: 70px;
+        padding: 7px 10px;
+        margin: 0 8px;
+        text-align: center;
+        border-radius: $border-radius;
+        display: block;
+        @include media-breakpoint-up(lg) {
+          min-width: 110px;
+        }
+      }
+    }
+    .ui-slider.range {
+      flex-grow: 1;
+      margin-top: 15px;
+      @include media-breakpoint-up(lg) {
+        margin: 21px 0 20px;
+      }
+      .ui-slider-handle {
+        @include media-breakpoint-up(lg) {
+          @include size(40px);
+          margin: -25px 0 0 -20px;
+        }
+        &:after {
+          @include media-breakpoint-up(lg) {
+            @include size(20px);
+          }
+        }
+      }
+    }
+  }
+}

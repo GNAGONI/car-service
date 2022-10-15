@@ -1,0 +1,20 @@
+{
+  "name": "@car-service/api-client",
+  "version": "0.0.1-alpha.0",
+  "scripts": {
+    "lint": "eslint . --ext .js --ext .jsx",
+    "lint:fix": "yarn lint -- --fix",
+    "lint:quiet": "yarn lint -- --quiet",
+    "prettier": "prettier './**/*.js' --write --single-quote",
+    "prettier:write": "yarn prettier -- --write",
+    "prettier:check": "yarn prettier -- --list-different"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.0",
+    "query-string": "^6.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "prettier": "^1.18.2"
+  }
+}

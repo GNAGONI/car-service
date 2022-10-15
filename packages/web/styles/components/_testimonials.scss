@@ -1,0 +1,291 @@
+.section-testimonials {
+  position: relative;
+  z-index: 5;
+}
+
+.testimonial-slider,
+.testimonial-slider-single {
+  @include slider-flex;
+
+  .slick-list {
+    display: block;
+    max-width: 540px;
+    margin: auto;
+
+    @include media-breakpoint-up(md) {
+      max-width: 720px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 970px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1198px;
+    }
+  }
+
+  .slick-slide {
+    @include slider-flexbox;
+    width: 300px !important;
+    flex-flow: column nowrap;
+
+    @include media-breakpoint-up(md) {
+      width: 350px !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 485px !important;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 599px !important;
+    }
+
+    > div {
+      display: flex;
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+}
+
+.box-testimonial {
+  display: flex !important;
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 0;
+
+  blockquote {
+    @include fontsize(14, 25);
+    background: theme-color('default');
+    padding: 25px 14%;
+    flex-grow: 1;
+    border-radius: $border-radius;
+    position: relative;
+    margin: 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 25px 10%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 33px 14%;
+    }
+
+    .testimonial-slider:not(.testimonial-slider-single) {
+      height: 262px;
+      padding: 36px 30px 28px;
+      overflow: hidden;
+
+      @include media-breakpoint-up(md) {
+        padding: 22px 14%;
+        height: 237px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        height: 214px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding: 26px 17% 27px;
+        height: 200px;
+      }
+    }
+
+    .bg-before-default &,
+    .bg-default & {
+      background: theme-color('light');
+    }
+
+    .bg-before-info &,
+    .bg-info & {
+      background: theme-color('default');
+    }
+
+    q {
+      display: block;
+      quotes: none;
+
+      margin: 0 0 16px;
+      height: 75px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      font-weight: $font-weight-medium;
+      @include media-breakpoint-up(md) {
+        margin: 0 0 13px;
+      }
+
+      @include media-breakpoint-down(md) {
+        display: inline !important;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    cite {
+      letter-spacing: -0.32em;
+      margin: 0 -9px 18px -12px;
+      position: relative;
+      font-style: normal;
+      display: block;
+      padding: 0 20px;
+
+      @include media-breakpoint-up(md) {
+        position: static;
+        padding: 0;
+        margin-bottom: 16px;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-top: 16px;
+      }
+
+      &:after,
+      &:before {
+        @include absolute(4px, -1px);
+        @include icon('\e90b');
+        @include fontsize(17, 18);
+        color: theme-color('primary');
+        transform: rotate(180deg);
+
+        @include media-breakpoint-up(md) {
+          top: 20px;
+          left: 15px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          @include fontsize(27, 27);
+          top: 31px;
+          left: 31px;
+        }
+      }
+
+      &:before {
+        transform: none;
+        left: auto;
+        right: -3px;
+
+        @include media-breakpoint-up(md) {
+          left: auto;
+          right: 15px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          left: auto;
+          right: 31px;
+        }
+      }
+
+      span {
+        position: relative;
+        display: inline-block;
+        letter-spacing: 0;
+        vertical-align: top;
+        padding: 0 9px 0 12px;
+
+        &:first-child:before {
+          display: none;
+        }
+
+        &:before {
+          @include absolute(50%, 0);
+          @include size(3px, 2px);
+          background: theme-color('dark');
+          content: '';
+        }
+      }
+
+      strong {
+        display: block;
+        letter-spacing: 0;
+        font-weight: $font-weight-light;
+
+        @include media-breakpoint-up(lg) {
+          @include fontsize(15, 21);
+        }
+      }
+
+      .title {
+        @include fontsize(16, 22);
+        display: block;
+        color: theme-color('dark');
+        margin: 0 0 2px;
+
+        @include media-breakpoint-up(lg) {
+          @include fontsize(20, 26);
+        }
+      }
+    }
+
+    @media (max-width: 1219px) and (min-width: 1000px) {
+      cite:before,
+      cite:after {
+        font-size: 1.475rem;
+      }
+      cite:before {
+        right: 16px;
+      }
+      cite:after {
+        left: 16px;
+      }
+    }
+  }
+
+  .star-rating {
+    margin: -4px;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 20px;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    li {
+      @include fontsize(24, 24);
+      margin: 4px;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(32, 32);
+      }
+    }
+  }
+
+  .section-testimonials:not(.single-slide) {
+    .star-rating {
+      margin: -5px;
+
+      li {
+        @include fontsize(26, 26);
+        margin: 5px;
+        color: theme-color('primary');
+
+        &:before {
+          content: '\e914';
+        }
+
+        &.active {
+          font-size: rem-calc(22);
+
+          &:before {
+            content: '\e916';
+          }
+        }
+
+        &.half-active {
+          &:before {
+            content: '\e901';
+          }
+        }
+      }
+    }
+    blockquote {
+      q {
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+}

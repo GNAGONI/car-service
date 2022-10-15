@@ -1,0 +1,55 @@
+.finance-calc {
+  .btn.btn-md {
+    @include media-breakpoint-up(lg) {
+      @include fontsize(18, 22);
+      padding-top: 19px;
+      padding-bottom: 19px;
+      min-width: 260px;
+    }
+  }
+  .content-block {
+    .section-head {
+      .text-box {
+        max-width: 100%;
+      }
+      h2 {
+        @include inline(top);
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+          @include fontsize(30, 40);
+          margin: 0 0 30px;
+        }
+        @include media-breakpoint-up(xl) {
+          @include fontsize(43, 49);
+          margin: 0 0 48px;
+        }
+        .ico {
+          margin: 2px 15px 0 -5px;
+          @include media-breakpoint-up(lg) {
+            margin: 4px 30px 0 -9px;
+          }
+          @include media-breakpoint-up(xl) {
+            margin-left: -15px;
+          }
+        }
+      }
+      .btn-block {
+        @include media-breakpoint-up(lg) {
+          padding-top: 22px;
+        }
+      }
+    }
+  }
+  .img-area {
+    margin: 0 -30px -10px;
+    @include media-breakpoint-up(md) {
+      margin: -35px -130px -35px -10px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: -60px -200px -70px -60px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: -82px -275px -100px -82px;
+    }
+  }
+}

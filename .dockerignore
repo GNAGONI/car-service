@@ -1,0 +1,8 @@
+.next
+node_modules
+dist
+*
+!src
+!pages
+!yarn.lock
+!package.json

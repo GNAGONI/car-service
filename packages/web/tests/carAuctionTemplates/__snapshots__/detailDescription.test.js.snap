@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="detail-description info-box"
+>
+  <ul
+    className="description-list"
+  >
+    <li>
+      <span
+        className="detail-title"
+      >
+        Bodywork condition
+      </span>
+      <p>
+        
+      </p>
+    </li>
+    <li>
+      <span
+        className="detail-title"
+      >
+        Interior condition
+      </span>
+      <p>
+        
+      </p>
+    </li>
+    <li>
+      <span
+        className="detail-title"
+      >
+        Exterior
+      </span>
+      <p>
+        
+      </p>
+    </li>
+  </ul>
+  <ul
+    className="description-list"
+  >
+    <li>
+      <span
+        className="detail-title"
+      >
+        Interior
+      </span>
+      <p>
+        
+      </p>
+    </li>
+    <li>
+      <span
+        className="detail-title"
+      >
+        Safety features
+      </span>
+      <p>
+        
+      </p>
+    </li>
+  </ul>
+</div>
+`;

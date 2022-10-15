@@ -1,0 +1,188 @@
+.section-stories {
+  position: relative;
+}
+
+.stories-slider {
+  position: relative;
+  .slick-list {
+    display: flex;
+    flex-grow: 1;
+    max-width: 540px;
+    margin: auto;
+
+    @include media-breakpoint-up(md) {
+      max-width: 720px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 970px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1198px;
+    }
+  }
+  .slick-track {
+    display: flex;
+  }
+  &:after,
+  &:before {
+    @include media-breakpoint-down(sm) {
+      @include absolute(0, -10px, auto, 0);
+      width: 40px;
+      background: linear-gradient(to right, rgba(theme-color("light"), 1) 0%, rgba(theme-color("light"), 1) 50%, rgba(theme-color("light"), 0) 100%);
+      content: '';
+      z-index: 50;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 30px;
+    }
+  }
+  &:before {
+    @include media-breakpoint-down(sm) {
+      .bg-before-default &,
+      .bg-default & {
+        background: linear-gradient(to right, rgba(theme-color("default"), 1) 0%, rgba(theme-color("default"), 1) 50%, rgba(theme-color("default"), 0) 100%);
+      }
+      .bg-before-info &,
+      .bg-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 1) 0%, rgba(theme-color("info"), 1) 50%, rgba(theme-color("info"), 0) 100%);
+      }
+      .bg-before-primary &,
+      .bg-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 1) 0%, rgba(theme-color("primary"), 1) 50%, rgba(theme-color("primary"), 0) 100%);
+      }
+      .bg-before-dark &,
+      .bg-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 1) 0%, rgba(theme-color("dark"), 1) 50%, rgba(theme-color("dark"), 0) 100%);
+      }
+      .bg-before-lighter &,
+      .bg-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 1) 0%, rgba(theme-color("lighter"), 1) 50%, rgba(theme-color("lighter"), 0) 100%);
+      }
+    }
+  }
+  &:after {
+    @include media-breakpoint-down(sm) {
+      left: auto;
+      background: linear-gradient(to right, rgba(theme-color("light"), 0) 0%, rgba(theme-color("light"), 1) 50%, rgba(theme-color("light"), 1) 100%);
+      right: -10px;
+      .bg-before-default &,
+      .bg-default & {
+        background: linear-gradient(to right, rgba(theme-color("default"), 0) 0%, rgba(theme-color("default"), 1) 50%, rgba(theme-color("default"), 1) 100%);
+      }
+      .bg-before-info &,
+      .bg-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 0) 0%, rgba(theme-color("info"), 1) 50%, rgba(theme-color("info"), 1) 100%);
+      }
+      .bg-before-primary &,
+      .bg-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 0) 0%, rgba(theme-color("primary"), 1) 50%, rgba(theme-color("primary"), 1) 100%);
+      }
+      .bg-before-dark &,
+      .bg-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 0) 0%, rgba(theme-color("dark"), 1) 50%, rgba(theme-color("dark"), 1) 100%);
+      }
+      .bg-before-lighter &,
+      .bg-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 0) 0%, rgba(theme-color("lighter"), 1) 50%, rgba(theme-color("lighter"), 1) 100%);
+      }
+    }
+  }
+}
+
+.box-story {
+  @include fontsize(14, 24);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: theme-color('default');
+  display: flex;
+  flex-flow: column nowrap;
+  height: auto !important;
+  position: relative;
+  float: none;
+  min-height: inherit !important;
+  flex-basis: inherit !important;
+  @include media-breakpoint-down(sm) {
+    width: 300px;
+  }
+  @include media-breakpoint-up(lg) {
+    @include fontsize(16, 26);
+  }
+  @include media-breakpoint-up(xl) {
+    @include fontsize(18, 27);
+  }
+  .slick-initialized & {
+    display: flex;
+  }
+  .box-holder {
+    border-radius: $border-radius;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+  }
+  .img-thumbnail {
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
+  .caption {
+    @include absolute(auto, 0, 0, 0);
+    padding: 15px 30px;
+    z-index: 50;
+    @include media-breakpoint-up(md) {
+      padding: 32px 42px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 25px 35px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 32px 42px;
+    }
+    &:after {
+      @include absolute(-50px, 0, 0, 0);
+      content: '';
+      z-index: -1;
+      pointer-events: none;
+      display: block;
+      background: linear-gradient(to bottom, rgba(theme-color("dark"), 0) 0%, rgba(theme-color("dark"), 0.7) 83%, rgba(theme-color("dark"), 0.95) 100%);
+    }
+  }
+  blockquote {
+    margin: 0;
+    q {
+      display: block;
+      margin: 0 0 10px;
+      position: relative;
+      font-weight: $font-weight-medium;
+      @include media-breakpoint-up(xl) {
+        margin: 0 0 14px;
+      }
+      &:after,
+      &:before {
+        @include absolute(2px, auto, -26px);
+        @include icon('\e90b');
+        @include fontsize(16, 16);
+        color: theme-color('primary');
+        @include media-breakpoint-up(xl) {
+          @include fontsize(20, 20);
+          right: -32px;
+          top: 0;
+        }
+      }
+      &:after {
+        right: auto;
+        left: -26px;
+        transform: rotate(180deg);
+        @include media-breakpoint-up(xl) {
+          right: auto;
+          left: -32px;
+        }
+      }
+    }
+    cite {
+      display: block;
+      font-style: normal;
+    }
+  }
+}

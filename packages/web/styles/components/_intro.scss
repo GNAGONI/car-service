@@ -1,0 +1,99 @@
+.intro {
+  @include clearfix;
+  position: relative;
+  color: theme-color("default");
+  background-image: url("../static/images/banner-auction-mobile.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background-color: #f4f4f5;
+
+  @include media-breakpoint-up(lg) {
+    background-image: url("../static/images/banner-auction.jpg");
+  }
+
+  @include media-breakpoint-up(md) {
+    background-image: url("../static/images/banner-auction-tablet.jpg");
+  }
+
+  h1 {
+    line-height: 1.6875rem;
+    letter-spacing: -.5px;
+    margin: 0 0 26px;
+    font-weight: 300;
+
+    @media (min-width: 1000px) {
+      font-size: 2.0625rem;
+      line-height: 2.375rem;
+      letter-spacing: -1px;
+      margin: 0 0 29px;
+    }
+
+    @media (min-width: 1220px) {
+      font-size: 2.6875rem;
+      line-height: 2.9375rem;
+      margin: 0 0 33px;
+      margin: 0 0 28px;
+    }
+  }
+
+  .bg-tiers {
+    @include absolute(0, 0, 0);
+    @include size(100%);
+    z-index: 400;
+    pointer-events: none;
+    &:after,
+    &:before {
+      @include absolute(-350px, 340px, auto, -500px);
+      width: 70px;
+      background: url(../static/images/icons/bg-tier.svg) repeat-y;
+      content: '';
+      background-size: 70px 12px;
+      opacity: .05;
+      transform: rotate(-45deg);
+      @include media-breakpoint-up(lg) {
+        left: 727px;
+        top: -300px;
+      }
+    }
+    &:before {
+      left: -50px;
+      @include media-breakpoint-up(lg) {
+        left: 342px;
+      }
+    }
+    .template-home & {
+      &:after,
+      &:before {
+        left: 360px;
+        bottom: -500px;
+        top: -250px;
+        @include media-breakpoint-up(lg) {
+          background-size: 112px 19px;
+          left: 406px;
+          bottom: -700px;
+          top: -300px;
+          width: 112px;
+        }
+      }
+      &:before {
+        left: -27px;
+        bottom: -500px;
+        @include media-breakpoint-up(lg) {
+          top: 170px;
+          left: -6px;
+          bottom: -700px;
+        }
+      }
+    }
+  }
+  > .img-area {
+    @include absolute(0, 0, 0, 0);
+    &:after {
+      @include absolute(0, 0, 0, 0);
+      content: '';
+      background: linear-gradient(to right, rgba(theme-color('dark'), 0.75) 0%, rgba(theme-color('dark'), 0) 100%);
+    }
+  }
+}

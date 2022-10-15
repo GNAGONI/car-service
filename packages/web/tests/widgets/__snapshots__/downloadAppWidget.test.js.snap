@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="widget app-widget app-downloads"
+>
+  <div
+    className="widget-head text-center"
+  >
+    <h3>
+      Download the car.service app
+    </h3>
+  </div>
+  <ul
+    className="app-downloads"
+  >
+    <li>
+      <a
+        href="#"
+      >
+        <img
+          alt="Download on the App Store"
+          height="29"
+          src=""
+          width="88"
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        <img
+          alt="GET IT ON Google Play"
+          height="30"
+          src=""
+          width="99"
+        />
+      </a>
+    </li>
+  </ul>
+  <div
+    className="img-mobile-holder"
+  >
+    <img
+      alt="image description"
+      src=""
+    />
+  </div>
+</section>
+`;

@@ -1,0 +1,43 @@
+.section-tools {
+  padding-top: 28px;
+  padding-bottom: 37px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 102px;
+    padding-bottom: 74px;
+  }
+  .img-area {
+    z-index: 5;
+    position: relative;
+    @include media-breakpoint-up(sm) {
+      margin: 0 -105px 0 0;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 0 -185px 0 -20px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: -17px -228px 0 -137px;
+    }
+    &:after {
+      @include absolute(0, auto, -35px);
+      @include size(450px, 296px);
+      height: 100%;
+      background: url(../static/images/icons/c-logo-inverse.svg) no-repeat;
+      background-size: 100% auto;
+      content: '';
+      z-index: -1;
+      @include media-breakpoint-up(lg) {
+        @include size(650px, 428px);
+        right: -100px;
+      }
+      @include media-breakpoint-up(xl) {
+        @include size(793px, 522px);
+        right: -189px;
+        top: -19px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="content section-info common-collapse"
+>
+  <div
+    aria-expanded={null}
+    className="mb-4 collapse"
+  >
+    
+  </div>
+  <div
+    className="btn-block text-center pt-2"
+  >
+    <a
+      className="default read-more "
+      onClick={[Function]}
+    >
+      <span
+        className="more"
+      >
+        Read more
+      </span>
+    </a>
+  </div>
+</section>
+`;

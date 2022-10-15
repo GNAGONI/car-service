@@ -1,0 +1,397 @@
+.terms {
+  .nav-breadcrumb {
+    margin-left: 10%;
+  }
+
+  .gratitude__head {
+    margin: 25px auto;
+
+    .gratitudeHead__text {
+      @include media-breakpoint-down(xxl) {
+        width: 30%;
+      }
+      @include media-breakpoint-down(xl) {
+        width: 45%;
+      }
+      @include media-breakpoint-down(lg) {
+        width: 40%;
+      }
+      @include media-breakpoint-down(md) {
+        width: 45%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 50%;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 75%;
+        text-align: justify;
+      }
+    }
+  }
+
+
+  .terms-options {
+    background-color: $gray-275;
+    padding: 60px 10% 146px;
+
+    .terms-option {
+
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 20px;
+      }
+
+      @include media-breakpoint-down(md) {
+        padding: 22px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: 10px 0;
+      }
+
+      .terms-option-content {
+        display: flex;
+        flex-flow: column;
+        background-color: $gray-125;
+        padding: 47px 33px;
+        border-radius: $border-radius;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      h3 {
+        margin-top: 30px;
+        margin-bottom: 33px;
+        @media (max-width: 1377px) {
+          max-width: 238px;
+        }
+        @include media-breakpoint-down(lg) {
+          max-width: 210px;
+        }
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
+      }
+
+      p {
+        font-size: 1.18em;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-down(xl) {
+          height: 63px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 0.8em;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 1.1em;
+          height: auto;
+        }
+      }
+
+      .terms-button {
+        padding: 16px 67px;
+
+        @include media-breakpoint-down(lg) {
+          padding: 16px 43px;
+        }
+        @include media-breakpoint-down(md) {
+          padding: 12px 27px;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
+.website-terms-container {
+  .nav-breadcrumb {
+    margin-top: 10px;
+    margin-left: 10%;
+    padding-left: 30px;
+    @media (max-width: 576px) {
+      padding-left: 0;
+      margin-left: 5%;
+    }
+  }
+  .website-terms {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(xs) {
+      width: 95%;
+    }
+
+    &.centralized-header {
+      .website-info > h1 {
+        text-align: left;
+      }
+
+      .centralized-subheader {
+        text-align: left;
+      }
+    }
+
+    a {
+      color: theme-color('dark');
+      border-bottom: 1px solid $gray-900;
+    }
+    a:hover {
+      color: $green;
+      border-bottom: 1px solid $green;
+    }
+
+    .terms-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid gray;
+
+      thead {
+        border-bottom: 1px solid gray;
+      }
+
+      tr:not(:last-child) {
+        border-bottom: 1px solid gray;
+      }
+
+      th {
+        width: 33%;
+        padding: 6px;
+        text-align: left;
+
+        &:not(:last-child) {
+          border-right: 1px solid gray;
+        }
+      }
+
+      td {
+        padding: 6px;
+        vertical-align: top;
+        text-align: left;
+
+        &:not(:last-child) {
+          border-right: 1px solid gray;
+        }
+      }
+
+      tbody:not(:last-child) {
+        border-bottom: 1px solid gray;
+      }
+
+      @media only screen and (max-width: 760px),
+      (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+        table, thead, tbody, th, td, tr {
+          display: block;
+        }
+
+        thead {
+          border: none !important;
+        }
+
+        thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+
+        td {
+          border-right: none !important;
+          position: relative;
+          padding-left: 50%;
+
+          &:last-child {
+            min-height: 100px;
+          }
+
+          &:not(:last-child) {
+            border-bottom: 1px solid $gray-600;
+          }
+        }
+
+        td:before {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+        }
+
+        td:nth-of-type(1):before { content: "Purpose/Activity"; }
+        td:nth-of-type(2):before { content: "Type of data"; }
+        td:nth-of-type(3):before { content: "Lawful basis for processing including basis of legitimate interest"; }
+      }
+    }
+
+    ol > .header:before {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+      letter-spacing: -0.5px;
+    }
+
+    li ol > li {
+      margin: 0;
+    }
+
+    li ol > li:before {
+      content: counters(item, ".") " ";
+    }
+
+    &.centralized-header {
+      .website-info > h1 {
+        text-align: center;
+      }
+    }
+
+    ol {
+      list-style-type: none;
+      counter-reset: item;
+      margin: 0;
+      padding: 0;
+    }
+
+    ol.letters {
+      counter-reset: alpha;
+    }
+
+    ol:not(.letters) > li {
+      display: table;
+      counter-increment: item;
+      margin-bottom: 0.6em;
+    }
+
+    ol > li:before {
+      content: counters(item, ".") ". ";
+      display: table-cell;
+      padding-right: 0.6em;
+    }
+
+    ol.letters > li {
+      display: table;
+      margin-bottom: 0.6em;
+    }
+
+    ol.letters > li:before {
+      counter-increment: alpha;
+      content:"(" counter(alpha, lower-alpha)") "
+    }
+
+    ol > .header:before {
+      font-size: 1.125rem;
+
+      @include media-breakpoint-up(xl) {
+        @include fontsize(18, 47);
+      }
+    }
+
+    li ol > li {
+      margin: 0;
+    }
+
+    .bordered-box {
+      border: 1px solid gray;
+      padding: 10px 10px 0;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+
+
+    .website-info {
+      padding: 50px 30px;
+      @media (max-width: 576px) {
+        padding: 30px 15px;
+      }
+      h1 {
+        margin-top: 35px;
+      }
+      h1.website-info-mainHeader {
+        margin-top: 0;
+        text-align: left;
+      }
+      h4 {
+        margin: 0 0 10px;
+
+        @include media-breakpoint-up(lg) {
+          margin: 0 0 12px;
+        }
+
+      }
+      p {
+        margin-bottom: 10px;
+        @media (max-width: 768px) {
+          text-align: justify;
+        }
+      }
+      .policy-bullet-points {
+        li {
+          padding: 0 0 13px 15px;
+        }
+      }
+    }
+
+    .calculator-form {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      @media (max-width: 576px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.term-and-policy-checkbox-text {
+  color: theme-color('dark');
+  a {
+    color: theme-color('dark');
+    border-bottom: 1px solid $gray-900;
+  }
+  a:hover {
+    color: $green;
+    border-bottom: 1px solid $green;
+  }
+}
+
+.business-terms {
+  a {
+    color: theme-color('dark');
+    border-bottom: 1px solid $gray-900;
+  }
+  a:hover {
+    color: $green;
+  }
+  .terms-table {
+    width: 100%;
+    border: 1px solid gray;
+    tr {
+      border: 1px solid gray;
+      td {
+        border: 1px solid gray;
+        vertical-align: top;
+        width: 50%;
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .terms-table-up {
+    border: none !important;
+    tr {
+      border: none !important;
+      td {
+        border: none !important;
+      }
+      td:last-of-type {
+        padding-left: 50px;
+        @include media-breakpoint-down(sm) {
+          padding-left: 50%;
+        }
+      }
+    }
+  }
+}

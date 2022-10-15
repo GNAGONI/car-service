@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<ul
+  className="star-rating"
+>
+  <li
+    className=""
+  >
+    <span
+      className="sr-only"
+    >
+      1 Star
+    </span>
+  </li>
+  <li
+    className=""
+  >
+    <span
+      className="sr-only"
+    >
+      2 Star
+    </span>
+  </li>
+  <li
+    className=""
+  >
+    <span
+      className="sr-only"
+    >
+      3 Star
+    </span>
+  </li>
+  <li
+    className=""
+  >
+    <span
+      className="sr-only"
+    >
+      4 Star
+    </span>
+  </li>
+  <li
+    className=""
+  >
+    <span
+      className="sr-only"
+    >
+      5 Star
+    </span>
+  </li>
+</ul>
+`;

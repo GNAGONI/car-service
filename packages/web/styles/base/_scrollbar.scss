@@ -1,0 +1,93 @@
+/* custom scrollbars styles */
+
+.jcf-scrollable-wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.jcf-scrollbar-vertical {
+  position: absolute;
+  cursor: default;
+  width: 14px;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  top: 0;
+  &:after {
+    @include absolute(0, auto, 1px, 0);
+    width: 1px;
+    content: '';
+    background: #ebeced;
+    z-index: -1;
+    border-radius: 5px;
+  }
+}
+
+.jcf-scrollbar-vertical .jcf-scrollbar-dec,
+.jcf-scrollbar-vertical .jcf-scrollbar-inc {
+  background: none;
+  height: 0;
+  width: 0;
+  left: 0;
+  top: 0;
+}
+
+.jcf-scrollbar-vertical .jcf-scrollbar-inc {
+  top: auto;
+  bottom: 0;
+}
+
+.jcf-scrollbar-vertical .jcf-scrollbar-handle {
+  background: #b3b6ba;
+  height: 1px;
+  width: 3px;
+  right: 0;
+  border-radius: 5px;
+}
+
+.jcf-scrollbar-horizontal {
+  position: absolute;
+  right: auto;
+  top: auto;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 8px;
+}
+
+.jcf-scrollbar-horizontal .jcf-scrollbar-dec,
+.jcf-scrollbar-horizontal .jcf-scrollbar-inc {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}
+
+.jcf-scrollbar-horizontal .jcf-scrollbar-inc {
+  left: auto;
+  right: 0;
+}
+
+.jcf-scrollbar-horizontal .jcf-scrollbar-slider {
+  display: inline-block;
+  position: relative;
+  height: 8px;
+  vertical-align: top;
+}
+
+.jcf-scrollbar-horizontal .jcf-scrollbar-handle {
+  position: absolute;
+  background: theme-color('lightest');
+  height: 8px;
+  border-radius: 6px;
+}
+
+.jcf-scrollbar.jcf-inactive .jcf-scrollbar-handle {
+  visibility: hidden;
+}
+
+.jcf-scrollbar.jcf-inactive .jcf-scrollbar-dec,
+.jcf-scrollbar.jcf-inactive .jcf-scrollbar-inc {
+  background: #e3e3e3;
+}

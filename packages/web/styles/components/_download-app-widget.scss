@@ -1,0 +1,25 @@
+.app-downloads {
+  justify-content: center;
+  color: #ffffff;
+  background-image: url(../static/images/bg-login.jpg);
+
+  .widget-head {
+    border-bottom: 1px solid #d5d3d0;
+    margin: 0 0 14px;
+  }
+
+  a {
+    display: block;
+    max-width: 99px;
+  }
+
+  .img-mobile-holder {
+    text-align: center;
+    padding: 30px 0 8px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

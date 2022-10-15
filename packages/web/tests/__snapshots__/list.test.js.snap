@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<section
+  className="list"
+>
+  <div
+    className="list__row list__row-header"
+  />
+</section>
+`;

@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="banner-col"
+>
+  <div
+    className="header"
+  >
+    <h2>
+      0  
+    </h2>
+    <strong
+      className="bid-wrap"
+    >
+      Current Bid: 
+      <span
+        className="price"
+      >
+        £
+        0
+      </span>
+       (
+      0
+       bids)
+    </strong>
+  </div>
+  <ul
+    className="meta-list"
+  >
+    <li>
+      <i>
+        <img
+          alt="Clock"
+          height="20px"
+          src=""
+          width="20px"
+        />
+      </i>
+      Time remaining:
+       
+      <span
+        className="meta-text"
+      />
+    </li>
+    <li>
+      <i>
+        <img
+          alt="Location"
+          height="20px"
+          src=""
+          width="20px"
+        />
+      </i>
+      Collection postcode: 
+      
+      <span
+        className="meta-text"
+      >
+        (
+        
+         miles away)
+      </span>
+    </li>
+  </ul>
+  <div
+    className="time-option-block"
+  >
+    <p>
+      Preferred collection time:
+    </p>
+    <ul
+      className="radio-list"
+    />
+    <div
+      className="btn-block extend"
+    >
+      <div
+        className="container container"
+      >
+        <div
+          className="row row"
+          lg="12"
+          md="12"
+          sm="12"
+          xl="12"
+          xs="12"
+        >
+          <div
+            className="col col"
+          >
+            <button
+              className="btn btn-primary btn-xl lightbox btn btn-primary"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Place bid
+            </button>
+          </div>
+        </div>
+        <div
+          className="row row"
+          lg="12"
+          md="12"
+          sm="12"
+          xl="12"
+          xs="12"
+        >
+          <div
+            className="col col"
+          >
+            <button
+              className="btn btn-info btn-lg btn btn-primary"
+              disabled={false}
+              type="button"
+            >
+              <i
+                className="icon-eye"
+              />
+              Watch this car
+            </button>
+          </div>
+          <div
+            className="col col"
+          >
+            <button
+              className="btn btn-info btn-lg lightbox btn btn-primary"
+              disabled={false}
+              type="button"
+            >
+              <i
+                className="icon-message"
+              />
+              Message seller
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

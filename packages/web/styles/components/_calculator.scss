@@ -1,0 +1,36 @@
+.section-calculator {
+  ul.tick-list {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 25px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .btn-block {
+      display: flex;
+      padding: 9px 0 0;
+      flex-flow: row wrap;
+      .btn {
+        flex-grow: 1;
+      }
+    }
+  }
+  .content-block .section-head {
+    .text-box {
+      max-width: 100%;
+    }
+    @include media-breakpoint-up(md) {
+      max-width: 100%;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 30px;
+    }
+    p {
+      letter-spacing: 0;
+    }
+  }
+  .btn-block {
+    @include media-breakpoint-up(lg) {
+      padding: 5px 0 0;
+    }
+  }
+}

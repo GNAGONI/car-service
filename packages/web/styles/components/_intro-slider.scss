@@ -1,0 +1,170 @@
+.intro-slider {
+  @include clearfix;
+  @include fontsize(12, 20);
+  position: relative;
+  padding: 17px 0 41px;
+  z-index: 100;
+  @include media-breakpoint-up(lg) {
+    @include fontsize(15, 28);
+    padding: 30px 0;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 44px 0;
+  }
+  &:before {
+    @include absolute(0, 0, 0, 0);
+    background: theme-color("dark");
+    content: '';
+    z-index: -2;
+  }
+  .template-home & {
+    &:before {
+      @include media-breakpoint-up(md) {
+        bottom: 60px;
+      }
+      @include media-breakpoint-up(lg) {
+        bottom: 80px;
+      }
+    }
+    &:after {
+      @include absolute(100%, 0);
+      border-color: theme-color("dark") transparent transparent;
+      border-style: solid;
+      border-width: 30px 100vw 0 0;
+      content: "";
+      display: block;
+      z-index: -2;
+      @include media-breakpoint-up(md) {
+        border-width: 100px 100vw 0 0;
+        margin: -60px 0 0;
+      }
+      @include media-breakpoint-up(lg) {
+        border-width: 110px 100vw 0 0;
+        margin: -80px 0 0;
+      }
+      @include media-breakpoint-up(xl) {
+        border-width: 150px 100vw 0 0;
+      }
+    }
+  }
+  .slide {
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+  }
+  .slick-list {
+    margin: 0 0 15px;
+  }
+  .slide-holder {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+      height: auto !important;
+    }
+  }
+  .slick-dots {
+    @extend %listreset;
+    overflow: hidden;
+    padding: 19px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: -5px;
+    li {
+      padding: 5px;
+      &:last-child {
+        padding: 5px !important;
+      }
+      &.slick-active {
+        button {
+          background: theme-color("default");
+          cursor: default;
+        }
+      }
+      button {
+        @include text-hide;
+        @include size(11px);
+        padding: 0;
+        cursor: pointer;
+        border: 2px solid theme-color("default");
+        border-radius: 50%;
+        display: block;
+        &:hover {
+          background: theme-color("default");
+        }
+      }
+    }
+  }
+  h1 {
+    line-height: rem-calc(29);
+    margin: 0 0 28px;
+    @include media-breakpoint-up(lg) {
+      line-height: rem-calc(43);
+    }
+    @include media-breakpoint-up(xl) {
+      line-height: rem-calc(59);
+    }
+  }
+  h1,
+  .text-box {
+    @include media-breakpoint-up(md) {
+      max-width: 53%;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 45%;
+      padding: 0 0 0 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 42%;
+      padding: 0 0 0 50px;
+    }
+    @include media-breakpoint-up(xxl) {
+      padding: 0;
+    }
+  }
+  p {
+    letter-spacing: -.2px;
+    margin: 0 0 19px;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 26px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: 0 0 32px;
+    }
+  }
+  .img-area {
+    margin: 0 -35px -5px;
+    flex-shrink: 0;
+    @include media-breakpoint-down(md) {
+      height: auto !important;
+    }
+    @include media-breakpoint-up(md) {
+      @include absolute(50%, auto, 0);
+      transform: translateY(-50%);
+      width: 65%;
+      margin: 0 -110px 0 0;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 0 -150px 0 0;
+      width: 70%;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: 0 -177px 0 0;
+      width: 76.6%;
+    }
+  }
+  .btn-block {
+    margin: -5px;
+    .btn {
+      min-width: 133px;
+      margin: 5px;
+      @include media-breakpoint-up(lg) {
+        min-width: 192px;
+        padding: 12px 20px;
+      }
+    }
+  }
+}

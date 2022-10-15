@@ -1,0 +1,159 @@
+.personalise-locations {
+  padding: 30px 0;
+  @include media-breakpoint-up(lg) {
+    padding: 37px 0;
+  }
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+  h2 {
+    margin: 0 0 20px;
+    @include media-breakpoint-up(lg) {
+      font-size: rem-calc(24);
+      margin: 0 0 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: rem-calc(30);
+      margin: 0 0 43px;
+    }
+  }
+  .tabs-area {
+    overflow: hidden;
+  }
+  .nav-tabs {
+    border: 0;
+    padding: 0;
+    margin: 0 -5px;
+    display: block;
+    display: flex;
+    flex-flow: row wrap;
+    @include media-breakpoint-up(md) {
+      float: left;
+      margin: 3px 30px 0 0;
+      width: 200px;
+      display: block;
+    }
+    @include media-breakpoint-up(lg) {
+      @include fontsize(15, 20);
+      margin: 3px 50px 0 0;
+      width: 230px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(18, 24);
+      width: 250px;
+    }
+    .nav-link {
+      width: 100%;
+      background: #acaeb3;
+      padding: 8px 19px 9px 13px;
+      font-weight: $font-weight-medium;
+      border-radius: $border-radius;
+      position: relative;
+      border: 0;
+      flex-grow: 1;
+      min-width: calc(50% - 10px);
+      color: theme-color("default");
+      margin: 0 5px 8px;
+      &:last-child {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 0;
+        }
+      }
+      &:before {
+        @include absolute(50%, auto, 14px);
+        @include icon("\e911");
+        @include transition;
+        @include fontsize(11, 13);
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+      }
+      &:after {
+        @include media-breakpoint-up(md) {
+          @include triangle(18px, theme-color("dark"), right);
+          @include absolute(50%, 100%);
+          @include transition;
+          transform: translateY(-50%);
+          opacity: 0;
+          visibility: hidden;
+          content: '';
+          margin: 0 0 0 -1px;
+          z-index: 4;
+        }
+      }
+      &:hover,
+      &.active {
+        background: theme-color("dark");
+        color: theme-color("default");
+        outline: none;
+      }
+      &.active {
+        &:after,
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .tab-content {
+    overflow: hidden;
+    padding: 15px;
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+  }
+  .regions-list {
+    @extend %listreset;
+    @include media-breakpoint-up(md) {
+      column-count: 2;
+      -moz-column-count: 2;
+      column-gap: 20px;
+      -moz-column-gap: 20px;
+    }
+    @include media-breakpoint-up(lg) {
+      @include fontsize(14, 22);
+      column-count: 3;
+      -moz-column-count: 3;
+      column-gap: 30px;
+      -moz-column-gap: 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      column-gap: 50px;
+      -moz-column-gap: 50px;
+    }
+    li {
+      overflow: hidden;
+      border-bottom: 1px solid #dbd8d7;
+      page-break-inside: avoid;
+      break-inside: avoid-column;
+      button {
+        display: block;
+        position: relative;
+        padding: 10px 25px 11px 0;
+        text-align: left;
+        border: none;
+        width: 100%;
+        color: theme-color("dark");
+        background-color: inherit;
+        &:before {
+          @include absolute(50%, auto, 0);
+          @include icon("\e911");
+          @include fontsize(11, 11);
+          transform: translateY(-50%);
+        }
+        &:hover,
+        &:focus {
+          outline: none;
+          color: darken(theme-color("primary"), 15%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,821 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="content section-stories pt-0 bg-default text-center"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        
+      </div>
+    </div>
+  </div>
+  <div
+    className="content-holder"
+  >
+    <div
+      className="slick-slider stories-slider slick-initialized"
+      dir="ltr"
+    >
+      <div
+        className="btn-prev"
+        onClick={[Function]}
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+      />
+      <div
+        className="slick-list"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={null}
+        onMouseMove={null}
+        onMouseUp={[Function]}
+        onTouchCancel={null}
+        onTouchEnd={[Function]}
+        onTouchMove={null}
+        onTouchStart={[Function]}
+        style={Object {}}
+      >
+        <div
+          className="slick-track"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          style={
+            Object {
+              "WebkitTransform": "translate3d(0px, 0px, 0px)",
+              "WebkitTransition": "",
+              "msTransform": "translateX(0px)",
+              "opacity": 1,
+              "transform": "translate3d(0px, 0px, 0px)",
+              "transition": "",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={-3}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={-2}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={-1}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={false}
+            className="slick-slide slick-active slick-current"
+            data-index={0}
+            onClick={[Function]}
+            style={
+              Object {
+                "outline": "none",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={false}
+            className="slick-slide slick-active"
+            data-index={1}
+            onClick={[Function]}
+            style={
+              Object {
+                "outline": "none",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={false}
+            className="slick-slide slick-active"
+            data-index={2}
+            onClick={[Function]}
+            style={
+              Object {
+                "outline": "none",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide"
+            data-index={3}
+            onClick={[Function]}
+            style={
+              Object {
+                "outline": "none",
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={4}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={5}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={6}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div
+            aria-hidden={true}
+            className="slick-slide slick-cloned"
+            data-index={7}
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 0,
+              }
+            }
+            tabIndex="-1"
+          >
+            <div>
+              <article
+                className="box-story"
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "100%",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <div
+                  className="box-holder"
+                >
+                  <div
+                    className="img-thumbnail"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcSet=",  2x"
+                        />
+                        <source
+                          srcSet=",  2x\\""
+                        />
+                        <img
+                          alt="image description"
+                          height="516"
+                          src=""
+                          width="380"
+                        />
+                      </picture>
+                    </a>
+                  </div>
+                  <div
+                    className="caption"
+                  >
+                    <blockquote>
+                      <q>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu
+                      </q>
+                      <cite>
+                        Adam
+                         - 
+                        London
+                      </cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="btn-next"
+        onClick={[Function]}
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+      />
+    </div>
+  </div>
+</section>
+`;

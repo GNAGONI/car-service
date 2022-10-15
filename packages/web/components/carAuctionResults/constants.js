@@ -1,0 +1,91 @@
+import { auction4Mobile, auction4Mobile2x, auction4, auction42x } from 'static/images';
+
+export const carMakeOptions = [
+  { value: 2018, label: '2018 (340)', option: 'make' },
+  { value: 2018, label: '2017 (427)' },
+  { value: 2018, label: '2016 (527)' },
+  { value: 2018, label: '2015 (765)' },
+  { value: 2018, label: '2014 (876)' },
+  { value: 2018, label: '2013 (1,067)' },
+  { value: 2018, label: '2012 (1,056)' },
+  { value: 2018, label: '2011 (1,034)' },
+];
+
+export const auctionPosts = [
+  {
+    featured: true,
+    images: [auction4Mobile, auction4Mobile2x, auction4, auction42x],
+    name: '2006 Vauxhall Corsa 1.6 SRI',
+    price: 160,
+    numberOfBids: 3,
+    timeRemaining: '22 mins 30 secs',
+    link: '#',
+    watched: true,
+    id: 1,
+  },
+  {
+    featured: true,
+    images: [auction4Mobile, auction4Mobile2x, auction4, auction42x],
+    name: '2006 Vauxhall Corsa 1.6 SRI',
+    price: 180,
+    numberOfBids: 2,
+    timeRemaining: '21 mins 30 secs',
+    link: '#',
+    watched: false,
+    id: 2,
+  },
+  {
+    featured: true,
+    images: [auction4Mobile, auction4Mobile2x, auction4, auction42x],
+    name: '2007 Vauxhall Corsa 1.6 SRI',
+    price: 2160,
+    numberOfBids: 1111,
+    timeRemaining: '23 mins 30 secs',
+    link: '#',
+    watched: false,
+    id: 3,
+  },
+  {
+    featured: false,
+    images: [auction4],
+    name: '2008 Vauxhall Corsa 1.6 SRI',
+    price: 123,
+    numberOfBids: 2222,
+    timeRemaining: '24 mins 30 secs',
+    link: '#',
+    watched: true,
+    id: 4,
+  },
+  {
+    featured: false,
+    images: [auction4],
+    name: '2009 Vauxhall Corsa 1.6 SRI',
+    price: 321,
+    numberOfBids: 3333,
+    timeRemaining: '25 mins 30 secs',
+    link: '#',
+    watched: false,
+    id: 5,
+  },
+  {
+    featured: false,
+    images: [auction4],
+    name: '2010 Vauxhall Corsa 1.6 SRI',
+    price: 233,
+    numberOfBids: 4444,
+    timeRemaining: '26 mins 30 secs',
+    link: '#',
+    watched: false,
+    id: 6,
+  },
+];
+
+export const displayPerPage = {
+  threeColumns: [
+    { value: 15, label: 15 },
+    { value: 30, label: 30 },
+    { value: 45, label: 45 },
+    { value: 60, label: 60 },
+  ],
+  fourColumns: [{ value: 20, label: 20 }, { value: 40, label: 40 }, { value: 60, label: 60 }, { value: 80, label: 80 }],
+};

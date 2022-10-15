@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="info-box"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 col-lg-9"
+    >
+      <h2>
+        Customer Description:
+      </h2>
+      <p>
+        
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="auction-filters content bg-expansion"
+>
+  <div
+    className="content-holder"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row wrap auction-filters-slider"
+      >
+        <article
+          className="col-12 col-md-4 box-filter text-center"
+        >
+          <div
+            className="holder"
+          >
+            <div
+              className="img-area"
+            >
+              <img
+                src=""
+              />
+            </div>
+            <div
+              className="text-box"
+            >
+              <h2>
+                <strong>
+                  Browse by 
+                  <br />
+                  make & model
+                </strong>
+              </h2>
+              <div
+                className="btn-block"
+              >
+                <button
+                  className="btn btn-primary btn-ml"
+                  onClick={[Function]}
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article
+          className="col-12 col-md-4 box-filter text-center"
+        >
+          <div
+            className="holder"
+          >
+            <div
+              className="img-area"
+            >
+              <img
+                src=""
+              />
+            </div>
+            <div
+              className="text-box"
+            >
+              <h2>
+                <strong>
+                  Browse by 
+                  <br />
+                  location
+                </strong>
+              </h2>
+              <div
+                className="btn-block"
+              >
+                <button
+                  className="btn btn-primary btn-ml"
+                  onClick={[Function]}
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article
+          className="col-12 col-md-4 box-filter text-center"
+        >
+          <div
+            className="holder"
+          >
+            <div
+              className="img-area"
+            >
+              <img
+                src=""
+              />
+            </div>
+            <div
+              className="text-box"
+            >
+              <h2>
+                <strong>
+                  Browse by 
+                  <br />
+                  vehicle type
+                </strong>
+              </h2>
+              <div
+                className="btn-block"
+              >
+                <button
+                  className="btn btn-primary btn-ml"
+                  onClick={[Function]}
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+`;

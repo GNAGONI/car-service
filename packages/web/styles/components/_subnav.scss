@@ -1,0 +1,226 @@
+.subnav {
+  @include fontsize(12, 21);
+  position: relative;
+  z-index: 400;
+
+  &:after {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    right: -9999px;
+    bottom: 0px;
+    content: "";
+    height: 2px;
+    background: $white;
+    z-index: -1
+  }
+
+  .jcf-scrollable {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .jcf-scrollbar {
+    position: static !important;
+    &.jcf-scrollbar-vertical {
+      display: none !important;
+    }
+    &.jcf-scrollbar-horizontal {
+      background: none;
+    }
+    .jcf-scrollbar-slider {
+      display: none;
+    }
+    .jcf-scrollbar-dec,
+    .jcf-scrollbar-inc {
+      @include transition;
+      position: absolute;
+      display: block;
+      height: 100%;
+      top: 0;
+      cursor: pointer;
+      bottom: 0;
+      z-index: 5;
+      left: 0;
+      background: none;
+      width: 100px;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.98) 87%, rgba(255, 255, 255, 1) 89%, rgba(255, 255, 255, 1) 100%);
+      &:before {
+        @include size(40px);
+        @include icon("\e910");
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+      }
+      &:hover {
+        color: theme-color('primary');
+      }
+      &.jcf-inactive {
+        display: none;
+      }
+    }
+    .jcf-scrollbar-inc {
+      left: auto;
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.98) 87%, rgba(255, 255, 255, 1) 89%, rgba(255, 255, 255, 1) 100%);
+      &:before {
+        content: "\e911";
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+  ul {
+    @extend %listreset;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: -.32em;
+    li {
+      position: relative;
+      display: inline-block;
+      padding: 0 1px 0 0;
+      letter-spacing: 0;
+      vertical-align: top;
+      &.active {
+        a {
+          color: theme-color("primary");
+          color: theme-color("dark");
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+      &:before {
+        @include absolute(-999px, auto, 1px, -999px);
+        content: '';
+        background: $gray-300;
+        width: 1px;
+        top: 25px;
+        bottom: 23px;
+      }
+      &:last-child:before {
+        display: none;
+      }
+      a {
+        color: theme-color("dark");
+        display: block;
+        font-weight: $font-weight-medium;
+        padding: 18px 10px;
+        @include media-breakpoint-up(lg) {
+          padding: 18px;
+          position: relative;
+        }
+        @include media-breakpoint-up(xl) {
+          padding: 21px 18px;
+        }
+        &:after {
+          @include absolute(auto, 0, auto, 0);
+          transition: width .25s ease-in-out;
+          content: '';
+          background: theme-color("primary");
+          height: 3px;
+          width: 0;
+        }
+        &:hover,
+        &:focus {
+          color: theme-color("dark");
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: 17px;
+  }
+
+  &__alert {
+    margin-top: -1px;
+  }
+
+  &__container {
+    overflow-x: hidden;
+  }
+
+  &__list {
+    position: relative;
+    left: 0;
+    width: auto;
+    transition: transform 0.2s;
+    padding: 0 15px;
+  }
+
+  .btn-arrow {
+    position: absolute;
+    transition-property: opacity, background, color, border, visibility;
+    display: block;
+    height: 95%;
+    cursor: pointer;
+    bottom: 2px;
+    z-index: 5;
+    left: auto;
+    border: none;
+    width: 100px;
+    background: none;
+
+    &:after {
+      width: 40px;
+      height: 40px;
+      font-family: "icomoon";
+      content: "";
+      font-weight: 400;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &__right {
+      left: auto;
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, .02) 0%, rgba(255, 255, 255, .8) 87%, white 89%, white 100%);
+
+      &:after {
+        content: "\E911";
+        left: auto;
+        right: 0;
+      }
+    }
+
+    &__left {
+      left: 0;
+      right: auto;
+      background: linear-gradient(to left, rgba(255, 255, 255, .02) 0%, rgba(255, 255, 255, .98) 87%, white 89%, white 100%);
+
+      &:after {
+        content: "\E910";
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}
+
+.subnav-title {
+  line-height: normal;
+}

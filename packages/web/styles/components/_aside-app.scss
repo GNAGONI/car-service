@@ -1,0 +1,121 @@
+.app-download {
+  position: relative;
+  z-index: 500;
+  overflow: hidden;
+  line-height: rem-calc(19);
+  max-width: 100%;
+  padding: 16px 0 20px;
+  font-weight: $font-weight-normal;
+  @include media-breakpoint-up(lg) {
+    @include fontsize(16, 22);
+    padding: 19px 0 24px;
+  }
+  @include media-breakpoint-up(xl) {
+    @include fontsize(18, 25);
+  }
+  &:after {
+    @include absolute(0, 0, 0, 0);
+    background: url(../static/images/bg-facts.jpg) no-repeat 100% 50%;
+    background-size: cover;
+    z-index: -2;
+    content: '';
+    @include media-breakpoint-up(md) {
+      background-position: 50% 50%;
+      background-size: 100% 100%;
+    }
+  }
+  .section-head {
+    padding-bottom: 20px;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 0;
+      text-align: left;
+    }
+    .text-box {
+      max-width: 100%;
+      margin: 0;
+      @include media-breakpoint-up(md) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        max-width: 96%;
+      }
+      @include media-breakpoint-up(lg) {
+        max-width: 65%;
+      }
+      @include media-breakpoint-up(xl) {
+        max-width: 59%;
+      }
+      .text {
+        padding: 0 0 10px;
+        margin: 0;
+        @include media-breakpoint-up(md) {
+          padding: 0 20px 0 0;
+        }
+      }
+    }
+    .btn-block {
+      justify-content: center;
+      .btn {
+        flex-grow: inherit;
+        &.btn-dark {
+          &:hover, &:focus {
+            background: lighten(theme-color('dark'), 10%);
+            color: theme-color('default');
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    margin: 0 0 10px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(22, 32);
+      margin: 0 0 13px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(27, 37);
+    }
+  }
+  .app-area {
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: right;
+      padding-top: 10px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 16px;
+    }
+    h4 {
+      @include font(14, 23, $font-weight-semibold);
+      margin: 0 0 10px;
+      letter-spacing: .4px;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 14px;
+      }
+    }
+  }
+  .downloads {
+    @extend %listreset;
+    display: flex;
+    flex-flow: row wrap;
+    margin: -5px;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: -9px;
+    }
+    li {
+      padding: 5px;
+      max-width: 50%;
+      @include media-breakpoint-up(lg) {
+        padding: 9px;
+      }
+    }
+    img {
+      @include img-responsive;
+    }
+  }
+}

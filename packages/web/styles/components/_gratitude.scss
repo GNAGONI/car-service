@@ -1,0 +1,134 @@
+.gratitude {
+  @include media-breakpoint-down(lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__head {
+    margin: 44px auto;
+    text-align: center;
+    background-color: $white;
+    @include media-breakpoint-down(xs) {
+      margin: 15px auto 6px;
+    }
+    .gratitudeHead__header {
+      margin: 0 auto 15px;
+      width: 100%;
+      @include media-breakpoint-down(sm) {
+        width: 90%;
+        font-size: 1.9em;
+        line-height: 30px;
+      }
+    }
+    .gratitudeHead__text {
+      margin: 0 auto 15px;
+      width: 35%;
+      font-size: 1.1em;
+      color: $black;
+      @include media-breakpoint-down(xl) {
+        width: 38%;
+      }
+      @include media-breakpoint-down(lg) {
+        font-size: 0.9em;
+      }
+      @include media-breakpoint-down(md) {
+        width: 43%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 75%;
+        font-size: 1em;
+      }
+    }
+  }
+
+  &__list {
+    padding: 38.5px 0 38.5px 336px;
+    @include media-breakpoint-up(xxl) {
+      padding: 38.5px 0 38.5px 336px;
+    }
+    @include media-breakpoint-down(xl) {
+      padding: 48px 0 48px 200px;
+    }
+    @include media-breakpoint-down(lg) {
+      padding: 71px 0 61px 200px;
+    }
+    @include media-breakpoint-down(md) {
+      padding-bottom: 26px;
+      padding-left: 100px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 45px 48px;
+    }
+
+    @media (max-width: 500px) {
+      padding-bottom: 125px;
+    }
+    @media (max-width: 375px) {
+      padding-bottom: 90px;
+    }
+
+    background-color: theme-color('middle-light');
+    background-image: url(../static/images/thank-you-background.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 114%;
+    @include media-breakpoint-down(xl) {
+      background-image: url(../static/images/thank-you-background@x2.png);
+    }
+    @include media-breakpoint-down(lg) {
+      background-size: 134%;
+      background-position-x: -125px;
+    }
+    @include media-breakpoint-down(md) {
+      background-size: 158%;
+      background-position-x: -120px;
+    }
+    ul li::before {
+      width: 0;
+      height: 0;
+    }
+    .gratitudeList__head {
+      width: 100%;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 10px;
+      }
+    }
+    .gratitudeList__steps {
+      padding: 0;
+
+      font-size: 1.1em;
+    }
+    .gratitudeList__point {
+      display: flex;
+      padding: 0;
+      width: 390px;
+
+      .gratitudeList__number {
+        width: 68px;
+        padding: 30px 0;
+        text-align: center;
+        margin-right: 15px;
+        div {
+          width: 100%;
+          padding: 9px 16px;
+          background-color: $green;
+          border-radius: 50%;
+          color: $white;
+          font-size: 1.3em;
+          font-weight: bold;
+        }
+      }
+
+      p {
+        @include media-breakpoint-down(sm) {
+          width: 85%;
+        }
+        @media (max-width: 380px) {
+          width: 70%;
+        }
+        @media (max-width: 320px) {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

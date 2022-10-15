@@ -1,0 +1,86 @@
+.not-my-car {
+  background-color: $gray-500;
+
+  .intro-scrap-my-car {
+    color: $black;
+    background-image: none;
+    background-color: $gray-125;
+    background: url(../static/images/not-your-car-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .bg-tiers {
+      display: none;
+    }
+    .search-area {
+      .section-head {
+        padding-bottom: 25px;
+        padding-top: 42px;
+        h2 {
+          margin-bottom: 10px;
+        }
+        p {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .search-form {
+    border-radius: 4px 3px 3px 4px;
+    input.form-control {
+      @include placeholder {
+        color: $gray-600 !important;
+      }
+    }
+
+    .holder {
+      border-radius: 4px 4px 0 0;
+    }
+
+    div.ico {
+      border-radius: 3px 0 0 3px;
+      @media (max-width: 768px) {
+        border-radius: 3px 0 0 0;
+      }
+      img {
+        width: 77px;
+        height: 87px;
+        @media (max-width: 768px) {
+          height: 60px;
+        }
+      }
+    }
+
+    .form-group input.form-control:first-child {
+      border-radius: 4px;
+    }
+  }
+  .section-head.large {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    width: 59%;
+    @media (max-width: 768px) {
+      width: 65%;
+    }
+    margin: 0 auto;
+  }
+  .wrap {
+    width: 64%;
+    margin: 0 auto;
+    padding-bottom: 49px;
+
+    .box-scrap {
+      @include media-breakpoint-down(lg) {
+        padding: 20px 20px 0;
+      }
+
+      img {
+        @include media-breakpoint-down(lg) {
+          max-width: 75%;
+        }
+      }
+    }
+  }
+}

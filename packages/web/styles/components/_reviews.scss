@@ -1,0 +1,150 @@
+.section-review {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include media-breakpoint-up(xl) {
+    padding-top: 55px;
+    padding-bottom: 65px;
+  }
+  blockquote {
+    @include fontsize(12, 17);
+    margin: 0;
+    q {
+      display: block;
+      quotes: none;
+    }
+    cite {
+      display: block;
+      font-weight: $font-weight-medium;
+      font-style: normal;
+    }
+  }
+  .review-selection {
+    background: theme-color("default");
+    padding: 21px 25px 29px;
+    border-radius: $border-radius;
+    @include media-breakpoint-up(md) {
+      padding: 16px 25px 31px;
+    }
+  }
+  &.add {
+    @include media-breakpoint-up(xl) {
+      padding-top: 70px;
+      padding-bottom: 78px;
+    }
+    &:after {
+      @include absolute(0, 0, 0, 0);
+      background: url(../static/images/bg-reviews.png) no-repeat 50% 50%;
+      content: '';
+      z-index: -1;
+      background-size: cover;
+    }
+    .review-selection {
+      background: none;
+      padding: 0;
+    }
+    .product-review {
+      @include media-breakpoint-up(lg) {
+        padding: 25px 0 10px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding: 37px 0 10px;
+      }
+    }
+    .star-rating {
+      @include media-breakpoint-up(lg) {
+        padding: 0 0 13px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-left: -6px;
+        margin-right: -6px;
+      }
+      li {
+        @include media-breakpoint-up(lg) {
+          @include fontsize(25, 25);
+          margin-left: 6px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+.review-selection {
+  .section-head {
+    line-height: rem-calc(17);
+    padding: 0 0 28px;
+    @include media-breakpoint-up(md) {
+      @include fontsize(12, 23);
+      margin: 0;
+      padding: 0 0 12px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 18px;
+    }
+    .text-box {
+      max-width: 85%;
+      @include media-breakpoint-up(md) {
+        max-width: 350px;
+      }
+    }
+    h2 {
+      margin: 0 0 15px;
+    }
+    p {
+      letter-spacing: .2px;
+    }
+  }
+  h3 {
+    margin: 0 0 20px;
+    @include media-breakpoint-down(md) {
+      @include fontsize(12, 21);
+    }
+    @include media-breakpoint-up(md) {
+      margin: 0 0 18px;
+    }
+  }
+  .btn-block {
+    padding: 31px 0 0;
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+  }
+  .btn.btn-md {
+    @include media-breakpoint-up(lg) {
+      font-size: rem-calc(16);
+    }
+  }
+  .form-control, .jcf-select {
+    background: $input-bg;
+  }
+}
+.product-review {
+  overflow: hidden;
+  > .btn-review {
+    @include fontsize(13, 25);
+    min-width: 250px;
+    position: relative;
+    margin: 0 0 30px;
+    overflow: visible;
+    @include media-breakpoint-up(lg) {
+      min-width: 323px;
+      margin: 0 0 20px;
+    }
+    &:after {
+      @include triangle(12px, theme-color("primary"), down);
+      @include absolute(100%, 50%);
+      transform: translateX(-50%);
+      content: '';
+      pointer-events: none;
+    }
+  }
+  .img-area {
+    overflow: hidden;
+    margin: 0 0 18px;
+    @include media-breakpoint-up(lg) {
+      margin: 15px auto 12px;
+    }
+    img {
+      margin: 0 auto;
+    }
+  }
+}

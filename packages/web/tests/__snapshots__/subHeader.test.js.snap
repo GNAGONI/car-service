@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="main-header-content"
+>
+  <div
+    className="icon-holder"
+  >
+    <img
+      alt="description"
+      height="97"
+      src=""
+      width="95"
+    />
+  </div>
+  <div
+    className="text-holder"
+  >
+    <h1>
+      
+    </h1>
+    <p>
+      
+    </p>
+  </div>
+</div>
+`;

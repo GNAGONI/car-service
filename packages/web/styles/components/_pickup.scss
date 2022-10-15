@@ -1,0 +1,16 @@
+.section-pickup {
+  .section-head {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 50px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 59px;
+    }
+  }
+  .tick-list {
+    @include media-breakpoint-up(lg) {
+      max-width: 80.5%;
+      margin: 0 auto;
+    }
+  }
+}

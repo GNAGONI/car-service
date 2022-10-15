@@ -1,0 +1,15 @@
+.aside-info {
+  @include fontsize(14, 24);
+  @include media-breakpoint-up(lg) {
+    @include fontsize(18, 26);
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 58px;
+  }
+  h3 {
+    letter-spacing: 0;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 19px;
+    }
+  }
+}

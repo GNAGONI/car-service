@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div
+  className="fade alert alert-danger show"
+  role="alert"
+>
+  Ops something wrong!
+</div>
+`;

@@ -1,0 +1,17 @@
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+dist
+.next
+.DS_Store
+out
+bundles
+.env
+.vimrc
+*.log
+coverage/
+desktop.ini
+jsconfig.json

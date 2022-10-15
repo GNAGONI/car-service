@@ -1,0 +1,110 @@
+.brand-bubbles {
+  position: relative;
+  margin: -100px 0 60px;
+  height: 460px;
+  .bubbles-holder {
+    position: relative;
+  }
+  .bubble-static {
+    @include absolute(60px, -70px);
+    @include size(110px);
+    z-index: 1;
+    display: none;
+    border-radius: 50%;
+    background: #d3d4d7;
+    @include media-breakpoint-up(lg) {
+      @include size(147px);
+      display: block;
+    }
+    &.small {
+      @include size(90px);
+      @include media-breakpoint-up(lg) {
+        @include size(136px);
+      }
+    }
+    &.bubble2 {
+      left: 30%;
+      top: 80px;
+      display: block;
+    }
+    &.bubble3 {
+      left: 65%;
+      top: 100px;
+    }
+    &.bubble4 {
+      left: 100%;
+      margin: 0 0 0 -50px;
+      top: 40px;
+    }
+    &.bubble5 {
+      left: 15%;
+      top: 200px;
+    }
+    &.bubble6 {
+      left: 45%;
+      top: 250px;
+    }
+    &.bubble7 {
+      left: 78%;
+      top: 290px;
+      display: block;
+    }
+    &.bubble8 {
+      left: -30px;
+      top: 390px;
+    }
+    &.bubble9 {
+      left: 60%;
+      top: 410px;
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+    &.bubble10 {
+      left: 95%;
+      top: 400px;
+    }
+    &.bubble11 {
+      left: 30%;
+      top: 380px;
+      display: block;
+    }
+  }
+  .bubble {
+    @include size(160px);
+    background-size: 100% auto;
+    background-position: 50% 50%;
+    z-index: 2;
+    background-repeat: no-repeat;
+    position: absolute;
+    will-change: transform, opacity;
+    .title {
+      position: absolute;
+      padding: 5px 12px;
+      will-change: transform, opacity;
+      left: 50%;
+      bottom: -40px;
+      background: theme-color("default");
+      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+      border-radius: 50px;
+      white-space: nowrap;
+      font-weight: 500;
+      font-size: 16px;
+      color: theme-color("dark");
+      pointer-events: none;
+      user-select: none;
+      transform: translate(-50%, -10px);
+      opacity: 0;
+      transition-property: opacity, transform, -webkit-transform;
+      transition-duration: 0.25s;
+      transition-timing-function: ease-out;
+    }
+    &:hover {
+      z-index: 60;
+      .title {
+        opacity: 0.9;
+        transform: translate(-50%);
+      }
+    }
+  }
+}

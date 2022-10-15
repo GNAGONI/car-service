@@ -1,0 +1,161 @@
+.section-fuel {
+  .text-block {
+    max-width: 450px;
+    padding: 0 0 20px;
+    @include media-breakpoint-up(md) {
+      max-width: 90%;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 33px;
+      max-width: 80%;
+    }
+    &:last-child {
+      padding: 0;
+    }
+    h3 {
+      letter-spacing: 0;
+      @include media-breakpoint-up(xl) {
+        font-size: 17px;
+      }
+    }
+  }
+  .map-frame {
+    height: 550px;
+    @include media-breakpoint-up(md) {
+      @include absolute(0, auto, 0, 0);
+      height: auto;
+      width: 50%;
+    }
+  }
+}
+
+.fuel-calculator {
+  .label {
+    margin: 0 0 10px;
+  }
+  .form-row {
+    align-items: flex-end;
+    &:last-child {
+      margin-bottom: -15px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: -20px;
+      }
+    }
+  }
+  .card .card-body {
+    padding: 15px 0 10px;
+    @include media-breakpoint-up(xl) {
+      padding: 15px 20px 20px 0;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 15px 49px 28px 0;
+    }
+  }
+  .form-row {
+    > .col,
+    > [class*="col-"] {
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 16px;
+      }
+    }
+  }
+  .form-control {
+    color: $gray-700;
+    @include placeholder {
+      color: $gray-700;
+    }
+  }
+  .btn-block {
+    display: flex;
+    flex-flow: row wrap;
+    .btn {
+      flex-grow: 1;
+      min-width: inherit;
+    }
+  }
+  .custom-control.custom-checkbox {
+    .custom-control-label {
+      flex-flow: row-reverse;
+      align-items: center;
+      font-weight: $font-weight-medium;
+      &:before {
+        margin: 0 0 0 10px;
+        @include media-breakpoint-up(lg) {
+          @include size(40px);
+          @include fontsize(15, 38);
+          margin: 0 0 0 15px;
+        }
+      }
+    }
+  }
+}
+
+.fuel-features {
+  @include clearfix;
+  .wrap {
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 20px;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  .box-feature {
+    background: theme-color("light");
+    padding: 15px;
+    flex-flow: column nowrap;
+    line-height: rem-calc(14);
+    margin: 10px;
+    width: calc(50% - 20px);
+    flex-grow: 1;
+    .bg-before-light &,
+    .bg-light & {
+      background: theme-color('default');
+    }
+    @include media-breakpoint-up(sm) {
+      width: calc(33.33% - 20px);
+    }
+    @include media-breakpoint-up(md) {
+      width: calc(50% - 20px);
+      padding: 15px 15px 25px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: calc(33.33% - 20px);
+      padding: 15px 15px 40px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 15px 20px 55px;
+    }
+    .ico {
+      display: flex;
+      flex-flow: row wrap;
+      min-height: 86px;
+      margin: 0 0 10px;
+      align-items: center;
+      img {
+        @include img-responsive;
+        margin: 0 auto;
+      }
+    }
+    h3 {
+      color: theme-color('primary');
+      font-weight: $font-weight-bold;
+      margin: 0 0 7px;
+      width: 100%;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(17, 22);
+      }
+      @include media-breakpoint-up(xl) {
+        @include fontsize(20, 24);
+      }
+    }
+    p {
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

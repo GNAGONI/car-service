@@ -1,0 +1,180 @@
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 576px,
+  'tablet': 768px,
+  'desktop': 992px,
+  'widescreen': 1200px,
+);
+
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)',
+);
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+
+@import 'vendors/bootstrap/functions';
+@import 'vendors/bootstrap/variables';
+@import 'vendors/bootstrap/mixins';
+
+@import 'vendors/slick';
+@import 'vendors/fancybox';
+@import 'vendors/jquery-ui.min';
+@import 'vendors/croppie';
+
+@import 'vendors/react-datepicker/react-datepicker';
+
+@import 'bootstrap-custom';
+
+@import 'base/autosuggest';
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+
+@import 'base/fonts';
+
+@import 'base/typography';
+@import 'base/icons';
+@import 'base/typography';
+@import 'base/forms';
+@import 'base/scrollbar';
+@import 'base/date-time-picker';
+
+@import 'base/slider';
+
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/common';
+@import 'layout/sidebar';
+@import 'layout/footer';
+
+@import 'components/section';
+@import 'components/dashboard';
+@import 'components/post';
+@import 'components/post-details';
+@import 'components/media';
+
+@import 'components/tabs';
+@import 'components/widgets';
+
+@import 'components/search';
+@import 'components/accordion';
+@import 'components/ad-block';
+@import 'components/breadcrumb';
+@import 'components/navigation';
+@import 'components/rating';
+@import 'components/social-networks';
+@import 'components/subnav';
+@import 'components/callback';
+
+@import 'components/aside-app';
+@import 'components/aside-claim';
+@import 'components/aside-info';
+@import 'components/pagination';
+@import 'components/popup';
+
+@import 'components/intro';
+@import 'components/intro-slider';
+@import 'components/best-price';
+@import 'components/blog';
+@import 'components/calculator';
+@import 'components/car-types';
+@import 'components/essentials';
+@import 'components/partners';
+@import 'components/facts-slider';
+@import 'components/featured';
+@import 'components/services';
+@import 'components/location-finder';
+@import 'components/model';
+@import 'components/reviews';
+@import 'components/scrap';
+@import 'components/testimonials';
+@import 'components/tools';
+@import 'components/personalise-locations';
+@import 'components/pickup';
+@import 'components/popular-locations';
+@import 'components/brand-bubbles';
+@import 'components/longAuctionSelect';
+
+@import 'components/complaints';
+@import 'components/faqs';
+@import 'components/fuel-calculator';
+@import 'components/thankyou';
+@import 'components/features';
+@import 'components/contact';
+@import 'components/contact-us';
+
+@import 'components/post-slideshow';
+@import 'components/recommend';
+@import 'components/review-write';
+@import 'components/process';
+@import 'components/section-404';
+
+@import 'components/procedure';
+@import 'components/reviews-partner';
+@import 'components/scrap-collected';
+@import 'components/review-content';
+
+@import 'components/signup';
+
+@import 'components/finance-intro';
+@import 'components/finance-brands';
+@import 'components/finance-calc';
+@import 'components/finance-features';
+@import 'components/finance-calculator';
+@import 'components/stories';
+
+@import 'components/intro-search-dealers';
+@import 'components/search-brands';
+
+@import 'components/vehicle-cost-management';
+
+@import 'components/owner-reviews';
+
+@import 'components/auction';
+
+@import 'components/multiple-blocks';
+@import 'components/aside-block';
+@import 'components/select';
+@import 'components/input';
+@import 'components/progress';
+@import 'components/main-header.scss';
+@import 'components/filter-form.scss';
+@import 'components/list.scss';
+@import 'components/live-list-row.scss';
+@import 'components/download-app-widget';
+@import 'components/invite-customer-widget';
+@import 'components/news-widget';
+@import 'components/live-auction-aside';
+@import 'components/load-more';
+@import 'components/awaiting-collection';
+@import 'components/pending_payments-empty';
+@import 'components/modal';
+@import 'components/my-account';
+@import 'components/commont-page-container';
+@import 'components/map';
+@import 'components/gratitude';
+@import 'components/car-auction';
+@import 'components/summary';
+@import 'components/online-quotation';
+@import 'components/quotation-confirmation';
+@import 'components/change-password';
+@import 'components/slider';
+@import 'components/homePage';
+@import 'components/scrap-my-car';
+@import 'components/car-make-model';
+@import 'components/why-choose-us';
+@import 'components/base-confirm-popup';
+@import 'components/terms';
+@import 'components/links';
+@import 'components/not-my-car';
+@import 'components/edit-profile';
+@import 'components/social-value';

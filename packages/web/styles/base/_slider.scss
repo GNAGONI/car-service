@@ -1,0 +1,120 @@
+@mixin slider-flex {
+  position: relative;
+
+  .slick-list {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .slick-track {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &:after,
+  &:before {
+    @include media-breakpoint-down(sm) {
+      @include absolute(0, -10px, auto, 0);
+      width: 40px;
+      background: linear-gradient(to right, rgba(theme-color("default"), 1) 0%, rgba(theme-color("default"), 1) 50%, rgba(theme-color("default"), 0) 100%);
+      content: '';
+      z-index: 50;
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: 20px;
+    }
+  }
+
+  &:before {
+    @include media-breakpoint-down(sm) {
+
+      .bg-before-light &,
+      .bg-light & {
+        background: linear-gradient(to right, rgba(theme-color("light"), 1) 0%, rgba(theme-color("light"), 1) 50%, rgba(theme-color("light"), 0) 100%);
+      }
+
+      .bg-before-lightest &,
+      .bg-lightest & {
+        background: linear-gradient(to right, rgba(theme-color("lightest"), 1) 0%, rgba(theme-color("lightest"), 1) 50%, rgba(theme-color("lightest"), 0) 100%);
+      }
+
+      .bg-before-info &,
+      .bg-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 1) 0%, rgba(theme-color("info"), 1) 50%, rgba(theme-color("info"), 0) 100%);
+      }
+
+      .bg-before-primary &,
+      .bg-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 1) 0%, rgba(theme-color("primary"), 1) 50%, rgba(theme-color("primary"), 0) 100%);
+      }
+
+      .bg-before-dark &,
+      .bg-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 1) 0%, rgba(theme-color("dark"), 1) 50%, rgba(theme-color("dark"), 0) 100%);
+      }
+
+      .bg-before-lighter &,
+      .bg-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 1) 0%, rgba(theme-color("lighter"), 1) 50%, rgba(theme-color("lighter"), 0) 100%);
+      }
+    }
+  }
+
+  &:after {
+    @include media-breakpoint-down(sm) {
+      left: auto;
+      background: linear-gradient(to right, rgba(theme-color("default"), 0) 0%, rgba(theme-color("default"), 1) 50%, rgba(theme-color("default"), 1) 100%);
+      right: -10px;
+
+      .bg-before-light &,
+      .bg-light & {
+        background: linear-gradient(to right, rgba(theme-color("light"), 0) 0%, rgba(theme-color("light"), 1) 50%, rgba(theme-color("light"), 1) 100%);
+      }
+
+      .bg-before-lightest &,
+      .bg-lightest & {
+        background: linear-gradient(to right, rgba(theme-color("lightest"), 0) 0%, rgba(theme-color("lightest"), 1) 50%, rgba(theme-color("lightest"), 1) 100%);
+      }
+
+      .bg-before-info &,
+      .bg-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 0) 0%, rgba(theme-color("info"), 1) 50%, rgba(theme-color("info"), 1) 100%);
+      }
+
+      .bg-before-primary &,
+      .bg-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 0) 0%, rgba(theme-color("primary"), 1) 50%, rgba(theme-color("primary"), 1) 100%);
+      }
+
+      .bg-before-dark &,
+      .bg-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 0) 0%, rgba(theme-color("dark"), 1) 50%, rgba(theme-color("dark"), 1) 100%);
+      }
+
+      .bg-before-lighter &,
+      .bg-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 0) 0%, rgba(theme-color("lighter"), 1) 50%, rgba(theme-color("lighter"), 1) 100%);
+      }
+    }
+  }
+}
+
+@mixin slider-flexbox {
+  flex-flow: row nowrap;
+  min-height: inherit !important;
+  float: none !important;
+  height: auto;
+  flex-basis: inherit;
+  padding-top: 10px;
+  display: flex;
+  padding-bottom: 10px;
+
+  @include media-breakpoint-down(sm) {
+    width: 300px;
+  }
+
+  .slick-initialized & {
+    display: flex !important;
+  }
+}

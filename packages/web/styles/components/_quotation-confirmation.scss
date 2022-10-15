@@ -1,0 +1,147 @@
+.quotation-confirmation {
+  margin-top: -57px;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: -40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: -30px;
+  }
+
+  .important-information-section {
+    padding-left: 20px;
+
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+    }
+
+    .section-head {
+      padding-bottom: 0 !important;
+    }
+
+
+    @include media-breakpoint-up(md) {
+      .left-section-wrapper {
+        padding-right: 15px;
+      }
+
+      .right-section-wrapper {
+        padding-left: 15px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .right-section-wrapper {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .booking-confirmation-section {
+    .title {
+      &-light {
+        font-weight: $font-weight-lightest;
+
+        @include media-breakpoint-up(lg) {
+          width: 530px;
+          line-height: 32px;
+        }
+      }
+
+      &-bold {
+        font-weight: $font-weight-bolder;
+      }
+    }
+    .btn-block {
+      .btn {
+        @media (max-width: 420px) {
+          width: 158px;
+        }
+      }
+    }
+  }
+
+  .content {
+    padding-bottom: 10px;
+  }
+
+  .section-head__description {
+    margin: auto;
+
+    @include media-breakpoint-up(md) {
+      font-size: 12px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 445px;
+    }
+  }
+
+  .quote-price__title {
+    line-height: 25px;
+
+    @include media-breakpoint-up(md) {
+      line-height: 32px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 450px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 530px;
+    }
+  }
+
+  .section-head {
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 25px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 32px;
+    }
+
+    .text-box {
+      @media (max-width: 1000px) {
+        margin: auto;
+      }
+    }
+  }
+
+  .section-head__smaller {
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .content-block__text {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  .bg-before-darkest {
+    &:before {
+      @media (max-width: 1000px) {
+        right: -9999px !important;
+      }
+    }
+  }
+}

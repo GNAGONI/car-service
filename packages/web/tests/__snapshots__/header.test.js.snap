@@ -1,0 +1,1118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  id="header"
+>
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col header-wrap"
+      >
+        <div
+          className="logo"
+        >
+          <a
+            href="/car-auctions"
+          >
+            <img
+              alt="Car.service®"
+              height="44"
+              src=""
+              width="216"
+            />
+          </a>
+        </div>
+        <nav
+          className="navbar navbar-expand-xxl navbar-dark"
+          id="nav"
+        >
+          <button
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            className="navbar-toggler collapsed"
+            data-target="#navbarSupportedContent"
+            data-toggle="collapse"
+            type="button"
+          >
+            <span
+              className="navbar-toggler-icon"
+            />
+          </button>
+          <div
+            className="collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <div
+              className="navbar-wrap"
+            >
+              <ul
+                className="navbar-nav mr-auto"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="/car-auctions"
+                  >
+                    <span
+                      className="icon-wrap"
+                    >
+                      <img
+                        alt="Car auctions"
+                        height="28"
+                        src=""
+                        width="27"
+                      />
+                    </span>
+                    Car auctions
+                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#"
+                  >
+                    <span
+                      className="icon-wrap"
+                    >
+                      <img
+                        alt="image description"
+                        height="22"
+                        src=""
+                        width="27"
+                      />
+                    </span>
+                    Scrap my car
+                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#"
+                  >
+                    <span
+                      className="icon-wrap"
+                    >
+                      <img
+                        alt="Private number plates"
+                        height="24"
+                        src=""
+                        width="26"
+                      />
+                    </span>
+                    Private number plates
+                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#"
+                  >
+                    <span
+                      className="icon-wrap"
+                    >
+                      <img
+                        alt="Car news & reviews"
+                        height="18"
+                        src=""
+                        width="27"
+                      />
+                    </span>
+                    Car news & reviews
+                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#"
+                  >
+                    <span
+                      className="icon-wrap"
+                    >
+                      <img
+                        alt="Finance, insurance & more"
+                        height="24"
+                        src=""
+                        width="20"
+                      />
+                    </span>
+                    Finance, insurance & more
+                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#"
+                  >
+                    <span
+                      className="icon-wrap"
+                    >
+                      <img
+                        alt="Social value"
+                        height="21"
+                        src=""
+                        width="20"
+                      />
+                    </span>
+                    Social value
+                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                      >
+                        Link to page here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <ul
+          className="option-links"
+        >
+          <li
+            className="dropdown"
+          >
+            <a
+              aria-expanded="false"
+              aria-haspopup="true"
+              className="dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              id="dropdownMessage"
+              role="button"
+            >
+              <span
+                className="img-wrap"
+              >
+                <img
+                  alt="image description"
+                  height="24"
+                  src=""
+                  width="26"
+                />
+              </span>
+              <span
+                className="counter"
+              >
+                3
+              </span>
+            </a>
+            <div
+              aria-labelledby="dropdownMessage"
+              className="dropdown-menu message-drop"
+            >
+              <div
+                className="jcf-scrollable"
+              >
+                <ul
+                  className="drop-list"
+                >
+                  <li
+                    className="status-green"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Message Subject here
+                      </span>
+                      <span
+                        className="message-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..
+                         
+                      </span>
+                      <time
+                        className="message-time"
+                        dateTime="2011-01-12"
+                      >
+                        18th September @ 14:29
+                      </time>
+                    </a>
+                  </li>
+                  <li
+                    className="status-green"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <span
+                        className="title"
+                      >
+                        A larger message Subject here and here over two lines
+                      </span>
+                      <span
+                        className="message-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..
+                         
+                      </span>
+                      <time
+                        className="message-time"
+                        dateTime="2011-01-12"
+                      >
+                        18th September @ 14:29
+                      </time>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <span
+                        className="title"
+                      >
+                        A larger message Subject here and here over two lines
+                      </span>
+                      <span
+                        className="message-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..
+                         
+                      </span>
+                      <time
+                        className="message-time"
+                        dateTime="2011-01-12"
+                      >
+                        18th September @ 14:29
+                      </time>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Message Subject here
+                      </span>
+                      <span
+                        className="message-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..
+                         
+                      </span>
+                      <time
+                        className="message-time"
+                        dateTime="2011-01-12"
+                      >
+                        18th September @ 14:29
+                      </time>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <span
+                        className="title"
+                      >
+                        Message Subject here
+                      </span>
+                      <span
+                        className="message-text"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..
+                         
+                      </span>
+                      <time
+                        className="message-time"
+                        dateTime="2011-01-12"
+                      >
+                        18th September @ 14:29
+                      </time>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="btn-holder"
+              >
+                <a
+                  className="btn-drop"
+                  href="#"
+                >
+                  View all messages
+                </a>
+              </div>
+            </div>
+          </li>
+          <li
+            className="dropdown"
+          >
+            <a
+              aria-expanded="false"
+              aria-haspopup="true"
+              className="dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              id="dropdownUser"
+              role="button"
+            >
+              <span
+                className="img-wrap"
+              >
+                <img
+                  alt="image description"
+                  height="27"
+                  src=""
+                  width="27"
+                />
+              </span>
+              <span
+                className="counter"
+              >
+                4
+              </span>
+            </a>
+            <div
+              aria-labelledby="dropdownUser"
+              className="dropdown-menu user-drop"
+            >
+              <div
+                className="jcf-scrollable"
+              >
+                <ul
+                  className="drop-list"
+                >
+                  <li
+                    className="status-green"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="20"
+                          src=""
+                          width="27"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          You have a car 
+                          <strong>
+                            awaiting collection
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          10 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    className="status-green"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="26"
+                          src=""
+                          width="21"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          You were the highest bidder on 
+                          <strong>
+                            Vauxhall Corsa 1.6 GTI
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          10 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    className="status-red"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="25"
+                          src=""
+                          width="28"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          You have been outbid on the car 
+                          <strong>
+                            Citreon Saxo 1.4 RS
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          29 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    className="status-red"
+                  >
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="21"
+                          src=""
+                          width="23"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Please pay for the vehicle, 
+                          <strong>
+                            Vauxhall Corsa 1.6 RS
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          40 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="25"
+                          src=""
+                          width="21"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          You have a scheduled vehicle for collection, in 
+                          <strong>
+                            2 hours
+                          </strong>
+                           at
+                           
+                          <strong>
+                            PR1 1YH
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          40 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="20"
+                          src=""
+                          width="27"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          You have a car 
+                          <strong>
+                            awaiting collection
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          52 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="20"
+                          src=""
+                          width="27"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          You have a car 
+                          <strong>
+                            awaiting collection
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          52 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="20"
+                          src=""
+                          width="27"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          You have a car 
+                          <strong>
+                            awaiting collection
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          52 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="20"
+                          src=""
+                          width="27"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          You have a car 
+                          <strong>
+                            awaiting collection
+                          </strong>
+                        </p>
+                        <span
+                          className="text-small"
+                        >
+                          52 mins ago
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li
+            className="dropdown"
+          >
+            <a
+              aria-expanded="false"
+              aria-haspopup="true"
+              className="dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              id="dropdownSetting"
+              role="button"
+            >
+              <span
+                className="img-wrap"
+              >
+                <img
+                  alt="image description"
+                  height="23"
+                  src=""
+                  width="23"
+                />
+              </span>
+            </a>
+            <div
+              aria-labelledby="dropdownSetting"
+              className="dropdown-menu setting-drop"
+            >
+              <div
+                className="jcf-scrollable"
+              >
+                <ul
+                  className="drop-list"
+                >
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="15"
+                          src=""
+                          width="14"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Edit profile
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="22"
+                          src=""
+                          width="20"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Change password
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="22"
+                          src=""
+                          width="28"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Edit areas & car makes
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="16"
+                          src=""
+                          width="19"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Notifications
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="19"
+                          src=""
+                          width="32"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Edit Vehicle preferences
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="17"
+                          src=""
+                          width="22"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Subscriptions
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="16"
+                          src=""
+                          width="19"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Notifications
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="19"
+                          src=""
+                          width="32"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Edit Vehicle preferences
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                    >
+                      <div
+                        className="icon-wrap"
+                      >
+                        <img
+                          alt="image desctiption"
+                          height="17"
+                          src=""
+                          width="22"
+                        />
+                      </div>
+                      <div
+                        className="text-holder"
+                      >
+                        <p>
+                          Subscriptions
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+`;

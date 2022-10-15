@@ -1,0 +1,125 @@
+.section-contact {
+  .section-head {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 29px;
+    }
+  }
+  .map {
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    margin: 0 -20px;
+    @include media-breakpoint-up(md) {
+      margin: 0 0 0 -100px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 0 -120px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: 0 0 0 -191px;
+    }
+    img {
+      @include size(100%, auto);
+      display: block;
+    }
+  }
+  .map-frame {
+    height: 550px;
+    @include media-breakpoint-up(md) {
+      @include absolute(0, 0, auto, 0);
+      width: calc(50% - 16.667%);
+      height: auto;
+    }
+  }
+}
+
+.contact-info {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  &:after {
+    @include absolute(0, 10px, 10px);
+    height: 1px;
+    background: #d9d8d8;
+    content: '';
+  }
+  .wrap {
+    margin-bottom: -9px !important;
+    margin-top: 0 !important;
+  }
+  .contact-box {
+    overflow: hidden;
+    margin: 0 0 9px;
+    address {
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  h3 {
+    @include media-breakpoint-up(xl) {
+      font-size: rem-calc(17);
+      margin: 0 0 20px;
+    }
+  }
+  h5 {
+    margin: 0;
+  }
+  .text {
+    display: block;
+  }
+  .timing-list {
+    padding: 0;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .time {
+      color: theme-color("dark");
+      font-weight: $font-weight-light;
+    }
+    .day {
+      display: block;
+      flex-grow: 1;
+    }
+  }
+}
+
+.contact-form {
+  @include media-breakpoint-up(lg) {
+    padding: 27px 0;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 34px 0;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+  .form-group {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 19px;
+    }
+  }
+  textarea.form-control {
+    @include media-breakpoint-up(lg) {
+      min-height: 200px;
+      max-height: 300px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 305px;
+      max-height: 400px;
+    }
+  }
+  .btn {
+    @include media-breakpoint-up(lg) {
+      min-width: 200px;
+    }
+  }
+}

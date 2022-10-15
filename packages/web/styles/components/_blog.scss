@@ -1,0 +1,114 @@
+.section-blog {
+  padding-top: 41px;
+  padding-bottom: 44px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 82px;
+    padding-bottom: 72px;
+  }
+  .section-head {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 50px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 78px;
+    }
+  }
+}
+
+.news-slider, .posts-slider {
+  position: relative;
+  @include media-breakpoint-up(md) {
+    width: calc(100% + 20px) !important;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-bottom: 20px;
+    &:after,
+    &:before {
+      @include absolute(0, 0, auto, 0);
+      background: linear-gradient(to right, rgba(theme-color("default"), 1) 0%, rgba(theme-color("default"), 0) 100%);
+      content: '';
+      z-index: 15;
+      width: 40px;
+      .bg-light &,
+      .bg-before-light & {
+        background: linear-gradient(to right, rgba(theme-color("light"), 1) 0%, rgba(theme-color("light"), 0) 100%);
+      }
+      .bg-info &,
+      .bg-before-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 1) 0%, rgba(theme-color("info"), 0) 100%);
+      }
+      .bg-dark &,
+      .bg-before-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 1) 0%, rgba(theme-color("dark"), 0) 100%);
+      }
+      .bg-primary &,
+      .bg-before-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 1) 0%, rgba(theme-color("primary"), 0) 100%);
+      }
+      .bg-lighter &,
+      .bg-before-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 1) 0%, rgba(theme-color("lighter"), 0) 100%);
+      }
+      .bg-darker &,
+      .bg-before-darker & {
+        background: linear-gradient(to right, rgba(theme-color("darker"), 1) 0%, rgba(theme-color("darker"), 0) 100%);
+      }
+    }
+    &:after {
+      left: auto;
+      right: 0;
+      background: linear-gradient(to right, rgba(theme-color("default"), 0) 0%, rgba(theme-color("default"), 1) 100%);
+      .bg-light &,
+      .bg-before-light & {
+        background: linear-gradient(to right, rgba(theme-color("light"), 0) 0%, rgba(theme-color("light"), 1) 100%);
+      }
+      .bg-info &,
+      .bg-before-info & {
+        background: linear-gradient(to right, rgba(theme-color("info"), 0) 0%, rgba(theme-color("info"), 1) 100%);
+      }
+      .bg-dark &,
+      .bg-before-dark & {
+        background: linear-gradient(to right, rgba(theme-color("dark"), 0) 0%, rgba(theme-color("dark"), 1) 100%);
+      }
+      .bg-primary &,
+      .bg-before-primary & {
+        background: linear-gradient(to right, rgba(theme-color("primary"), 0) 0%, rgba(theme-color("primary"), 1) 100%);
+      }
+      .bg-lighter &,
+      .bg-before-lighter & {
+        background: linear-gradient(to right, rgba(theme-color("lighter"), 0) 0%, rgba(theme-color("lighter"), 1) 100%);
+      }
+      .bg-darker &,
+      .bg-before-darker & {
+        background: linear-gradient(to right, rgba(theme-color("darker"), 0) 0%, rgba(theme-color("darker"), 1) 100%);
+      }
+    }
+  }
+  .slick-list {
+    @include media-breakpoint-up(md) {
+      height: auto !important;
+    }
+  }
+  .slick-track {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      transform: none !important;
+      flex-flow: row wrap;
+      width: 100% !important;
+    }
+  }
+  .slick-cloned {
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+  &.slick-initialized .slick-slide {
+    display: flex;
+  }
+}

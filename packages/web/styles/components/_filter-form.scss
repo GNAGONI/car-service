@@ -1,0 +1,314 @@
+.filter-form {
+  position: relative;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  font-weight: 300;
+  color: #474d57;
+  background: #9fd34a;
+  margin: 0 -10px 15px;
+}
+
+.filter-head {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+.filter-form.active .opener .opener-text {
+  display: none;
+}
+
+.filter-form.active .opener .opener-text.less {
+  display: block;
+}
+
+.filter-form.active .opener:before {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.filter-form .input-row {
+  position: relative;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  padding: 10px;
+  border-top: 1px solid #f8f8f9;
+}
+
+.filter-form .form-group {
+  padding: 8px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.filter-form .form-group p {
+  margin: 0 0 10px;
+}
+
+.filter-form .form-row {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-form .opener {
+  color: #fff;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  padding: 12px 20px 12px 10px;
+  position: relative;
+}
+
+.filter-form .opener .opener-text {
+  display: block;
+}
+
+.filter-form .opener .opener-text.less {
+  display: none;
+}
+
+.filter-form .opener:before {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "icomoon";
+  content: "";
+  font-weight: 400;
+  font-size: 8px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.filter-form .title {
+  color: #19212c;
+  font-size: .875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  margin: 0 0 15px;
+  width: 100%;
+  display: none;
+}
+
+.filter-form .label-wrap {
+  display: block;
+  width: 34px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 0 5px 0 0;
+}
+
+.filter-form .label-wrap .title {
+  margin: 0;
+}
+
+.filter-form label,
+.filter-form .label {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.filter-form label i,
+.filter-form .label i {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 24px;
+  line-height: 1;
+  color: #19212c;
+}
+
+.filter-form .input-holder {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: calc(100% - 34px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.filter-form .input-wrap {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 10px 0 0;
+  width: calc(100% - 80px);
+}
+
+.filter-form .btn-holder {
+  width: 80px;
+}
+
+.filter-form .btn-holder .btn {
+  width: 100%;
+  min-width: 1px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 3px;
+  font-size: .75rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  border: 0;
+  padding: 8px;
+  margin: 0;
+}
+
+.filter-form .form-control {
+  position: relative;
+  height: 34px;
+  border-radius: 3px;
+  background: #f4f4f5;
+  border: 1px solid #d5d2d0;
+  font-size: .75rem;
+  line-height: 1.125rem;
+  font-weight: 300;
+  padding: 7px 10px;
+  text-overflow: ellipsis;
+}
+
+.filter-form .jcf-select {
+  height: 34px;
+  border-radius: 3px;
+  background: #f4f4f5;
+  border: 1px solid #d5d2d0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.filter-form .jcf-select .jcf-select-text {
+  line-height: 16px;
+}
+
+.filter-form .jcf-select .jcf-select-opener:after {
+  font-size: 20px;
+}
+
+@media (min-width: 576px) {
+  .filter-form {
+    margin: 0 0 15px;
+    border-radius: 3px;
+  }
+
+  .filter-form .title {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 0 0 17px;
+  }
+
+  .filter-form .label-wrap .title {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-form {
+    border-radius: 5px;
+    background: #e8e9ea;
+    padding: 8px;
+  }
+
+  .filter-form .input-row {
+    padding: 0;
+    border: none;
+  }
+
+  .filter-form .form-group {
+    padding: 8px;
+  }
+
+  .filter-form .form-group p {
+    margin: 0 0 12px;
+  }
+
+  .filter-form .title {
+    display: block;
+  }
+
+  .filter-form .label-wrap {
+    width: 48px;
+  }
+
+  .filter-form label i,
+  .filter-form .label i {
+    font-size: 33px;
+  }
+
+  .filter-form .input-holder {
+    width: calc(100% - 48px);
+  }
+
+  .filter-form .btn-holder .btn {
+    padding: 11px;
+  }
+
+  .filter-form .form-control {
+    height: 40px;
+    padding: 10px 15px;
+  }
+
+  .filter-form .jcf-select {
+    height: 40px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .filter-form .jcf-select .jcf-select-opener:after {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .filter-form {
+    margin-bottom: 34px;
+    padding-bottom: 15px;
+  }
+
+  .filter-form.date-range .form-group {
+    width: 54.7%;
+  }
+
+  .filter-form.date-range .form-group:nth-child(2n+1) {
+    width: 45.3%;
+  }
+
+  .filter-form .input-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .filter-form .form-group {
+    width: 50%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,108 @@
+.search-brands {
+  &:after,
+  &:before {
+    @include absolute(0, auto, 0);
+    @include size(250px, 252px);
+    background: url(../static/images/shadow-light-tr-2.png) no-repeat;
+    background-size: 100% auto;
+    content: '';
+    @include media-breakpoint-up(lg) {
+      @include size(560px, 562px);
+    }
+  }
+  &:after {
+    @include size(250px, 210px);
+    right: auto;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    background-image: url(../static/images/shadow-light-bl-2.png);
+    background-position: 0 100%;
+    @include media-breakpoint-up(lg) {
+      @include size(449px, 378px);
+    }
+  }
+  .section-head {
+    .text-box {
+      max-width: 100% !important;
+    }
+  }
+  .popular-brands {
+    @extend %clearfix;
+    margin: 0 0 25px;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 35px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    h3 {
+      margin: 0 0 20px;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 30px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin: 0 0 41px;
+      }
+    }
+  }
+  .brands-list {
+    @extend %listreset;
+    margin: -7px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    @include media-breakpoint-up(lg) {
+      margin: -10px;
+    }
+    li {
+      padding: 7px;
+      max-width: 20%;
+      @include media-breakpoint-up(lg) {
+        padding: 10px;
+        max-width: 14.28%;
+      }
+      &:before {
+        display: none;
+      }
+      img {
+        @include img-responsive;
+        transition: transform .25s ease-in-out;
+      }
+      a {
+        display: block;
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  .brand-selection {
+    overflow: hidden;
+    .form-row {
+      margin: -5px;
+      > .col,
+      > [class*="col-"] {
+        padding: 5px;
+      }
+    }
+    .form-control,
+    .jcf-select {
+      @include media-breakpoint-up(lg) {
+        height: 48px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+    }
+    .form-group .btn-block {
+      .btn {
+        flex-grow: 1;
+        @include media-breakpoint-up(lg) {
+          @include fontsize(14, 26);
+        }
+      }
+    }
+  }
+}

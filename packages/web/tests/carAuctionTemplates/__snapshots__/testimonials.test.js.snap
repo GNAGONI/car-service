@@ -1,0 +1,490 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="content section-testimonials single-slide bg-before-info"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <header
+          className="section-head text-center"
+        >
+          <h2>
+            Reviews from customers selling similar cars on Car.service
+          </h2>
+          <div
+            className="text-box"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elitd iam nonummy nibh euis mod tincidunt ut laoreet dolorea am erat volutpat. Ut wisi enim ad minim veniam,
+            </p>
+            <div
+              className="btn-block"
+            >
+              <a
+                className="btn btn-primary btn-ml"
+                href="#"
+              >
+                Auction your car
+              </a>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+  <div
+    className="content-holder"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="wrap testimonial-slider-single row"
+      >
+        <div
+          className="box-testimonial text-center col"
+        >
+          <blockquote>
+            <cite>
+              <strong
+                className="title"
+              >
+                Joe Blogg
+              </strong>
+              <strong>
+                Essex
+              </strong>
+            </cite>
+            <ul
+              className="star-rating"
+            >
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  1 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  2 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  3 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  4 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  5 Star
+                </span>
+              </li>
+            </ul>
+            <q>
+              Lorem ipsum dolor sit amet, consectetuer adipi scing elitd iam nonummy nibh euis mod tincidunt ut laoreet dolorea am erat volutpat. Ut wisi enim ad minim. Lorem ipsum dolor sit amet, consectetuer. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+               
+            </q>
+          </blockquote>
+        </div>
+        <div
+          className="box-testimonial text-center col"
+        >
+          <blockquote>
+            <cite>
+              <strong
+                className="title"
+              >
+                Joe Blogg
+              </strong>
+              <strong>
+                Essex
+              </strong>
+            </cite>
+            <ul
+              className="star-rating"
+            >
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  1 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  2 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  3 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  4 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  5 Star
+                </span>
+              </li>
+            </ul>
+            <q>
+              Lorem ipsum dolor sit amet, consectetuer adipi scing elitd iam nonummy nibh euis mod tincidunt ut laoreet dolorea am erat volutpat. Ut wisi enim ad minim. Lorem ipsum dolor sit amet, consectetuer. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+               
+            </q>
+          </blockquote>
+        </div>
+        <div
+          className="box-testimonial text-center col"
+        >
+          <blockquote>
+            <cite>
+              <strong
+                className="title"
+              >
+                Joe Blogg
+              </strong>
+              <strong>
+                Essex
+              </strong>
+            </cite>
+            <ul
+              className="star-rating"
+            >
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  1 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  2 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  3 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  4 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  5 Star
+                </span>
+              </li>
+            </ul>
+            <q>
+              Car.service was fantastic in lorem ipsum dolor sit amet, consecte adipiscing elit, diam non my nibh euismod tin unt ut adipiscing elit volutpat.
+            </q>
+          </blockquote>
+        </div>
+        <div
+          className="box-testimonial text-center col"
+        >
+          <blockquote>
+            <cite>
+              <strong
+                className="title"
+              >
+                Joe Blogg
+              </strong>
+              <strong>
+                Essex
+              </strong>
+            </cite>
+            <ul
+              className="star-rating"
+            >
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  1 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  2 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  3 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  4 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  5 Star
+                </span>
+              </li>
+            </ul>
+            <q>
+              Car.service was fantastic in lorem ipsum dolor sit amet, consecte adipiscing elit, diam non my nibh euismod tin unt ut adipiscing elit volutpat.
+            </q>
+          </blockquote>
+        </div>
+        <div
+          className="box-testimonial text-center col"
+        >
+          <blockquote>
+            <cite>
+              <strong
+                className="title"
+              >
+                Joe Blogg
+              </strong>
+              <strong>
+                Essex
+              </strong>
+            </cite>
+            <ul
+              className="star-rating"
+            >
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  1 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  2 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  3 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  4 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  5 Star
+                </span>
+              </li>
+            </ul>
+            <q>
+              Car.service was fantastic in lorem ipsum dolor sit amet, consecte adipiscing elit, diam non my nibh euismod tin unt ut adipiscing elit volutpat.
+            </q>
+          </blockquote>
+        </div>
+        <div
+          className="box-testimonial text-center col"
+        >
+          <blockquote>
+            <cite>
+              <strong
+                className="title"
+              >
+                Joe Blogg
+              </strong>
+              <strong>
+                Essex
+              </strong>
+            </cite>
+            <ul
+              className="star-rating"
+            >
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  1 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  2 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  3 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  4 Star
+                </span>
+              </li>
+              <li
+                className=""
+              >
+                <span
+                  className="sr-only"
+                >
+                  5 Star
+                </span>
+              </li>
+            </ul>
+            <q>
+              Car.service was fantastic in lorem ipsum dolor sit amet, consecte adipiscing elit, diam non my nibh euismod tin unt ut adipiscing elit volutpat.
+            </q>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div
+      className="btn-arrows"
+    >
+      <a
+        className="btn-prev"
+        href="#"
+      >
+        <span
+          className="sr-only"
+        >
+          Previous
+        </span>
+      </a>
+      <a
+        className="btn-next"
+        href="#"
+      >
+        <span
+          className="sr-only"
+        >
+          Next
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+`;

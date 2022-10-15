@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div
+  className="car-by-make container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <div
+        className="content-holder bg-before-default mt-4 mb-4"
+      >
+        <ul
+          className="car-makes"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

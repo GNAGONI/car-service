@@ -1,0 +1,435 @@
+.owner-reviews {
+  .section-head {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
+    .brand-logo {
+      @include media-breakpoint-up(lg) {
+        margin-right: 35px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-right: 45px;
+      }
+    }
+  }
+}
+
+.owner-reviews .review-models {
+  padding: 0 0 20px;
+  @include media-breakpoint-up(lg) {
+    padding: 0 0 30px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 6px 0 40px;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+  .review-calculated {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -10px;
+    padding: 0 0 12px;
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 18px;
+      margin: -10px -17px;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    h3 {
+      padding: 10px;
+      margin: 0;
+      @include media-breakpoint-up(lg) {
+        padding: 10px 17px;
+      }
+    }
+    .star-rating {
+      padding: 10px;
+      @include media-breakpoint-up(lg) {
+        padding: 10px 17px;
+        margin: -7px;
+      }
+      li {
+        @include media-breakpoint-up(lg) {
+          @include fontsize(30, 30);
+          margin: 7px;
+        }
+      }
+    }
+  }
+  .wrap {
+    margin: -10px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 0 20px;
+    @include media-breakpoint-up(lg) {
+      margin: -15px -20px;
+      padding: 0 7% 28px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: -20px -28px -21px;
+      padding-bottom: 36px;
+    }
+  }
+  .btn {
+    @include media-breakpoint-up(lg) {
+      min-width: 270px;
+    }
+    .text-active {
+      display: none;
+    }
+  }
+  &.active-derivatives {
+    .btn {
+      .text-normal {
+        display: none;
+      }
+      .text-active {
+        display: inline;
+      }
+    }
+  }
+  .box-review {
+    border: 1px solid theme-color('info');
+    padding: 15px;
+    margin: 10px;
+    width: calc(100% - 20px);
+    @include media-breakpoint-up(md) {
+      width: calc(50% - 20px);
+    }
+    @include media-breakpoint-up(lg) {
+      @include fontsize(14, 19);
+      width: calc(33.33% - 40px);
+      margin: 15px 20px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: calc(33.33% - 56px);
+      margin: 20px 28px 21px;
+      padding: 15px 24px 22px;
+    }
+    h3 {
+      margin: 0;
+      font-weight: $font-weight-semibold;
+    }
+    .listing {
+      @extend %listreset;
+      li {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.manufacturer-reviews {
+  @include media-breakpoint-up(lg) {
+    @include fontsize(12, 21);
+  }
+  .wrap:not(.row) {
+    margin: 0;
+    padding: 15px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    @include media-breakpoint-up(lg) {
+      padding: 22px 0;
+    }
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.manufacturer-review {
+  overflow: hidden;
+  border-bottom: 1px solid theme-color('info');
+  padding: 20px 0;
+  line-height: rem-calc(19);
+  @include media-breakpoint-up(lg) {
+    padding: 30px 0;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 40px 0;
+  }
+  &:first-child {
+    padding-top: 0;
+  }
+  .content-main {
+    @include media-breakpoint-up(lg) {
+      @include fontsize(12, 21);
+    }
+  }
+  .header {
+    line-height: rem-calc(20);
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 10px;
+    align-items: center;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 14px;
+    }
+    .img-thumbnail {
+      flex-shrink: 0;
+      width: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 11px 0 0;
+      img {
+        width: 100%;
+      }
+    }
+    .text-box {
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .title {
+      display: block;
+      a {
+        color: inherit;
+        &:hover,
+        &:focus {
+          color: theme-color('primary');
+        }
+      }
+    }
+    .info {
+      @extend %listreset;
+      margin: 0 -4px 0 -8px;
+      display: flex;
+      flex-flow: row wrap;
+      color: theme-color('secondary');
+      li {
+        padding: 0 4px 0 8px;
+        position: relative;
+        &:before {
+          @include absolute(50%, 0);
+          @include size(4px, 1px);
+          transform: translateY(-50%);
+          background: theme-color('dark');
+        }
+      }
+    }
+  }
+  .rating-overall {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 0 14px;
+    margin: -5px;
+    align-items: center;
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 22px;
+      margin: -13px;
+    }
+    > * {
+      padding: 6px;
+      @include media-breakpoint-up(lg) {
+        padding: 13px;
+      }
+    }
+    .text {
+      @include fontsize(14, 22);
+      @include media-breakpoint-up(lg) {
+        @include fontsize(18, 22);
+      }
+    }
+    .star-rating {
+      @include fontsize(12, 12);
+      margin: -5px;
+      li {
+        @include fontsize(22, 22);
+        margin: 5px;
+        @include media-breakpoint-up(lg) {
+          @include fontsize(30, 30);
+        }
+      }
+    }
+  }
+  h2 {
+    @include fontsize(20, 30);
+    margin: 0 0 17px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(26, 37);
+      margin: 0 0 26px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(26, 37);
+    }
+  }
+  p {
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .widget-rating {
+    padding: 17px 15px;
+    @include media-breakpoint-up(lg) {
+      padding: 25px 30px 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 56px 45px 37px;
+    }
+    .rating-overall {
+      display: block;
+      .text {
+        @include media-breakpoint-up(xl) {
+          @include fontsize(22, 26);
+        }
+      }
+      .star-rating {
+        justify-content: flex-start;
+        @include media-breakpoint-up(xl) {
+          margin: -6px;
+        }
+        li {
+          @include fontsize(30, 30);
+          @include media-breakpoint-up(xl) {
+            @include fontsize(48, 48);
+            margin: 6px;
+          }
+        }
+      }
+    }
+    .social-networks {
+      display: block;
+      @include media-breakpoint-up(xl) {
+        padding: 22px 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+      h4 {
+        @include fontsize(16, 20);
+        margin: 0 0 10px;
+        @include media-breakpoint-up(xl) {
+          margin: 0 0 14px;
+        }
+      }
+      &:before {
+        display: none;
+      }
+      ul {
+        @include media-breakpoint-up(xl) {
+          margin: -5px -8px;
+        }
+        li {
+          @include media-breakpoint-up(xl) {
+            padding: 5px 8px;
+          }
+          a {
+            border-radius: $border-radius;
+            @include media-breakpoint-up(xl) {
+              @include size(42px);
+              @include fontsize(16, 41);
+            }
+            &:hover {
+              color: theme-color('default');
+              opacity: 0.8;
+            }
+            &.icon-facebook {
+              background: $facebook;
+              font-size: rem-calc(18);
+            }
+            &.icon-twitter {
+              background: $twitter;
+            }
+            &.icon-googleplus {
+              background: $google-plus;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.review-cars-list {
+  .wrap {
+    padding-bottom: 15px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  .btn {
+    min-width: 170px;
+  }
+
+  .img-thumbnail {
+    border: none;
+  }
+
+  .box-car {
+    a {
+      padding: 10px;
+    }
+  }
+}
+
+.box-car {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  > a,
+  > .holder {
+    background: theme-color('default');
+    padding: 20px 10px 15px;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: $border-radius;
+    position: relative;
+    display: block;
+    width: 100%;
+    color: theme-color('dark');
+    @include media-breakpoint-up(xl) {
+      padding: 41px 15px 30px;
+    }
+    &:after {
+      @include absolute(0, 0, 0, 0);
+      @include transition;
+      background: rgba(theme-color('primary'), 0.84);
+      content: '';
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+      h3 {
+        color: theme-color('default');
+      }
+    }
+  }
+  .img-thumbnail {
+    margin: 0 0 6px;
+    picture {
+      @include v-align;
+    }
+    img {
+      height: 100%;
+      min-height: 100%;
+    }
+  }
+  h3 {
+    @include transition;
+    z-index: 5;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      @include fontsize(14, 20);
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

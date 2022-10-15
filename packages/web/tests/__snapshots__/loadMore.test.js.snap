@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div
+  className="load-more"
+>
+  <div
+    className="load-more__content mb-5"
+  />
+  <div
+    className="load-more__footer text-center"
+  >
+    <button
+      className="btn btn-new btn-success"
+      onClick={[Function]}
+    >
+      Load more
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,9 @@
+.content-block {
+  &-calculator {
+    padding-right: 50px;
+
+    @include media-breakpoint-down(sm) {
+      padding-right: 10px;
+    }
+  }
+}

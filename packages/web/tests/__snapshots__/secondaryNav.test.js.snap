@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<nav
+  className="subnav bg-before-default"
+>
+  <div
+    className="jcf-scrollable subnav__container"
+  >
+    <ul
+      className="subnav__list"
+      style={
+        Object {
+          "transform": "translate(0px)",
+        }
+      }
+    />
+  </div>
+</nav>
+`;

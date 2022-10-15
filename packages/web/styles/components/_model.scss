@@ -1,0 +1,95 @@
+.section-model {
+  z-index: 460;
+  @include media-breakpoint-up(lg) {
+    @include fontsize(14, 24);
+  }
+  &.bg-info, &.bg-before-info {
+    .bg-model {
+      &:after, &:before {
+        background: #d1d2d5;
+      }
+    }
+  }
+  .bg-model {
+    @include absolute(-40px, -10px, auto, 0);
+    overflow: hidden;
+    width: 9999px;
+    @include media-breakpoint-up(sm) {
+      left: -140px;
+      top: 0;
+    }
+    @include media-breakpoint-up(md) {
+      left: -100px;
+      top: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      left: -150px;
+    }
+    &:before {
+      @include absolute(-250px, 192px, auto, -300px);
+      width: 400px;
+      transform: rotate(38deg);
+      background: #e6e6e8;
+      content: '';
+      @include media-breakpoint-up(sm) {
+        left: 280px;
+      }
+      @include media-breakpoint-up(md) {
+        left: 280px;
+        width: 450px;
+        transform: rotate(20deg);
+        top: -250px;
+        bottom: -250px;
+      }
+      @include media-breakpoint-up(xl) {
+        transform: rotate(26deg);
+        width: 450px;
+      }
+    }
+    &:after {
+      @include absolute(0, 410px, auto, 0);
+      background: #e6e6e8;
+      width: 9999px;
+      content: '';
+      @include media-breakpoint-up(sm) {
+        left: 500px;
+      }
+      @include media-breakpoint-up(lg) {
+        left: 440px;
+      }
+      @include media-breakpoint-up(xl) {
+        left: 500px;
+      }
+    }
+  }
+  ul li:before {
+    @include media-breakpoint-up(lg) {
+      top: 9px;
+    }
+  }
+  .img-area {
+    margin: 0 0 -19px 0;
+    @include media-breakpoint-up(md) {
+      margin: -60px -30px -50px 0;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: -70px -20px -70px 0;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: -80px -20px -80px -20px;
+    }
+    @include media-breakpoint-up(xxl) {
+      margin: -101px -177px -99px -49px;
+      .template-home & {
+        margin: -140px -177px -75px -62px;
+      }
+    }
+    img {
+      max-width: 280px;
+      margin: 0 auto;
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+      }
+    }
+  }
+}

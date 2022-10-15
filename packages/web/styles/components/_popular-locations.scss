@@ -1,0 +1,113 @@
+.popular-locations {
+  overflow: hidden;
+  margin: 0 0 20px;
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 30px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 40px;
+  }
+  &:last-child {
+    margin: 0;
+  }
+  &[class^="bg-"],
+  &[class*=" bg-"] {
+    padding: 25px 15px;
+    border-radius: $border-radius;
+    @include media-breakpoint-up(lg) {
+      padding: 25px 25px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 32px 30px 56px;
+    }
+  }
+  h2 {
+    margin: 0 0 20px;
+    @include media-breakpoint-up(lg) {
+      font-size: rem-calc(24);
+      margin: 0 0 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: rem-calc(30);
+      margin: 0 0 36px;
+    }
+  }
+  .list-holder {
+    overflow: hidden;
+  }
+  .locations-list {
+    @extend %listreset;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -15px -21px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(16, 20);
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(18, 22);
+    }
+    li {
+      position: relative;
+      width: 33.33%;
+      padding: 0 15px 21px;
+      @include media-breakpoint-up(lg) {
+        width: 25%;
+      }
+      &:after {
+        @include absolute(-999px, -2px, auto, -999px);
+        width: 2px;
+        background: theme-color('dark');
+        content: '';
+      }
+      button {
+        color: inherit;
+        border: none;
+        background-color: inherit;
+        font-weight: $font-weight-medium;
+        &:hover,
+        &:focus {
+          outline: none;
+          color: theme-color("primary");
+        }
+      }
+    }
+  }
+  &.bg-dark {
+    .locations-list {
+      li {
+        &:after {
+          background: #a8abb0;
+        }
+      }
+    }
+  }
+}
+
+.section-regions {
+  .btn-locations {
+    i {
+      font-size: rem-calc(16px);
+      margin: 0 0 0 10px;
+      transition: transform .25s ease-in-out;
+    }
+    .less {
+      display: inline;
+    }
+    .more {
+      display: inline;
+    }
+  }
+  &.active-regions {
+    .btn-locations {
+      i {
+        transform: rotate(180deg);
+      }
+      .less {
+        display: inline;
+      }
+      .more {
+        display: none;
+      }
+    }
+  }
+}

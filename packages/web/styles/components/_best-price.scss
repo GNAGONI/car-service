@@ -1,0 +1,83 @@
+.section-bestprice {
+  padding-bottom: 0 !important;
+  display: none;
+  .img-area {
+    @include media-breakpoint-up(md) {
+      margin: 0 -160px 0 0;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 0 -162px 0 0;
+    }
+    &.img-full {
+      &:after {
+        @include absolute(0, 0, 0);
+        opacity: .85;
+        height: 85%;
+        content: '';
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(theme-color("dark"), .75) 0%, rgba(theme-color("dark"), 0) 100%);
+      }
+    }
+  }
+  .content-holder {
+    &:after {
+      @include absolute(0, 50%);
+      @include triangle(28px, theme-color("light"), down);
+      transform: translateX(-50%);
+      content: '';
+      display: block;
+      @include media-breakpoint-up(lg) {
+        border-width: 24px 24px 0 24px;
+      }
+    }
+    .section-head {
+      @include media-breakpoint-up(md) {
+        max-width: 67%;
+      }
+    }
+  }
+  &.bg-before-default .content-holder:after,
+  &.bg-default .content-holder:after {
+    border-top-color: theme-color('default');
+  }
+  &.bg-before-lighter .content-holder:after,
+  &.bg-lighter .content-holder:after {
+    border-top-color: theme-color('lighter');
+  }
+  &.bg-before-lightest .content-holder:after,
+  &.bg-lightest .content-holder:after {
+    border-top-color: theme-color('lightest');
+  }
+  &.bg-before-blue-dark .content-holder:after,
+  &.bg-blue-dark .content-holder:after {
+    border-top-color: theme-color('blue-dark');
+  }
+  &.bg-before-info .content-holder:after,
+  &.bg-info .content-holder:after {
+    border-top-color: theme-color('info');
+  }
+  &.bg-before-dark .content-holder:after,
+  &.bg-dark .content-holder:after {
+    border-top-color: theme-color('dark');
+  }
+  &.bg-before-primary .content-holder:after,
+  &.bg-primary .content-holder:after {
+    border-top-color: theme-color('primary');
+  }
+  &.bg-before-secondary .content-holder:after,
+  &.bg-secondary .content-holder:after {
+    border-top-color: theme-color('secondary');
+  }
+  &.bg-before-darker .content-holder:after,
+  &.bg-darker .content-holder:after {
+    border-top-color: theme-color('darker');
+  }
+  &.bg-before-darkest .content-holder:after,
+  &.bg-darkest .content-holder:after {
+    border-top-color: theme-color('darkest');
+  }
+  &.bg-before-success .content-holder:after,
+  &.bg-success .content-holder:after {
+    border-top-color: theme-color('success');
+  }
+}

@@ -1,0 +1,162 @@
+.form-callback {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 16px 0 25px;
+  position: relative;
+  z-index: 4;
+  @include media-breakpoint-up(md) {
+    padding: 22px 0 21px;
+  }
+  @include media-breakpoint-up(lg) {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .bg-tiers {
+    @include absolute(0, 0, 0);
+    @include size(100%);
+    z-index: -1;
+    pointer-events: none;
+    &:after,
+    &:before {
+      @include absolute(-300px, 214px, auto, -300px);
+      width: 45px;
+      background: url(../static/images/icons/bg-tier2.svg) repeat-y;
+      content: '';
+      background-size: 45px 8px;
+      opacity: .05;
+      transform: rotate(-45deg);
+      @include media-breakpoint-up(lg) {
+        left: 227px;
+        width: 70px;
+        background-size: 70px 12px;
+      }
+    }
+    &:before {
+      left: 10px;
+      @include media-breakpoint-up(lg) {
+        left: -88px;
+      }
+    }
+  }
+  .section-head {
+    @include fontsize(11, 23);
+    padding: 0 0 14px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(14, 23);
+      flex-shrink: 0;
+      max-width: 34.2%;
+      padding: 0 3% 0 0;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 32.2%;
+      padding: 0 5% 0 0;
+    }
+    .text-box {
+      max-width: 250px;
+      margin: 0;
+      @include media-breakpoint-up(lg) {
+        max-width: 100%;
+      }
+    }
+    h2 {
+      margin: 0 0 8px;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(24, 29);
+      }
+      @include media-breakpoint-up(xl) {
+        @include fontsize(30, 35);
+      }
+    }
+  }
+  .form-inline {
+    flex-grow: 1;
+    .form-group {
+      @include media-breakpoint-up(md) {
+        width: 34%;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 39%;
+      }
+    }
+    .btn-block {
+      padding: 0;
+      flex-shrink: 0;
+    }
+    .form-control {
+      background: theme-color("light");
+    }
+    .btn {
+      @include media-breakpoint-down(sm) {
+        text-align: left;
+      }
+      &.btn-dark {
+        &:hover,
+        &:focus {
+          color: theme-color("primary");
+          background: theme-color("dark");
+        }
+      }
+    }
+  }
+}
+
+.form-callback-small {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: rem-calc(17);
+  h2 {
+    margin: 0 0 12px;
+    @include media-breakpoint-up(lg) {
+      @include fontsize(24, 32);
+      margin: 0 0 15px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(30, 40);
+    }
+  }
+  .form-holder {
+    background: theme-color('dark');
+    color: theme-color('default');
+    flex-grow: 1;
+    padding: 15px;
+    @include media-breakpoint-up(lg) {
+      padding: 20px 30px;
+    }
+  }
+  .form-row {
+    margin: 0 -8px -12px;
+    > .col,
+    > [class*="col-"] {
+      padding: 0 8px 12px;
+    }
+  }
+  .form-control {
+    @include media-breakpoint-up(lg) {
+      @include fontsize(15, 18);
+      padding-top: 15px;
+      padding-bottom: 15px;
+      height: 48px;
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(18, 22);
+      height: 48px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+  }
+  .form-group .btn-block {
+    .btn {
+      flex-grow: 1;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(15, 22);
+        padding-top: 13px;
+        padding-bottom: 13px;
+      }
+      @include media-breakpoint-up(xl) {
+        @include fontsize(18, 22);
+      }
+    }
+  }
+}

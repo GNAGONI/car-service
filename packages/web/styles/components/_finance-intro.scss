@@ -1,0 +1,59 @@
+.intro-finance {
+  @include media-breakpoint-up(lg) {
+    min-height: 400px;
+  }
+  @include media-breakpoint-up(xl) {
+    min-height: 540px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .tick-list {
+    padding-top: 10px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 20px;
+    }
+  }
+  .section-head {
+    padding-bottom: 19px;
+    .text-box {
+      max-width: 100% !important;
+    }
+  }
+  &:after,
+  &:before {
+    @include absolute(0, 0);
+    @include size(250px, 263px);
+    background: url(../static/images/shadow-light-tl.png) no-repeat 0 0;
+    background-size: 100% auto;
+    content: '';
+    z-index: 50;
+    @include media-breakpoint-up(lg) {
+      @include size(485px, 510px);
+    }
+  }
+  &:after {
+    @include size(250px, 257px);
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    background-image: url(../static/images/shadow-light-br.png);
+    background-position: 0 100%;
+    @include media-breakpoint-up(lg) {
+      @include size(490px, 504px);
+    }
+  }
+  .img-area {
+    &.img-man {
+      @include absolute(auto, 50%, auto, 0);
+      transform: translateX(-50%);
+      max-width: 350px;
+      z-index: -1;
+      @include media-breakpoint-up(xl) {
+        max-width: 516px;
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="news-widget"
+>
+  <section
+    className="widget widget-media"
+  >
+    <h2>
+      <strong>
+        Latest
+      </strong>
+       News
+    </h2>
+    <div
+      className="post-holder"
+    >
+      <article
+        className="post"
+      >
+        <div
+          className="img-thumbnail"
+        >
+          <a
+            href="#"
+          >
+            <img
+              alt="Waste hours on the Rolls-Royce Cullinan configurator"
+              height="70"
+              src="https://i.ytimg.com/vi/JplDNiSMHaM/maxresdefault.jpg"
+              width="100"
+            />
+          </a>
+        </div>
+        <div
+          className="text-area"
+        >
+          <h3>
+            <a
+              href="#"
+            >
+              Waste hours on the Rolls-Royce Cullinan configurator
+            </a>
+          </h3>
+          <time
+            className="date"
+          >
+            12.02.03
+          </time>
+        </div>
+      </article>
+      <article
+        className="post"
+      >
+        <div
+          className="img-thumbnail"
+        >
+          <a
+            href="#"
+          >
+            <img
+              alt="Waste hours on the Rolls-Royce Cullinan configurator"
+              height="70"
+              src="https://i.ytimg.com/vi/JplDNiSMHaM/maxresdefault.jpg"
+              width="100"
+            />
+          </a>
+        </div>
+        <div
+          className="text-area"
+        >
+          <h3>
+            <a
+              href="#"
+            >
+              Waste hours on the Rolls-Royce Cullinan configurator
+            </a>
+          </h3>
+          <time
+            className="date"
+          >
+            15.02.03
+          </time>
+        </div>
+      </article>
+      <article
+        className="post"
+      >
+        <div
+          className="img-thumbnail"
+        >
+          <a
+            href="#"
+          >
+            <img
+              alt="Waste hours on the Rolls-Royce Cullinan configurator"
+              height="70"
+              src="https://i.ytimg.com/vi/JplDNiSMHaM/maxresdefault.jpg"
+              width="100"
+            />
+          </a>
+        </div>
+        <div
+          className="text-area"
+        >
+          <h3>
+            <a
+              href="#"
+            >
+              Waste hours on the Rolls-Royce Cullinan configurator
+            </a>
+          </h3>
+          <time
+            className="date"
+          >
+            16.02.03
+          </time>
+        </div>
+      </article>
+    </div>
+    <button
+      className="widget-btn d-block btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      succes={true}
+      type="button"
+    >
+      View more
+    </button>
+  </section>
+</div>
+`;

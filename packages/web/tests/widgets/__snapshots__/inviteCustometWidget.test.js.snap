@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="widget invite-widget"
+>
+  <span
+    className="price-tag"
+  >
+    <span
+      className="price"
+    >
+      Just 
+      <br />
+      £9.99
+    </span>
+  </span>
+  <div
+    className="widget-header text-center"
+  >
+    <h3>
+      Invite your customers to leave a review
+    </h3>
+    <p>
+      Gain that extra level of trust
+    </p>
+  </div>
+  <ul
+    className="star-list"
+  >
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="description"
+          height="41"
+          src=""
+          width="41"
+        />
+      </span>
+    </li>
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="description"
+          height="41"
+          src=""
+          width="41"
+        />
+      </span>
+    </li>
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="description"
+          height="41"
+          src=""
+          width="41"
+        />
+      </span>
+    </li>
+    <li>
+      <span
+        className="icon-wrap"
+      >
+        <img
+          alt="description"
+          height="41"
+          src=""
+          width="41"
+        />
+      </span>
+    </li>
+  </ul>
+  <a
+    className="widget-btn btn btn-dark d-block"
+    href="#"
+  >
+    Invite customers
+  </a>
+</section>
+`;

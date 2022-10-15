@@ -1,0 +1,383 @@
+.car-review {
+  &:after {
+    @include absolute(-100px, 0, 0, 0);
+    z-index: -1;
+    content: '';
+    background: url(../static/images/bg-reviews.png) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  .section-head {
+    @include media-breakpoint-up(lg) {
+      @include fontsize(16, 22);
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(18, 26);
+    }
+  }
+  .form-registration {
+    padding: 0 0 20px;
+    @include media-breakpoint-up(lg) {
+      padding: 10px 0 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 16px 0 40px;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .registration-number {
+      .form-control {
+        @include fontsize(20, 24);
+        height: 60px;
+        text-align: center;
+        width: auto;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding: 18px 20px;
+        background: theme-color("default");
+        @include media-breakpoint-up(lg) {
+          @include fontsize(27, 32);
+          letter-spacing: 5px;
+          height: 90px;
+          padding: 29px 25px;
+        }
+        @include media-breakpoint-up(xl) {
+          @include fontsize(36, 40);
+          height: 124px;
+          letter-spacing: 7px;
+          padding: 42px 30px;
+        }
+      }
+      .ico {
+        @include size(50px, 60px);
+        padding: 8px;
+        @include media-breakpoint-up(lg) {
+          @include size(80px, 90px);
+          padding: 15px 10px;
+        }
+        @include media-breakpoint-up(xl) {
+          @include size(100px, 124px);
+          padding: 22px 15px;
+        }
+        img {
+          max-height: 100%;
+          width: auto;
+        }
+      }
+    }
+    .btn.btn-md {
+      @include media-breakpoint-up(lg) {
+        @include fontsize(18, 26);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        min-width: 270px;
+      }
+    }
+  }
+
+}
+
+.form-review {
+  max-width: 450px;
+  margin: 0 auto 20px;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 28px;
+    max-width: 590px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .form-control,
+  .jcf-select {
+    text-align: left !important;
+  }
+  .text-box {
+    margin: 0 0 20px;
+    @include media-breakpoint-up(md) {
+      max-width: 70%;
+      margin: 0 auto 20px;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 70%;
+      margin-bottom: 28px;
+    }
+  }
+  .form-area {
+    overflow: hidden;
+    margin: 0 auto 10px;
+    background: theme-color('default');
+    padding: 15px;
+    @include media-breakpoint-up(lg) {
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 30px 27px 24px;
+    }
+  }
+
+  .btn {
+    @include media-breakpoint-up(lg) {
+      min-width: 254px;
+    }
+  }
+  .btn-registration {
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+    transition: all .3s ease-in-out;
+    position: relative;
+    height: 40px;
+    padding: 0;
+    margin: 10px 0 0;
+    .btn {
+      @include absolute(0, 50%);
+      @extend .ellipsis;
+      backface-visibility: hidden;
+      transform: translateX(-50%) rotateY(0deg);
+      transform-style: preserve-3d;
+      margin: 0;
+      transition: all .6s ease-in-out;
+      max-width: 100%;
+      &:not(.opener) {
+        transform: translateX(-50%) rotateY(-180deg);
+      }
+    }
+  }
+  &.active {
+    .btn-registration .btn {
+      &:not(.opener) {
+        transform: translateX(-50%) rotateY(0deg);
+      }
+      &.opener {
+        transform: translateX(-50%) rotateY(-180deg);
+      }
+    }
+  }
+}
+
+.section-rating {
+  .wrap {
+    @include media-breakpoint-up(lg) {
+      margin-top: -14px;
+      margin-bottom: -14px;
+    }
+  }
+  .form-control,
+  .jcf-slect,
+  label {
+    text-align: left;
+  }
+}
+
+.rating-area {
+  padding-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 56px;
+  }
+}
+
+.rating {
+  @include inline(top);
+  position: relative;
+  margin: 0 0 28px;
+  max-width: 100%;
+  @include media-breakpoint-up(lg) {
+    margin: 0 0 40px;
+  }
+  .rating-holder {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    margin: -4px;
+    vertical-align: top;
+  }
+  &:hover {
+    input[type="radio"] {
+      &:checked + label,
+      &:checked ~ label {
+        &:before {
+          content: "\e914";
+          color: $gray-400;
+        }
+      }
+      & + label:hover,
+      & + label:hover ~ label {
+        &:before {
+          content: "\e916";
+          color: theme-color('primary');
+        }
+      }
+    }
+  }
+  input[type="radio"] {
+    position: fixed;
+    left: -9999px;
+    top: -9999px;
+    &:checked {
+      + label .text {
+        display: block;
+      }
+    }
+    &:checked {
+      ~ label {
+        &:before {
+          content: "\e916";
+          color: theme-color('primary');
+        }
+      }
+      ~ .text {
+        display: none;
+      }
+    }
+  }
+  label {
+    position: static;
+    flex-grow: inherit;
+    width: auto;
+    font-weight: 400;
+    padding: 4px;
+    margin: 0;
+    &:before {
+      @include icon("\e914");
+      @include fontsize(25, 25);
+      display: block;
+      color: $gray-400;
+      @include media-breakpoint-up(md) {
+        @include fontsize(34, 35);
+      }
+      @include media-breakpoint-up(lg) {
+        @include fontsize(42, 45);
+      }
+    }
+    .text {
+      display: none;
+      color: theme-color('dark');
+    }
+  }
+  .text {
+    @include absolute(100%, 0, 0);
+    @extend .ellipsis;
+    text-align: center;
+    color: $gray-400;
+    display: block;
+    margin: 4px 0 0;
+    font-weight: $font-weight-semibold;
+  }
+  &.add {
+    &:hover {
+      input[type="radio"] {
+        &:checked + label,
+        &:checked ~ label {
+          &:before {
+            content: "\e916";
+          }
+        }
+      }
+    }
+    label:before {
+      content: "\e916";
+    }
+  }
+}
+
+.box-rating {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .box-holder {
+    background: theme-color("default");
+    padding: 20px;
+    @include media-breakpoint-up(lg) {
+      padding: 20px 10%;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 31px 15% 39px;
+    }
+  }
+  h3 {
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 19px;
+    }
+  }
+  .star-rating {
+    li {
+      @include fontsize(22, 22);
+      color: $gray-400;
+      @include media-breakpoint-up(lg) {
+        @include fontsize(26, 26);
+      }
+      &:before {
+        content: "\e914";
+      }
+      &.active {
+        &:before {
+          content: "\e916";
+        }
+      }
+      &.half-active {
+        &:before {
+          content: "\e901";
+        }
+      }
+    }
+  }
+  h2 {
+    @include media-breakpoint-up(lg) {
+      @include fontsize(24, 32);
+    }
+    @include media-breakpoint-up(xl) {
+      @include fontsize(30, 40);
+    }
+  }
+  &.large {
+    .star-rating {
+      li {
+        @include fontsize(24, 24);
+        @include media-breakpoint-up(lg) {
+          @include fontsize(34, 34);
+        }
+      }
+    }
+    .box-holder {
+      @include media-breakpoint-up(lg) {
+        padding-left: 30%;
+        padding-right: 30%;
+      }
+      @include media-breakpoint-up(xl) {
+        padding: 27px 32% 50px;
+      }
+    }
+    .rating {
+      label {
+        &:before {
+          @include media-breakpoint-up(lg) {
+            @include fontsize(74, 74);
+          }
+        }
+      }
+    }
+  }
+}
+
+.review-reasons {
+  .form-control,
+  .jcf-select {
+    background: theme-color("default");
+  }
+  .btn {
+    @include media-breakpoint-up(lg) {
+      min-width: 200px;
+    }
+  }
+  textarea.form-control {
+    @include media-breakpoint-up(lg) {
+      height: 203px !important;
+    }
+  }
+}

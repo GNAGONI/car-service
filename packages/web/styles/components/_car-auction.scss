@@ -1,0 +1,71 @@
+.car-auction {
+  &__header {
+    .header {
+      &__content {
+        background: #f2f2f3;
+
+        h2 {
+          line-height: 1.375rem;
+          margin: 0 0 32px;
+          letter-spacing: -0.2px;
+          font-weight: 300;
+
+          @media (min-width: 768px) {
+            font-size: 1.5625rem;
+            line-height: 1.9375rem;
+            margin: 0 0 17px;
+          }
+
+          @media (min-width: 1000px) {
+            font-size: 1.75rem;
+            line-height: 2.25rem;
+            letter-spacing: -0.5px;
+          }
+
+          @media (min-width: 1220px) {
+            font-size: 2.25rem;
+            line-height: 2.9375rem;
+          }
+        }
+      }
+    }
+
+    .header {
+      &__selector {
+        &-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .selector-section {
+      &__title {
+        font-size: 0.75rem;
+        line-height: 1.1875rem;
+        font-weight: 500;
+        display: block;
+        margin: 0 4px 4px;
+
+        @media (min-width: 576px) {
+          margin: 0 10px 0 0;
+        }
+
+        @media (min-width: 1000px) {
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+          margin: 0 25px 0 0;
+        }
+      }
+
+      &__wrapper {
+        min-width: 200px;
+
+        @media (min-width: 1000px) {
+          min-width: 273px;
+        }
+      }
+    }
+  }
+}

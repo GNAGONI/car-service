@@ -1,0 +1,129 @@
+.intro-search {
+  .img-area {
+    @include media-breakpoint-up(lg) {
+      margin: -7px -20px 0;
+    }
+    @include media-breakpoint-up(xl) {
+      margin: -7px -62px 0 -20px;
+    }
+    &[id^="bg-stretch"],
+    &[id*=" bg-stretch"] {
+      @include absolute(0, 0, 0, 0);
+      margin: 0;
+      background-color: theme-color('dark');
+      &:after {
+        @include absolute(0, 0, 0, 0);
+        content: '';
+        background: linear-gradient(to right, rgba(theme-color('dark'), 0.6) 0%, rgba(theme-color('dark'), .3) 100%)
+      }
+    }
+  }
+  .content-block {
+    .section-head {
+      @include media-breakpoint-up(lg) {
+        @include fontsize(12, 21);
+      }
+      h2 {
+        margin: 0 0 10px;
+        @include media-breakpoint-up(lg) {
+          line-height: rem-calc(32);
+          margin: 0 0 14px;
+        }
+        @include media-breakpoint-up(xl) {
+          line-height: rem-calc(39);
+        }
+      }
+    }
+  }
+  .form-wrap {
+    .form-group .btn-block {
+      .btn {
+        flex-grow: 1;
+        @include media-breakpoint-up(lg) {
+          font-size: rem-calc(14);
+        }
+      }
+    }
+    .form-row {
+      margin-bottom: -15px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: -20px;
+      }
+    }
+    label,
+    .label {
+      margin: 0 0 10px;
+      @include media-breakpoint-up(lg) {
+        margin: 0 0 19px;
+      }
+    }
+  }
+  .widget-testimonial {
+    background: rgba(theme-color('dark'), .7);
+    box-shadow: 0 0 10px 0 rgba(theme-color('dark'), .6);
+  }
+  .label-text {
+    display: block;
+    margin: 0 0 8px;
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 11px;
+    }
+  }
+  &.add {
+    @include media-breakpoint-up(lg) {
+      padding-top: 37px;
+      padding-bottom: 37px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: 37px;
+      padding-bottom: 47px;
+    }
+    &:after,
+    &:before {
+      @include absolute(0, auto, 0);
+      @include size(250px, 252px);
+      background: url(../static/images/shadow-light-tr-2.png) no-repeat;
+      background-size: 100% auto;
+      content: '';
+      @include media-breakpoint-up(lg) {
+        @include size(560px, 562px);
+      }
+    }
+    &:after {
+      @include size(250px, 210px);
+      right: auto;
+      left: 0;
+      top: auto;
+      bottom: 0;
+      background-image: url(../static/images/shadow-light-bl-2.png);
+      background-position: 0 100%;
+      @include media-breakpoint-up(lg) {
+        @include size(449px, 378px);
+      }
+    }
+    .section-head {
+      padding-bottom: 15px;
+    }
+    .form-wrap {
+      @include media-breakpoint-up(lg) {
+        margin-right: 10%;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-right: 19.5%;
+      }
+    }
+    .form-row {
+      margin-bottom: -11px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: -11px;
+      }
+      > .col,
+      > [class*="col-"] {
+        padding-bottom: 11px;
+      }
+    }
+    .btn {
+      min-width: 173px;
+    }
+  }
+}

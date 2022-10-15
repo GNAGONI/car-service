@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<aside
+  className="aside-recommend text-default"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="text-block col-md-8"
+        lb={9}
+      >
+        <div
+          className="text-box"
+        >
+          <h2>
+            Advertise your car to over 
+            <strong>
+              16,000 garages across the UK
+            </strong>
+          </h2>
+        </div>
+        <div
+          className="btn-block"
+        >
+          <a
+            href="/car-auctions/auction-your-car"
+            onClick={[Function]}
+          >
+            Auction your car
+          </a>
+        </div>
+      </div>
+      <div
+        className="d-none d-md-flex col-md-3"
+      >
+        <div
+          className="img-area"
+        >
+          <img
+            alt="Would you recommend your car?"
+            height="153"
+            src=""
+            width="143"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+`;

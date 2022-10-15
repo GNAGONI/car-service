@@ -1,0 +1,71 @@
+{
+  "name": "car-service",
+  "private": true,
+  "engines": {
+    "node": ">=8.10.0",
+    "npm": ">=6.4.1"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "run:web": "lerna run dev --stream --scope=@car-service/web",
+    "run:ios": "lerna run ios --stream --scope=@car-service/mobile",
+    "run:android": "lerna run android --stream --scope=@car-service/mobile",
+    "run:mobile": "lerna run start --stream --scope=@car-service/mobile",
+    "build:web": "lerna run build --stream --scope=@car-service/web",
+    "start:web": "lerna run start --stream --scope=@car-service/web",
+    "test": "lerna run test",
+    "lint": "lerna run lint --stream --concurrency 4",
+    "prettier": "lerna run prettier --stream --concurrency 4",
+    "new-version": "lerna version --conventional-commits --yes",
+    "commit": "git-cz"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/api-client",
+      "packages/common",
+      "packages/redux",
+      "packages/web"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/expo",
+      "**/expo/**",
+      "**/metro-bundler-config-yarn-workspaces",
+      "**/metro-bundler-config-yarn-workspaces/**",
+      "**/expo-analytics",
+      "**/expo-analytics/**",
+      "**/react-native-keyboard-spacer",
+      "**/react-native-keyboard-spacer/**",
+      "**/react-native-linear-gradient",
+      "**/react-native-linear-gradient/**",
+      "**/react-native-progress-bar",
+      "**/react-native-progress-bar/**",
+      "**/react-native-switch-pro",
+      "**/react-native-switch-pro/**",
+      "**/react-native-ui-kitten",
+      "**/react-native-ui-kitten/**",
+      "**/victory-native",
+      "**/victory-native/**",
+      "**/react-lifecycles-compat",
+      "**/react-lifecycles-compat/**",
+      "**/clamp",
+      "**/clamp/**",
+      "**/gud",
+      "**/gud/**",
+      "**/react-native-dismiss-keyboard",
+      "**/react-native-dismiss-keyboard/**",
+      "**/react-native-scripts",
+      "**/react-native-scripts/**"
+    ]
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "lerna": "^3.10.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

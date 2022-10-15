@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="intro pb-3"
+>
+  <div
+    className="img-area"
+  >
+    <span
+      data-srcset="images/banner-auction-mobile.jpg, images/banner-auction-mobile-2x.jpg 2x"
+    />
+    <span
+      data-media="(min-width: 768px)"
+      data-srcset="images/banner-auction-tablet.jpg, images/banner-auction-tablet-2x.jpg 2x"
+    />
+    <span
+      data-media="(min-width: 1000px)"
+      data-srcset="images/banner-auction.jpg, images/banner-auction-2x.jpg 2x"
+    />
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <div
+          className="search-area search-faqs inline"
+        >
+          <header
+            className="section-head"
+          >
+            <h2>
+              <strong>
+                Search
+              </strong>
+               car auctions
+            </h2>
+          </header>
+          <div
+            className="search-form"
+          >
+            <form
+              className="form-area"
+              onSubmit={[Function]}
+            >
+              <div
+                className="form-inline"
+              >
+                <div
+                  className="form-group"
+                >
+                  <input
+                    className="form-control"
+                    onChange={[Function]}
+                    placeholder="Search make, model, colour, location etc"
+                    type="text"
+                    value={Array []}
+                  />
+                </div>
+                <div
+                  className="btn-block"
+                >
+                  <button
+                    className="btn btn-primary"
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div
+              className="tags"
+            >
+              <strong
+                className="title"
+              >
+                Popular searches: 
+              </strong>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    Vauxhall
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    BMW
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    Audi
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                  >
+                    Manchester
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

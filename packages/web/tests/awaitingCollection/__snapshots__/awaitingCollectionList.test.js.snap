@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div>
+  <div
+    className="load-more"
+  >
+    <div
+      className="load-more__content mb-5"
+    >
+      <div
+        className="awaiting-collection__list"
+      >
+        <section
+          className="list"
+        >
+          <div
+            className="list__row list__row-header"
+          >
+            <div
+              className="row__item row__item-header"
+            >
+              <strong
+                className="data-title"
+              >
+                Car Details
+              </strong>
+            </div>
+            <div
+              className="row__item row__item-header"
+            >
+              <strong
+                className="data-title"
+              >
+                Winning Bid
+              </strong>
+            </div>
+            <div
+              className="row__item row__item-header"
+            >
+              <strong
+                className="data-title"
+              >
+                Location
+              </strong>
+            </div>
+            <div
+              className="row__item row__item-header"
+            >
+              <strong
+                className="data-title"
+              >
+                Actions
+              </strong>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div
+      className="load-more__footer text-center"
+    >
+      <button
+        className="btn btn-new btn-success"
+        onClick={[Function]}
+      >
+        Load more
+      </button>
+    </div>
+  </div>
+</div>
+`;

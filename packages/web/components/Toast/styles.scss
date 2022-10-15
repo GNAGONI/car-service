@@ -1,0 +1,60 @@
+.toast {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80vw;
+  margin: 35px auto;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+
+  &-close {
+    margin: 4px 10px;
+  }
+
+  &-body {
+    padding: 0 20px;
+    margin: 2px auto;
+    overflow: hidden;
+  }
+
+  &-text {
+    font-size: 16px;
+    word-wrap: break-word;
+    margin: 0px;
+  }
+
+  &.info {
+    background-color: white;
+    color: black;
+    .toast-close > svg {
+      color: black;
+    }
+  }
+
+  &.warning {
+    background-color: yellow;
+    color: black;
+    .toast-close > svg {
+      color: black;
+    }
+  }
+
+  &.error {
+    background-color: #ea444e;
+    color: white;
+    .toast-close > svg {
+      color: white;
+    }
+  }
+
+  &.success {
+    background-color: #9fd34a;
+    color: white;
+    .toast-close > svg {
+      color: white;
+    }
+  }
+}

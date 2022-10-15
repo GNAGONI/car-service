@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<article
+  className="content auction-details extend bg-before-default"
+>
+  <div
+    className="detail-banner auction-slider"
+  >
+    <img
+      src=""
+    />
+    <div
+      className="banner-col"
+    >
+      <div
+        className="header"
+      >
+        <h2>
+          0  
+        </h2>
+        <strong
+          className="bid-wrap"
+        >
+          Current Bid: 
+          <span
+            className="price"
+          >
+            £
+            0
+          </span>
+           (
+          0
+           bids)
+        </strong>
+      </div>
+      <ul
+        className="meta-list"
+      >
+        <li>
+          <i>
+            <img
+              alt="Clock"
+              height="20px"
+              src=""
+              width="20px"
+            />
+          </i>
+          Time remaining:
+           
+          <span
+            className="meta-text"
+          />
+        </li>
+        <li>
+          <i>
+            <img
+              alt="Location"
+              height="20px"
+              src=""
+              width="20px"
+            />
+          </i>
+          Collection postcode: 
+          
+          <span
+            className="meta-text"
+          >
+            (
+             miles away)
+          </span>
+        </li>
+      </ul>
+      <div
+        className="time-option-block"
+      >
+        <p>
+          Preferred collection time:
+        </p>
+        <ul
+          className="radio-list"
+        />
+        <div
+          className="btn-block extend"
+        >
+          <div
+            className="container container"
+          >
+            <div
+              className="row row"
+              lg="12"
+              md="12"
+              sm="12"
+              xl="12"
+              xs="12"
+            >
+              <div
+                className="col col"
+              >
+                <button
+                  className="btn btn-primary btn-xl lightbox btn btn-primary"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Place bid
+                </button>
+              </div>
+            </div>
+            <div
+              className="row row"
+              lg="12"
+              md="12"
+              sm="12"
+              xl="12"
+              xs="12"
+            >
+              <div
+                className="col col"
+              >
+                <button
+                  className="btn btn-info btn-lg btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  <i
+                    className="icon-eye"
+                  />
+                  Watch this car
+                </button>
+              </div>
+              <div
+                className="col col"
+              >
+                <button
+                  className="btn btn-info btn-lg lightbox btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  <i
+                    className="icon-message"
+                  />
+                  Message seller
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="info-box"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-lg-9"
+      >
+        <h2>
+          Customer Description:
+        </h2>
+        <p>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="info-box"
+  >
+    <h2>
+      Car Details:
+    </h2>
+    <ul
+      className="details-list"
+    >
+      <li>
+        <span
+          className="icon-wrap"
+        >
+          <img
+            alt="Has Keys"
+            height={56}
+            src=""
+            width={54}
+          />
+        </span>
+        <span
+          className="text"
+        >
+          Has not Keys
+        </span>
+      </li>
+      <li>
+        <span
+          className="icon-wrap"
+        >
+          <img
+            alt="Does Start"
+            height={52}
+            src=""
+            width={54}
+          />
+        </span>
+        <span
+          className="text"
+        >
+          Does not Start
+        </span>
+      </li>
+      <li>
+        <span
+          className="icon-wrap"
+        >
+          <img
+            alt="V5C Logbook"
+            height={44}
+            src=""
+            width={46}
+          />
+        </span>
+        <span
+          className="text"
+        >
+          No V5
+        </span>
+      </li>
+      <li>
+        <span
+          className="icon-wrap"
+        >
+          <img
+            alt="ABI Category"
+            height={29}
+            src=""
+            width={62}
+          />
+        </span>
+        <span
+          className="text"
+        >
+          ABI category not recorded
+        </span>
+      </li>
+      <li>
+        <span
+          className="icon-wrap"
+        >
+          <img
+            alt="FSH"
+            height={49}
+            src=""
+            width={36}
+          />
+        </span>
+        <span
+          className="text"
+        >
+          No FSH
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="detail-description info-box"
+  >
+    <ul
+      className="description-list"
+    >
+      <li>
+        <span
+          className="detail-title"
+        >
+          Bodywork condition
+        </span>
+        <p>
+          
+        </p>
+      </li>
+      <li>
+        <span
+          className="detail-title"
+        >
+          Interior condition
+        </span>
+        <p>
+          
+        </p>
+      </li>
+      <li>
+        <span
+          className="detail-title"
+        >
+          Exterior
+        </span>
+        <p>
+          
+        </p>
+      </li>
+    </ul>
+    <ul
+      className="description-list"
+    >
+      <li>
+        <span
+          className="detail-title"
+        >
+          Interior
+        </span>
+        <p>
+          
+        </p>
+      </li>
+      <li>
+        <span
+          className="detail-title"
+        >
+          Safety features
+        </span>
+        <p>
+          
+        </p>
+      </li>
+    </ul>
+  </div>
+</article>
+`;
