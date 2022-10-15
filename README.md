@@ -1,5 +1,7 @@
 # Car Service Frontend
 
+Car service application
+
 ## Installation:
 
 ### Development
